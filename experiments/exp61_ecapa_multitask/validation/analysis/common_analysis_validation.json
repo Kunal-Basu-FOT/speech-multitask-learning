@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "generated_artifact_count": 9,
+  "generated_artifacts": [
+    "accuracy.png",
+    "configuration.csv",
+    "confusion.png",
+    "cross_precision.csv",
+    "cross_precision.png",
+    "dialect.csv",
+    "loss.png",
+    "matched.csv",
+    "runtime.csv"
+  ],
+  "figures": 4,
+  "tables": 5,
+  "curve_contract": "PASS",
+  "confusion_contract": "PASS",
+  "cross_precision_contract": "PASS"
+}

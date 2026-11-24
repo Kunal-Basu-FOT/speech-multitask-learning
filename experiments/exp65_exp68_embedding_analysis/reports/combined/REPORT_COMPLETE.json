@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-08-06T08:09:36.060226+00:00",
+  "elapsed_seconds": 207.3112631390104,
+  "encoder_training_performed": false,
+  "exp65_geometry_rows": 30,
+  "exp65_probe_rows": 330,
+  "exp68_fewshot_rows": 120,
+  "scientific_scope": "three-task cache-compatible LID, language-local dialect, and gender",
+  "status": "EXP65_EXP68_ANALYSIS_COMPLETE"
+}

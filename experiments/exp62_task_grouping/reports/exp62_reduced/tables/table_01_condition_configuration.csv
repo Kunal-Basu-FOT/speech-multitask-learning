@@ -1,0 +1,7 @@
+domain,domain_label,condition,condition_label,active_tasks,parameter_count,model_tensor_count,best_checkpoint_bytes,history_rows,maximum_epoch,recorded_training_seconds,recorded_amp_skips,best_epoch,best_dev_selection_score,training_complete,matched_evaluation_complete,cross_precision_evaluation_complete
+one_bit,1-bit,lid_only,LID only,language,7284211,239,87492775,40,40,9785.84266496,,,,True,True,True
+one_bit,1-bit,dialect_only,Dialect only,dialect,7639180,281,91805887,40,40,10354.99541402,,,,True,True,True
+one_bit,1-bit,lid_dialect,LID + dialect,language+dialect,7691030,289,92438047,40,40,10224.32709527,,,,True,True,True
+sixteen_bit,16-bit,lid_only,LID only,language,7284211,239,87492775,40,40,9183.19785213,,,,True,True,True
+sixteen_bit,16-bit,dialect_only,Dialect only,dialect,7639180,281,91805887,40,40,10528.71941066,,,,True,True,True
+sixteen_bit,16-bit,lid_dialect,LID + dialect,language+dialect,7691030,289,92438047,40,40,11160.06502509,,,,True,True,True

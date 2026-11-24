@@ -1,0 +1,7 @@
+Visible GPU: NVIDIA GeForce RTX 3090
+Checkpoint: /data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/runtime/runs/exp66/one_bit/standard_logged/checkpoints/best.pt
+Model tensors: 296
+Model elements: 7741337
+Non-finite model values: 0
+Restored CPU RNG: cpu torch.uint8
+EXP66_REAL_CHECKPOINT_LOAD_PASS

@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+ROOT=/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer
+EXP62=/data/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer
+PYTHON=/data/Kunal/env_speech_mtl/bin/python
+SCREEN=exp65_exp68_gpu0
+MASTER="$ROOT/scripts/10_master_queue_gpu0.sh"
+LOG="$ROOT/runtime/logs/exp65_exp68_gpu0.screen.log"
+
+printf '%s\n' "============================================================" " EXP 6.5 + 6.8 — SAFE POST-EXP6.2 LAUNCH" "============================================================"
+whoami
+hostname
+date --iso-8601=seconds
+
+[[ "$(whoami)" == "wtc9" ]] || { echo "ERROR: expected user wtc9"; exit 1; }
+[[ "$(hostname)" == "wtc9-server" ]] || { echo "ERROR: expected host wtc9-server"; exit 1; }
+[[ -x "$PYTHON" ]] || { echo "ERROR: Python missing"; exit 1; }
+[[ -x "$MASTER" ]] || { echo "ERROR: master queue missing or not executable: $MASTER"; exit 1; }
+[[ -s "$ROOT/runtime/PACKAGE_INSTALL_VALIDATED.json" ]] || {
+  echo "ERROR: run bash scripts/00_install_validate.sh first"
+  exit 1
+}
+
+if pgrep -af '[p]ython.*speech_mtl[.]exp62|[p]ython.*exp62_reduced' >/tmp/exp62_live_after.txt; then
+  echo "ERROR: EXP 6.2 is still running:"
+  cat /tmp/exp62_live_after.txt
+  exit 1
+fi
+
+if pgrep -af '[p]ython.*exp65_68' >/tmp/exp65_68_live.txt; then
+  echo "ERROR: EXP 6.5/6.8 is already running:"
+  cat /tmp/exp65_68_live.txt
+  exit 1
+fi
+
+if screen -ls 2>/dev/null | grep -qE "\.${SCREEN}[[:space:]]"; then
+  echo "ERROR: screen already exists: $SCREEN"
+  exit 1
+fi
+
+gpu_processes="$(nvidia-smi -i 0 --query-compute-apps=pid,process_name,used_memory --format=csv,noheader 2>/dev/null || true)"
+if [[ -n "${gpu_processes//[[:space:]]/}" ]]; then
+  echo "ERROR: physical GPU 0 is occupied:"
+  echo "$gpu_processes"
+  exit 1
+fi
+
+for domain in one_bit sixteen_bit; do
+  for condition in lid_only dialect_only lid_dialect; do
+    run="$EXP62/runtime/runs/exp62_reduced/$domain/$condition"
+    [[ -s "$run/TRAINING_COMPLETE.json" ]] || { echo "ERROR: missing $run/TRAINING_COMPLETE.json"; exit 1; }
+    [[ -s "$run/checkpoints/best.pt" ]] || { echo "ERROR: missing $run/checkpoints/best.pt"; exit 1; }
+    [[ -s "$run/checkpoints/last.pt" ]] || { echo "ERROR: missing $run/checkpoints/last.pt"; exit 1; }
+    [[ -s "$run/history.csv" ]] || { echo "ERROR: missing $run/history.csv"; exit 1; }
+    rows=$(( $(wc -l < "$run/history.csv") - 1 ))
+    [[ "$rows" -eq 40 ]] || { echo "ERROR: $domain/$condition history rows=$rows"; exit 1; }
+  done
+done
+
+[[ -s "$ROOT/runtime/reference_embeddings/exp61/REFERENCE_EXTRACTION_COMPLETE.json" ]] || {
+  echo "ERROR: EXP 6.1 reference extraction is not complete"
+  exit 1
+}
+
+mkdir -p "$(dirname "$LOG")"
+screen -dmS "$SCREEN" bash -lc "cd '$ROOT' && bash '$MASTER'"
+sleep 12
+
+echo "===== SCREEN ====="
+screen -ls 2>&1
+echo "===== GPU 0 ====="
+nvidia-smi -i 0
+echo "===== PROCESS ====="
+ps -eo user,pid,ppid,etime,%cpu,%mem,args | grep -E '[e]xp65_68|[e]xp65_exp68_gpu0' || true
+echo "===== LOG TAIL ====="
+tail -n 60 "$LOG" 2>/dev/null || true
+
+echo "============================================================"
+echo " EXP65_EXP68_LAUNCHED"
+echo " Screen: $SCREEN"
+echo " Log:    $LOG"
+echo "============================================================"

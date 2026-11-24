@@ -1,0 +1,11 @@
+torch==2.6.0
+torchaudio==2.6.0
+speechbrain==1.0.3
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.1
+matplotlib==3.10.5
+PyYAML==6.0.2
+tqdm==4.67.1
+psutil==7.0.0

@@ -1,0 +1,35 @@
+1. Upload the ZIP to WTC9, preferably /data/Kunal/staging/.
+
+2. On WTC9:
+
+   cd /data/Kunal
+   unzip -o /data/Kunal/staging/EXP65_EXP68_COMBINED_COMPLETE_UPLOAD_READY_2026-08-06.zip
+
+3. Validate the package once:
+
+   cd /data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer
+   bash scripts/00_install_validate.sh
+
+4. Wait until:
+   - EXP 6.2 is complete and GPU 0 is free.
+   - EXP 6.1 reference extraction on GPU 1 has produced:
+     runtime/reference_embeddings/exp61/REFERENCE_EXTRACTION_COMPLETE.json
+
+5. Launch the complete queue:
+
+   bash RUN_ALL_AFTER_EXP62.sh
+
+6. Monitor:
+
+   bash scripts/11_status.sh
+
+   or:
+
+   screen -r exp65_exp68_gpu0
+
+7. Final success markers:
+
+   reports/combined/REPORT_COMPLETE.json
+   runtime/EXPERIMENT_COMPLETE.json
+
+The ZIP contains no runtime embeddings, checkpoints, results, reports, or caches, so it does not overwrite the running EXP 6.1 reference extraction.

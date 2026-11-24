@@ -1,0 +1,68 @@
+{
+  "bins": [
+    {
+      "count": 196,
+      "dialect_accuracy": 0.29081632653061223,
+      "label": "0.00-0.40",
+      "lid_accuracy": 0.1683673469387755,
+      "lower": 0.0,
+      "mean_lid_confidence": 0.36038612711186313,
+      "upper": 0.4
+    },
+    {
+      "count": 660,
+      "dialect_accuracy": 0.29393939393939394,
+      "label": "0.40-0.50",
+      "lid_accuracy": 0.21363636363636362,
+      "lower": 0.4,
+      "mean_lid_confidence": 0.45604798847978767,
+      "upper": 0.5
+    },
+    {
+      "count": 1305,
+      "dialect_accuracy": 0.3111111111111111,
+      "label": "0.50-0.60",
+      "lid_accuracy": 0.2260536398467433,
+      "lower": 0.5,
+      "mean_lid_confidence": 0.5504178201101749,
+      "upper": 0.6
+    },
+    {
+      "count": 1293,
+      "dialect_accuracy": 0.3163186388244393,
+      "label": "0.60-0.70",
+      "lid_accuracy": 0.2188708430007734,
+      "lower": 0.6,
+      "mean_lid_confidence": 0.6507236266541832,
+      "upper": 0.7
+    },
+    {
+      "count": 1429,
+      "dialect_accuracy": 0.28831350594821553,
+      "label": "0.70-0.80",
+      "lid_accuracy": 0.22463261021693492,
+      "lower": 0.7,
+      "mean_lid_confidence": 0.7513488510257302,
+      "upper": 0.8
+    },
+    {
+      "count": 1939,
+      "dialect_accuracy": 0.29706034038164003,
+      "label": "0.80-0.90",
+      "lid_accuracy": 0.2558019597730789,
+      "lower": 0.8,
+      "mean_lid_confidence": 0.8538441611295389,
+      "upper": 0.9
+    },
+    {
+      "count": 10728,
+      "dialect_accuracy": 0.30714019388516034,
+      "label": "0.90-1.00",
+      "lid_accuracy": 0.34256152125279643,
+      "lower": 0.9,
+      "mean_lid_confidence": 0.9814931276149487,
+      "upper": 1.0
+    }
+  ],
+  "overall_lid_dialect_correct_correlation": 0.06292897410976543
+}

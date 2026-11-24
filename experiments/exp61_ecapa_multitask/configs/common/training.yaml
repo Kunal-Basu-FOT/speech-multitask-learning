@@ -1,0 +1,194 @@
+training:
+  total_epochs: 40
+
+  curriculum:
+    phase_1:
+      name: joint_optimization_warmup
+      start_epoch: 1
+      end_epoch: 5
+
+      train_ecapa: true
+      train_task_heads: true
+      train_uncertainty_parameters: true
+
+    phase_2:
+      name: full_joint_training
+      start_epoch: 6
+      end_epoch: 35
+
+      train_ecapa: true
+      train_task_heads: true
+      train_uncertainty_parameters: true
+
+    phase_3:
+      name: task_head_stabilization
+      start_epoch: 36
+      end_epoch: 40
+
+      train_ecapa: false
+      train_task_heads: true
+      train_uncertainty_parameters: true
+
+  optimizer:
+    name: AdamW
+
+    phase_1_learning_rate: 0.0001
+    phase_2_peak_learning_rate: 0.0001
+    phase_3_learning_rate: 0.00002
+
+    betas: [0.9, 0.999]
+    epsilon: 0.00000001
+    weight_decay: 0.0001
+
+  scheduler:
+    name: linear_warmup_then_cosine_decay
+    warmup_epochs: 5
+    cosine_start_epoch: 6
+    cosine_end_epoch: 35
+    minimum_learning_rate: 0.000005
+
+  loss:
+    task_loss: cross_entropy
+    class_weighting: none
+
+    multitask_weighting: homoscedastic_uncertainty
+    uncertainty_initial_log_variance:
+      language: 0.0
+      dialect: 0.0
+      gender: 0.0
+
+    uncertainty_log_variance_clamp:
+      minimum: -6.0
+      maximum: 6.0
+
+    log_raw_task_losses: true
+    log_weighted_task_losses: true
+    log_learned_task_weights: true
+
+  precision:
+    automatic_mixed_precision: true
+    amp_dtype: float16
+    gradient_scaler: true
+
+  gradients:
+    accumulation_steps: 1
+    clip_norm: 1.0
+    reject_non_finite_loss: true
+    reject_non_finite_gradients: true
+
+  dynamic_batching:
+    enabled: true
+
+    length_source: cached_frame_count
+    max_batch_frames: 12000
+    max_batch_size: 32
+    number_of_buckets: 40
+
+    shuffle_examples: true
+    shuffle_batches: true
+    drop_last: false
+
+    overlength_policy: singleton_batch
+    truncate_overlength_sequences: false
+
+  data_loader:
+    number_of_workers: 8
+    pin_memory: true
+    persistent_workers: true
+    prefetch_factor: 2
+    non_blocking_gpu_transfer: true
+
+  checkpointing:
+    save_last_every_epoch: true
+    save_best: true
+    keep_last_checkpoints: 2
+    keep_best_checkpoints: 1
+
+    primary_selection_metric: three_task_mean_macro_f1
+    selection_mode: max
+
+    use_test_for_selection: false
+
+  stopping:
+    fixed_epoch_protocol: true
+    early_stopping: false
+
+  monitoring:
+    epoch_progress_bar: true
+    batch_progress_bar: true
+
+    print_batch_interval: 50
+    update_progress_json_seconds: 15
+    gpu_telemetry_interval_seconds: 10
+
+    show:
+      - epoch
+      - phase
+      - batch
+      - batches_in_epoch
+      - examples_seen
+      - frames_seen
+      - total_loss
+      - language_loss
+      - dialect_loss
+      - gender_loss
+      - language_accuracy
+      - dialect_accuracy
+      - gender_accuracy
+      - learning_rate
+      - frames_per_second
+      - examples_per_second
+      - padding_ratio
+      - gpu_memory_allocated_gb
+      - gpu_memory_reserved_gb
+
+evaluation:
+  splits:
+    - dev
+    - test
+
+  metrics:
+    language:
+      - accuracy
+      - macro_f1
+
+    gender:
+      - accuracy
+      - macro_f1
+
+    dialect:
+      - overall_sample_weighted_accuracy
+      - overall_sample_weighted_macro_f1
+      - per_language_accuracy
+      - per_language_macro_f1
+      - language_macro_accuracy
+      - language_macro_f1
+
+    composite:
+      - three_task_mean_accuracy
+      - three_task_mean_macro_f1
+
+  dialect_primary_aggregation: language_macro
+
+  confusion_matrices:
+    save_raw_counts: true
+    save_row_normalized_percentages: true
+
+    language: true
+    gender: true
+    dialect_per_language: true
+    flat_global_33_class_dialect: false
+
+  predictions:
+    save_dev_predictions: true
+    save_test_predictions: true
+
+    include_columns:
+      - utt_id
+      - true_language
+      - predicted_language
+      - true_gender
+      - predicted_gender
+      - oracle_dialect_head
+      - true_dialect
+      - predicted_dialect

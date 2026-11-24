@@ -1,0 +1,12 @@
+{
+  "amp_skips_total": 112,
+  "best_epoch": 39,
+  "best_score": 0.5842840342733354,
+  "domain": "one_bit",
+  "duration": "9s",
+  "epoch": 40,
+  "epochs": 40,
+  "optimizer_step": 292248,
+  "status": "running",
+  "updated_utc": "2026-08-06T21:51:00.040807+00:00"
+}

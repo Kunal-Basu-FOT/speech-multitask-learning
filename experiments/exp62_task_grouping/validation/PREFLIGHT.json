@@ -1,0 +1,62 @@
+{
+  "cross_domain_index_identity": {
+    "dev": true,
+    "test": true,
+    "train": true
+  },
+  "domains": {
+    "one_bit": {
+      "dev": {
+        "features_bytes": 4858670592,
+        "index_sha256": null,
+        "max_frames": 1180,
+        "min_frames": 68,
+        "rows": 11507,
+        "total_frames": 3163197
+      },
+      "test": {
+        "features_bytes": 7373816832,
+        "index_sha256": null,
+        "max_frames": 1195,
+        "min_frames": 48,
+        "rows": 17550,
+        "total_frames": 4800662
+      },
+      "train": {
+        "features_bytes": 66300699648,
+        "index_sha256": null,
+        "max_frames": 1691,
+        "min_frames": 47,
+        "rows": 146359,
+        "total_frames": 43164518
+      }
+    },
+    "sixteen_bit": {
+      "dev": {
+        "features_bytes": 4858670592,
+        "index_sha256": null,
+        "max_frames": 1180,
+        "min_frames": 68,
+        "rows": 11507,
+        "total_frames": 3163197
+      },
+      "test": {
+        "features_bytes": 7373816832,
+        "index_sha256": null,
+        "max_frames": 1195,
+        "min_frames": 48,
+        "rows": 17550,
+        "total_frames": 4800662
+      },
+      "train": {
+        "features_bytes": 66300699648,
+        "index_sha256": null,
+        "max_frames": 1691,
+        "min_frames": 47,
+        "rows": 146359,
+        "total_frames": 43164518
+      }
+    }
+  },
+  "status": "pass"
+}

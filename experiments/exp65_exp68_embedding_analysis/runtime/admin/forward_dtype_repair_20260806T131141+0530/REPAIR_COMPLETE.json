@@ -1,0 +1,10 @@
+{
+  "status": "REPAIR_COMPLETE",
+  "timestamp": "2026-08-06T13:12:06+05:30",
+  "repair": "Align feature dtype and device with encoder parameters",
+  "output_embedding_dtype": "float32",
+  "exp62_modified": false,
+  "checkpoints_modified": false,
+  "standalone_smoke_passed": true,
+  "preflight_passed": true
+}

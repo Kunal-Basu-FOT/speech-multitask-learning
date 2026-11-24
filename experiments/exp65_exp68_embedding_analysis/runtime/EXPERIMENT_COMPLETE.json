@@ -1,0 +1,156 @@
+{
+  "created_utc": "2026-08-06T08:09:44.719876+00:00",
+  "embedding_cells": 54,
+  "encoder_training_performed": false,
+  "experiments": [
+    "EXP6.5",
+    "EXP6.8"
+  ],
+  "figures": [
+    {
+      "bytes": 151348,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/figure_01_probe_macro_f1_heatmap.png",
+      "sha256": "344f94c931759a1c8af8b3c04322aaa4c04a9e93dc9dce6a105e11017e568d06"
+    },
+    {
+      "bytes": 96170,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/figure_02_joint_vs_single_task_deltas.png",
+      "sha256": "5f86b7392f88020870961c136819bd828c122058adbb37d0749814fb9a89d463"
+    },
+    {
+      "bytes": 1353894,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/figure_03_umap_one_bit_task_groupings.png",
+      "sha256": "543bd1224955c166e94ab14188e47ed8aa40164fa886cf6cf43b460de4437e2d"
+    },
+    {
+      "bytes": 1316851,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/figure_03_umap_sixteen_bit_task_groupings.png",
+      "sha256": "dfc7538d8da9899008ef27c5db8a831dfdec668ddf2ee7b13c81da2f02aaaf5c"
+    },
+    {
+      "bytes": 1620522,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/figure_04_umap_lid_dialect_precision.png",
+      "sha256": "ef4b32c046e8fc5d8bfd09387e126008bac1e84090af00e07fa7f91d83a66477"
+    },
+    {
+      "bytes": 163791,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/figure_05_geometry_separation.png",
+      "sha256": "ee399b8982f4e105f9a43b3b930b829d8bd6b4c6ead01118ca3a08c081a74932"
+    },
+    {
+      "bytes": 657109,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/appendix_umap_dialect_one_bit.png",
+      "sha256": "4854befcc4ae20f3f5f08c506586babfe07de514bdefa0bf7609f76797a85921"
+    },
+    {
+      "bytes": 659710,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/appendix_umap_dialect_sixteen_bit.png",
+      "sha256": "80d31347343d103f1fe0d96a1e9b85d808036a2b7d592df106519381ee24541a"
+    },
+    {
+      "bytes": 715600,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/figures/appendix_tsne_lid_dialect_precision.png",
+      "sha256": "5e3f2016002a53f67f9362df9829ac0a09197fd8ddb37fca126cb365e79597b5"
+    },
+    {
+      "bytes": 174335,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp68/figures/figure_01_gender_accuracy_learning_curves.png",
+      "sha256": "581ce28c31d4e8821853b11187a4fd1acd261cdab3b9f91266af06d0958d699e"
+    },
+    {
+      "bytes": 171619,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp68/figures/figure_02_gender_macro_f1_learning_curves.png",
+      "sha256": "3ced0c9b88f65342e23bd449f1ab66249981d1482f0f470670bcba7153a24454"
+    },
+    {
+      "bytes": 119399,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp68/figures/figure_03_transfer_gain_over_random.png",
+      "sha256": "3c066ce2b4934dd24ac00cd57e8116720b9c4382830cf2b0053b4e60ed55b114"
+    },
+    {
+      "bytes": 77811,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp68/figures/figure_04_matched_vs_cross_precision.png",
+      "sha256": "f64cf5eaa03cb076aeac87205a8378172d1986d4d0ff79274a5cfcf47b98edcd"
+    }
+  ],
+  "report_marker": {
+    "created_utc": "2026-08-06T08:09:36.060226+00:00",
+    "elapsed_seconds": 207.3112631390104,
+    "encoder_training_performed": false,
+    "exp65_geometry_rows": 30,
+    "exp65_probe_rows": 330,
+    "exp68_fewshot_rows": 120,
+    "scientific_scope": "three-task cache-compatible LID, language-local dialect, and gender",
+    "status": "EXP65_EXP68_ANALYSIS_COMPLETE"
+  },
+  "status": "EXPERIMENT_COMPLETE",
+  "summary": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/combined/README_RESULTS.md",
+  "tables": [
+    {
+      "columns": 12,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/tables/table_01_all_probe_results.csv",
+      "rows": 330,
+      "sha256": "def08f113236f59a75aef8ae87c3d7203680adfa56cb26579f504dbad7dbbe6c"
+    },
+    {
+      "columns": 7,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/tables/table_02_matched_probe_macro_f1.csv",
+      "rows": 10,
+      "sha256": "706ce3b899be0a4ac89a00c240664c65188136e9cddcaf596db2d05125b19b2c"
+    },
+    {
+      "columns": 7,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/tables/table_03_joint_vs_single_task_deltas.csv",
+      "rows": 6,
+      "sha256": "c4d456bf84ebc0a9dfd3c59fb4a434c1d7abd88b255e189935563a09cfa360f3"
+    },
+    {
+      "columns": 8,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/tables/table_04_precision_deltas.csv",
+      "rows": 9,
+      "sha256": "86e760d1ae04e0d3c6feb6220322f4f4eba992707ca6a64c68ba566dd9c5482f"
+    },
+    {
+      "columns": 13,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/tables/table_05_geometry_metrics.csv",
+      "rows": 30,
+      "sha256": "a94f4e0afcb6e40c4491e4862c0d08ad76938274a9653f440728f5b51d408e3b"
+    },
+    {
+      "columns": 9,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/tables/table_06_native_head_metrics.csv",
+      "rows": 12,
+      "sha256": "63aaedc394bf5ad0f4436e75fd777a6c3f14ea216c640911d24ce1242a33e519"
+    },
+    {
+      "columns": 10,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp65/tables/table_07_native_head_vs_probe.csv",
+      "rows": 24,
+      "sha256": "e06315de89cf202b79fdaa7ae45ca67dc4909f65483f9ba48489ea1f69f379d3"
+    },
+    {
+      "columns": 12,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp68/tables/table_01_fewshot_gender_all_results.csv",
+      "rows": 120,
+      "sha256": "9d4ee7133c6d4f1d0c2b8eec8751b40712cb757d2eed69a115ac210a52c8c57b"
+    },
+    {
+      "columns": 13,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp68/tables/table_02_transfer_summary_100_percent.csv",
+      "rows": 6,
+      "sha256": "bcf87993fbcb828b0cb506b7eb8d5bb6c2d6ec3529f39a39a018531222602720"
+    },
+    {
+      "columns": 13,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp68/tables/table_03_transfer_gain_and_recovery.csv",
+      "rows": 24,
+      "sha256": "f040040f80e9c359a0a46b1ecadc20b44df6ddc9aed13008c70cce4b4d5b9116"
+    },
+    {
+      "columns": 19,
+      "path": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer/reports/exp68/tables/table_04_matched_vs_cross_precision.csv",
+      "rows": 40,
+      "sha256": "a156deb2f076c31a3f6837eba30c68a7589f84183649b93e19994ee1e4802292"
+    }
+  ]
+}

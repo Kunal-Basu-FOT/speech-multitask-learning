@@ -1,0 +1,4 @@
+EXP 6.7 launched on WTC7 physical GPU1.
+Screen: exp67_gpu1
+Log: /data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/runtime/logs/exp67/master_queue.screen.log
+Queue: one_bit train+matched+cross, then sixteen_bit train+matched+cross

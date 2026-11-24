@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-08-06T04:52:23.348560+00:00",
+  "excluded": [
+    "runtime/",
+    "results/",
+    "reports/",
+    "checkpoints/",
+    "*.npy",
+    "*.pt",
+    "features.f16"
+  ],
+  "expected_target_root": "/data/Kunal/FORMAL_EXP6_5_EXP6_8_Combined_Embedding_Analysis_IndicWav2Vec_FinalLayer",
+  "files": [
+    {
+      "bytes": 4083,
+      "path": "README.md",
+      "sha256": "08663f89827df063ce86d54d926f0dceb7b279ec6ce9199fec8f3309236c92a1"
+    },
+    {
+      "bytes": 3251,
+      "path": "RUN_ALL_AFTER_EXP62.sh",
+      "sha256": "f14fc094eae939cc2c0f3681d2a6745fa6248e94f61a262abbafd314b04ef0b7"
+    },
+    {
+      "bytes": 936,
+      "path": "UPLOAD_AND_RUN_WTC9.txt",
+      "sha256": "c7feee04469058d007ca71b9a0f857d5b1e0df2f9c27d782123cdce118fdd2d1"
+    },
+    {
+      "bytes": 566,
+      "path": "configs/exp65_68.json",
+      "sha256": "264d4fbc1e1ce1e0552a8d667f1851493a4b3ee187c64b541ec45c6ec7410925"
+    },
+    {
+      "bytes": 1496,
+      "path": "docs/SCIENTIFIC_PROTOCOL.md",
+      "sha256": "cd8e93960978d9514604a998e61e8ec25567daebdd3a658bebe3658e476b96c8"
+    },
+    {
+      "bytes": 36,
+      "path": "requirements-analysis.txt",
+      "sha256": "b87a847890bc6d87dff6d7a30aff7ccdd0f89ea91df40bb30520bf65d16dbc5e"
+    },
+    {
+      "bytes": 2340,
+      "path": "scripts/00_install_validate.sh",
+      "sha256": "a408be91b3c1c3f818b7ee30619ece12362e5107ef8f4d487265aef403daaac3"
+    },
+    {
+      "bytes": 1626,
+      "path": "scripts/10_master_queue_gpu0.sh",
+      "sha256": "7178ef92028c5ac6179f092cdbcf6d11adddddfd3738cad134f77107a2f5fb85"
+    },
+    {
+      "bytes": 933,
+      "path": "scripts/11_status.sh",
+      "sha256": "d5deca77e3801f6ea7af6366b75a37dc929750c3601fa8c2036f8db0a0e138a3"
+    },
+    {
+      "bytes": 101,
+      "path": "src/exp65_68/__init__.py",
+      "sha256": "346e0e0bf3a7c7af55a84806fbadf3eaa222333c9f1f976375c354251c8e3da8"
+    },
+    {
+      "bytes": 48742,
+      "path": "src/exp65_68/analysis.py",
+      "sha256": "2f413d7ea5133d7e97d58281d35a2d40a4cf1c173698c0e15c4192f355a33422"
+    },
+    {
+      "bytes": 4209,
+      "path": "src/exp65_68/cache.py",
+      "sha256": "b1a9b67896b1fdde8158b7e33d91c428a22064826d5c589b64b42de61b87a29d"
+    },
+    {
+      "bytes": 1883,
+      "path": "src/exp65_68/cli.py",
+      "sha256": "e83a3280ee3dd790e70c7080f439518b37c1d035383b934b4458f91b6d09a885"
+    },
+    {
+      "bytes": 2169,
+      "path": "src/exp65_68/config.py",
+      "sha256": "3699e9c190ac6a2b7f7b1990eb16e7eb90eba908fccde422c02532e17f94959a"
+    },
+    {
+      "bytes": 3644,
+      "path": "src/exp65_68/encoder.py",
+      "sha256": "6b74879131d90e86eb37277ea3e38a9cef3c7b107a57a3f47fad6b9364cd59d2"
+    },
+    {
+      "bytes": 10922,
+      "path": "src/exp65_68/extract.py",
+      "sha256": "3eef06a0415dfb957393db03f87a3f35641a611b22aa248df375f5a945350395"
+    },
+    {
+      "bytes": 1911,
+      "path": "src/exp65_68/metrics.py",
+      "sha256": "ccf6238bbeea528b17f6ce5a762986e914d7610e94daed30847ecc039b590aa8"
+    },
+    {
+      "bytes": 7171,
+      "path": "src/exp65_68/preflight.py",
+      "sha256": "cbe9acb9d3976f5fd460adec0f7e74934ddb39deda41e51b4155ba27a13c7ffe"
+    },
+    {
+      "bytes": 5305,
+      "path": "src/exp65_68/probe.py",
+      "sha256": "a028ff38fc7fc0293930d686276048ac5fd964a7f17c0c1164e5d337d74d8bf3"
+    },
+    {
+      "bytes": 2421,
+      "path": "src/exp65_68/utils.py",
+      "sha256": "db486ec51bae136c6178a97e3f2a54124eb8b9c201aa7dd1358f2ffdae14863d"
+    },
+    {
+      "bytes": 6346,
+      "path": "src/exp65_68/verify.py",
+      "sha256": "e691cd08adb04402f7eeee505b9f4c60a4b304830aa9e634fe5e4c0187d38e4b"
+    },
+    {
+      "bytes": 1788,
+      "path": "tests/test_core.py",
+      "sha256": "4ead8719480831c752f5d97f855a99d8b5181a9197ee1f883f30bac693bfed19"
+    }
+  ],
+  "package": "EXP65_EXP68_COMBINED_COMPLETE_UPLOAD_READY_2026-08-06",
+  "preserves_existing_runtime_reference_embeddings": true,
+  "purpose": "No-new-encoder-training EXP 6.5 representation analysis and EXP 6.8 held-out gender transfer after EXP 6.2 completion.",
+  "status": "UPLOAD_READY",
+  "version": "1.0.0"
+}

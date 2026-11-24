@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+ROOT=/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA
+EXP61=/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK
+PYTHON=/data/Kunal/env_speech_mtl/bin/python
+CONFIG="$ROOT/configs/exp69.json"
+export PYTHONPATH="$ROOT/src:$EXP61/src"
+export PYTHONUNBUFFERED=1
+export OMP_NUM_THREADS=8
+export MKL_NUM_THREADS=8
+"$PYTHON" -u -m exp69.cli --config "$CONFIG" build-cache

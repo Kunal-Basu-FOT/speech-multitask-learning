@@ -1,0 +1,14 @@
+{
+  "labels": [
+    "F",
+    "M"
+  ],
+  "label_to_index": {
+    "F": 0,
+    "M": 1
+  },
+  "index_to_label": {
+    "0": "F",
+    "1": "M"
+  }
+}

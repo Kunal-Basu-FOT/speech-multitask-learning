@@ -1,0 +1,103 @@
+from __future__ import annotations
+
+import random
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+import torch
+
+
+def _build_encoder():
+    from speech_mtl.common.models.factory import build_exp61_model
+
+    model = build_exp61_model()
+    return model.encoder
+
+
+def _checkpoint_state(path: Path) -> dict[str, torch.Tensor]:
+    payload: Any = torch.load(path, map_location="cpu", weights_only=False)
+    if not isinstance(payload, dict):
+        raise RuntimeError(f"checkpoint is not a dictionary: {path}")
+    state = payload.get("model", payload)
+    if not isinstance(state, dict):
+        raise RuntimeError(f"checkpoint model state is not a dictionary: {path}")
+    return state
+
+
+def map_encoder_state(
+    checkpoint_state: dict[str, torch.Tensor],
+    target_state: dict[str, torch.Tensor],
+) -> dict[str, torch.Tensor]:
+    mapped: dict[str, torch.Tensor] = {}
+    source_keys = list(checkpoint_state)
+    prefixes = ("", "encoder.", "module.encoder.", "model.encoder.", "shared_encoder.")
+    for target_key, target_value in target_state.items():
+        candidates = [prefix + target_key for prefix in prefixes]
+        matches = [key for key in candidates if key in checkpoint_state]
+        if not matches:
+            suffix_matches = [key for key in source_keys if key.endswith("." + target_key) or key == target_key]
+            if len(suffix_matches) == 1:
+                matches = suffix_matches
+        if len(matches) != 1:
+            raise RuntimeError(
+                f"cannot uniquely map encoder parameter {target_key}; matches={matches[:10]}"
+            )
+        source = checkpoint_state[matches[0]]
+        if not torch.is_tensor(source):
+            raise RuntimeError(f"mapped value is not a tensor: {matches[0]}")
+        if tuple(source.shape) != tuple(target_value.shape):
+            raise RuntimeError(
+                f"shape mismatch for {target_key}: source={tuple(source.shape)} target={tuple(target_value.shape)}"
+            )
+        mapped[target_key] = source.detach().cpu()
+    unexpected_encoder_like = [
+        key for key in source_keys if ("encoder" in key or "ecapa" in key) and not any(
+            key == prefix + target for prefix in prefixes for target in target_state
+        )
+    ]
+    if len(mapped) != len(target_state):
+        raise RuntimeError("encoder state mapping is incomplete")
+    # Extra active-head tensors are expected; unmatched encoder-like tensors are recorded by callers.
+    _ = unexpected_encoder_like
+    return mapped
+
+
+def load_frozen_encoder(checkpoint_path: Path, device: torch.device):
+    encoder = _build_encoder()
+    state = _checkpoint_state(checkpoint_path)
+    mapped = map_encoder_state(state, encoder.state_dict())
+    encoder.load_state_dict(mapped, strict=True)
+    encoder.requires_grad_(False)
+    encoder.eval()
+    encoder.to(device)
+    return encoder
+
+
+def build_random_encoder(seed: int, device: torch.device):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+    encoder = _build_encoder()
+    encoder.requires_grad_(False)
+    encoder.eval()
+    encoder.to(device)
+    return encoder
+
+
+def forward_encoder(
+    encoder,
+    features: torch.Tensor,
+    relative_lengths: torch.Tensor,
+    valid_mask: torch.Tensor,
+) -> torch.Tensor:
+    embeddings = encoder(
+        features=features,
+        relative_lengths=relative_lengths,
+        valid_mask=valid_mask,
+    )
+    if embeddings.ndim != 2:
+        raise RuntimeError(f"encoder output must be [B,D], received {tuple(embeddings.shape)}")
+    return embeddings

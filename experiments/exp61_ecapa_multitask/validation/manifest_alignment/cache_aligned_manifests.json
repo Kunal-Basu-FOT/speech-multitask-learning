@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "policy": "CURRENT_MANIFESTS_EQUAL_EXISTING_CACHE_INDEXES",
+  "cache_modified": false,
+  "feature_reextraction_performed": false,
+  "splits": {
+    "train": {
+      "rows": 146359,
+      "manifest": "/data/Kunal/manifests/respin_unique_sentence_train.csv",
+      "manifest_sha256": "dc5889fce5db32265f888640762503622b2c54e2b0d94d3e0214416e22fd5068",
+      "cache_index": "/data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16/one_bit/train/index.csv",
+      "cache_index_sha256": "89e15af1c7ce2e525f0f0d1ba9ca030131625567302f848a0be1e8fcb17340ae",
+      "exact_audio_path_order_match": true,
+      "missing_text": 0,
+      "missing_audio": 0,
+      "duplicate_utterance_ids": 0,
+      "duplicate_audio_paths": 0
+    },
+    "dev": {
+      "rows": 11507,
+      "manifest": "/data/Kunal/manifests/respin_unique_sentence_dev.csv",
+      "manifest_sha256": "b449f5457a2dde3ce10a4ebbb7c5faf689b323d4fd7ea4b969485c36107745d7",
+      "cache_index": "/data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16/one_bit/dev/index.csv",
+      "cache_index_sha256": "a03d214541f2e80f5bfcd8e94ca6fa2a6ed1e3de6e38edf14cb4af6c3f0d2367",
+      "exact_audio_path_order_match": true,
+      "missing_text": 0,
+      "missing_audio": 0,
+      "duplicate_utterance_ids": 0,
+      "duplicate_audio_paths": 0
+    },
+    "test": {
+      "rows": 17550,
+      "manifest": "/data/Kunal/manifests/respin_unique_sentence_test.csv",
+      "manifest_sha256": "19234408b83fb04be780950b890779fdaded4aaed32fa16a3d9b07868b2d83f3",
+      "cache_index": "/data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16/one_bit/test/index.csv",
+      "cache_index_sha256": "7e6c7c18ff3297a45e6694d8ed87aa731d4a909e40f850c18ffb4336dccbea46",
+      "exact_audio_path_order_match": true,
+      "missing_text": 0,
+      "missing_audio": 0,
+      "duplicate_utterance_ids": 0,
+      "duplicate_audio_paths": 0
+    }
+  },
+  "previous_manifest_backup": "/data/Kunal/manifests/archive_before_cache_alignment_20260805T170525+0530",
+  "active_manifest_policy": "The files at /data/Kunal/manifests now contain exactly the utterances represented in the existing EXP 6.1 cache."
+}

@@ -1,0 +1,8 @@
+{
+  "condition": "gradnorm",
+  "matched": true,
+  "status": "complete",
+  "test_domain": "sixteen_bit",
+  "timestamp": 1786133350.5378165,
+  "train_domain": "sixteen_bit"
+}

@@ -1,0 +1,9 @@
+domain,duration,front_end,projection,encoder,tasks,epochs,train_examples,dev_examples,best_epoch,best_dev_metric,amp_skips_total,total_parameters,frontend_projection_parameters
+one_bit,3s,80-bin log-Mel from quantized waveform,"Linear(80,768)",EXP6.1 compact ECAPA-TDNN,LID + oracle-routed dialect + gender,40,146359,11507,40,0.5714169866172819,80,7785378,62208
+one_bit,7s,80-bin log-Mel from quantized waveform,"Linear(80,768)",EXP6.1 compact ECAPA-TDNN,LID + oracle-routed dialect + gender,40,146359,11507,38,0.5733712228554264,107,7785378,62208
+one_bit,9s,80-bin log-Mel from quantized waveform,"Linear(80,768)",EXP6.1 compact ECAPA-TDNN,LID + oracle-routed dialect + gender,40,146359,11507,39,0.5842840342733354,112,7785378,62208
+one_bit,full,80-bin log-Mel from quantized waveform,"Linear(80,768)",EXP6.1 compact ECAPA-TDNN,LID + oracle-routed dialect + gender,40,146359,11507,38,0.5438680420416487,116,7785378,62208
+sixteen_bit,3s,80-bin log-Mel from quantized waveform,"Linear(80,768)",EXP6.1 compact ECAPA-TDNN,LID + oracle-routed dialect + gender,40,146359,11507,38,0.6182439915051026,77,7785378,62208
+sixteen_bit,7s,80-bin log-Mel from quantized waveform,"Linear(80,768)",EXP6.1 compact ECAPA-TDNN,LID + oracle-routed dialect + gender,40,146359,11507,39,0.6863546563084916,108,7785378,62208
+sixteen_bit,9s,80-bin log-Mel from quantized waveform,"Linear(80,768)",EXP6.1 compact ECAPA-TDNN,LID + oracle-routed dialect + gender,40,146359,11507,39,0.6899713205021669,111,7785378,62208
+sixteen_bit,full,80-bin log-Mel from quantized waveform,"Linear(80,768)",EXP6.1 compact ECAPA-TDNN,LID + oracle-routed dialect + gender,40,146359,11507,40,0.6470178539970934,117,7785378,62208

@@ -1,0 +1,7 @@
+{
+  "checkpoint_sha256": "5d9f4fe843a0ee50b66e6322126b37642fadac825dbc38adbfc6851cc7533b5c",
+  "created_utc": "2026-08-05T16:32:13.309975+00:00",
+  "examples": 11507,
+  "result": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/results/ecapa_7p2m/exp61/evaluations/one_bit_to_one_bit/dev/evaluation.json",
+  "status": "EVALUATION_COMPLETE"
+}

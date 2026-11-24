@@ -1,0 +1,356 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "manifest_summaries": {
+    "train": {
+      "split": "train",
+      "path": "/data/Kunal/manifests/respin_unique_sentence_train.csv",
+      "exists": true,
+      "sha256": "dc5889fce5db32265f888640762503622b2c54e2b0d94d3e0214416e22fd5068",
+      "columns": [
+        "audio_path",
+        "dialect",
+        "dialect_local",
+        "duration",
+        "gender",
+        "gender_available",
+        "language",
+        "speaker_id",
+        "split",
+        "text",
+        "utt_id"
+      ],
+      "row_count": 146359,
+      "unique_utterance_count": 146359,
+      "duplicate_utterance_id_count": 0,
+      "duplicate_language_text_pair_count": 99,
+      "duplicate_language_text_pair_policy": "retain_distinct_utterance_ids",
+      "speaker_count": 11327,
+      "language_counts": {
+        "bh": 18879,
+        "bn": 17074,
+        "ch": 17049,
+        "kn": 17160,
+        "mg": 19056,
+        "mr": 19029,
+        "mt": 19056,
+        "te": 19056
+      },
+      "gender_counts": {
+        "F": 72564,
+        "M": 73795
+      },
+      "dialects_by_language": {
+        "bh": [
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "bn": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5"
+        ],
+        "ch": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "kn": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5"
+        ],
+        "mg": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "mr": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "mt": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "te": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ]
+      },
+      "duration": {
+        "valid_count": 146359,
+        "invalid_count": 0,
+        "total_hours": 240.383447,
+        "minimum_seconds": 0.95,
+        "maximum_seconds": 33.83,
+        "mean_seconds": 5.912724260209551
+      }
+    },
+    "dev": {
+      "split": "dev",
+      "path": "/data/Kunal/manifests/respin_unique_sentence_dev.csv",
+      "exists": true,
+      "sha256": "b449f5457a2dde3ce10a4ebbb7c5faf689b323d4fd7ea4b969485c36107745d7",
+      "columns": [
+        "audio_path",
+        "dialect",
+        "dialect_local",
+        "duration",
+        "gender",
+        "gender_available",
+        "language",
+        "speaker_id",
+        "split",
+        "text",
+        "utt_id"
+      ],
+      "row_count": 11507,
+      "unique_utterance_count": 11507,
+      "duplicate_utterance_id_count": 0,
+      "duplicate_language_text_pair_count": 2915,
+      "duplicate_language_text_pair_policy": "retain_distinct_utterance_ids",
+      "speaker_count": 660,
+      "language_counts": {
+        "bh": 1500,
+        "bn": 1500,
+        "ch": 1413,
+        "kn": 1430,
+        "mg": 1431,
+        "mr": 1386,
+        "mt": 1409,
+        "te": 1438
+      },
+      "gender_counts": {
+        "F": 5732,
+        "M": 5775
+      },
+      "dialects_by_language": {
+        "bh": [
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "bn": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5"
+        ],
+        "ch": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "kn": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5"
+        ],
+        "mg": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "mr": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "mt": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "te": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ]
+      },
+      "duration": {
+        "valid_count": 11507,
+        "invalid_count": 0,
+        "total_hours": 17.618547,
+        "minimum_seconds": 1.37,
+        "maximum_seconds": 23.61,
+        "mean_seconds": 5.512016164074017
+      }
+    },
+    "test": {
+      "split": "test",
+      "path": "/data/Kunal/manifests/respin_unique_sentence_test.csv",
+      "exists": true,
+      "sha256": "19234408b83fb04be780950b890779fdaded4aaed32fa16a3d9b07868b2d83f3",
+      "columns": [
+        "audio_path",
+        "dialect",
+        "dialect_local",
+        "duration",
+        "gender",
+        "gender_available",
+        "language",
+        "speaker_id",
+        "split",
+        "text",
+        "utt_id"
+      ],
+      "row_count": 17550,
+      "unique_utterance_count": 17550,
+      "duplicate_utterance_id_count": 0,
+      "duplicate_language_text_pair_count": 4091,
+      "duplicate_language_text_pair_policy": "retain_distinct_utterance_ids",
+      "speaker_count": 1320,
+      "language_counts": {
+        "bh": 2220,
+        "bn": 2174,
+        "ch": 2234,
+        "kn": 2161,
+        "mg": 2193,
+        "mr": 2170,
+        "mt": 2172,
+        "te": 2226
+      },
+      "gender_counts": {
+        "F": 8757,
+        "M": 8793
+      },
+      "dialects_by_language": {
+        "bh": [
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "bn": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5"
+        ],
+        "ch": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "kn": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5"
+        ],
+        "mg": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "mr": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "mt": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "te": [
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ]
+      },
+      "duration": {
+        "valid_count": 17550,
+        "invalid_count": 0,
+        "total_hours": 26.739631,
+        "minimum_seconds": 0.98,
+        "maximum_seconds": 23.91,
+        "mean_seconds": 5.4850524216524095
+      }
+    }
+  },
+  "speaker_overlap": {
+    "train_dev": [],
+    "train_test": [],
+    "dev_test": []
+  },
+  "actual_dialect_maps": {
+    "bh": [
+      "D1",
+      "D2",
+      "D3"
+    ],
+    "bn": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5"
+    ],
+    "ch": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "kn": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5"
+    ],
+    "mg": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "mr": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "mt": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "te": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ]
+  }
+}

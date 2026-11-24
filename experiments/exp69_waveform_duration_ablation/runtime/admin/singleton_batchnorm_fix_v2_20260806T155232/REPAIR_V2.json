@@ -1,0 +1,10 @@
+{
+  "status": "patched_and_tested",
+  "original_training_failure": "ECAPA asp_bn received [1, 2880, 1]",
+  "failed_test_explanation": "The first synthetic test supplied [1, 32, 1] to the standard SpeechBrain layout, which expects [batch, time, channels].",
+  "repair": "Detect singleton values after applying the same layout conversion used by SpeechBrain BatchNorm1d, then use running statistics only for that case.",
+  "samples_dropped": 0,
+  "samples_duplicated": 0,
+  "ordinary_batches_changed": false,
+  "timestamp_utc": "2026-08-06T10:22:36.406429+00:00"
+}

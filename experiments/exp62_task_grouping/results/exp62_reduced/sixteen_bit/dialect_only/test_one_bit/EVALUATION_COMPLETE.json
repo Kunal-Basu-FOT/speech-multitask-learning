@@ -1,0 +1,8 @@
+{
+  "condition": "dialect_only",
+  "metrics": "/home3/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/results/exp62_reduced/sixteen_bit/dialect_only/test_one_bit/metrics.json",
+  "status": "complete",
+  "test_domain": "one_bit",
+  "timestamp": 1785988788.9248405,
+  "train_domain": "sixteen_bit"
+}

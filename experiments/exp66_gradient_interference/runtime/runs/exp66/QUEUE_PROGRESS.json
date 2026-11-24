@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    "standard_logged",
+    "pcgrad",
+    "gradnorm"
+  ],
+  "domains": [
+    "one_bit",
+    "sixteen_bit"
+  ],
+  "queue_order": [
+    "one_bit/standard_logged",
+    "one_bit/pcgrad",
+    "one_bit/gradnorm",
+    "SAVE_ONE_BIT_RESULTS_TABLES_FIGURES",
+    "sixteen_bit/standard_logged",
+    "sixteen_bit/pcgrad",
+    "sixteen_bit/gradnorm",
+    "SAVE_SIXTEEN_BIT_RESULTS_TABLES_FIGURES",
+    "GENERATE_FINAL_COMPARISON"
+  ],
+  "status": "complete",
+  "timestamp": 1786133377.4709089
+}

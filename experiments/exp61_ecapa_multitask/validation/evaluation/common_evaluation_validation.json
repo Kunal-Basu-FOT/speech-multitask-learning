@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "examples": 16,
+  "selection_metric": {
+    "name": "three_task_mean_macro_f1",
+    "value": 0.15469001610305957,
+    "components": {
+      "language_macro_f1": 0.027777777777777776,
+      "dialect_language_macro_f1": 0.13194444444444445,
+      "gender_macro_f1": 0.3043478260869565
+    }
+  },
+  "language_accuracy": 0.125,
+  "gender_accuracy": 0.4375,
+  "dialect_language_macro_accuracy": 0.4375,
+  "dialect_language_macro_f1": 0.13194444444444445,
+  "confusion_matrix_contract": "PASS",
+  "prediction_csv_contract": "PASS"
+}

@@ -1,0 +1,79 @@
+{
+  "cache_root": "/home3/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16",
+  "data": {
+    "feature_dim": 768,
+    "max_batch_frames": 12000,
+    "max_batch_size": 32,
+    "num_workers": 8,
+    "number_of_buckets": 40,
+    "persistent_workers": true,
+    "pin_memory": true,
+    "prefetch_factor": 2
+  },
+  "evaluation": {
+    "figure_dpi": 300,
+    "representative_dialect_language": "bn",
+    "save_all_dialect_confusions": true
+  },
+  "model": {
+    "attention_channels": 128,
+    "channels": [
+      480,
+      480,
+      480,
+      480,
+      1440
+    ],
+    "dilations": [
+      1,
+      2,
+      3,
+      4,
+      1
+    ],
+    "dropout": 0.1,
+    "embedding_dim": 192,
+    "global_context": true,
+    "groups": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "head_dropout": 0.1,
+    "head_hidden": 256,
+    "input_dim": 768,
+    "kernels": [
+      5,
+      3,
+      3,
+      3,
+      1
+    ],
+    "res2net_scale": 8,
+    "se_channels": 128
+  },
+  "training": {
+    "amp": true,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "cosine_min_lr": 5e-06,
+    "epochs": 40,
+    "eps": 1e-08,
+    "grad_clip_norm": 1.0,
+    "max_amp_skips_per_epoch": 100,
+    "max_consecutive_amp_skips": 20,
+    "peak_lr": 0.0001,
+    "phase1_epochs": 5,
+    "phase2_epochs": 30,
+    "phase3_epochs": 5,
+    "phase3_task_lr": 2e-05,
+    "progress_every_batches": 50,
+    "seed": 1337,
+    "warmup_start_lr": 1e-05,
+    "weight_decay": 0.0001
+  }
+}

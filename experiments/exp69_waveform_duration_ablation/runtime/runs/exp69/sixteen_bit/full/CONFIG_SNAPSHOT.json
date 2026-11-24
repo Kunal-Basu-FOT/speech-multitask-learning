@@ -1,0 +1,72 @@
+{
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "bootstrap_replicates": 1000,
+  "cache_dtype": "float16",
+  "cache_workers": 8,
+  "cosine_end_lr": 5e-06,
+  "dialect_class_counts": {
+    "bh": 3,
+    "bn": 5,
+    "ch": 4,
+    "kn": 5,
+    "mg": 4,
+    "mr": 4,
+    "mt": 4,
+    "te": 4
+  },
+  "domains": [
+    "one_bit",
+    "sixteen_bit"
+  ],
+  "duration_seconds": {
+    "3s": 3.0,
+    "7s": 7.0,
+    "9s": 9.0,
+    "full": null
+  },
+  "durations": [
+    "3s",
+    "7s",
+    "9s",
+    "full"
+  ],
+  "embedding_dimension": 192,
+  "epochs": 40,
+  "epsilon": 1e-08,
+  "exp61_root": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK",
+  "expected_rows": {
+    "dev": 11507,
+    "test": 17550,
+    "train": 146359
+  },
+  "feature_dimension": 80,
+  "gradient_clip_norm": 1.0,
+  "hop_length": 160,
+  "logmel_cache_root": "/data/Kunal/shared_cache/exp69_waveform_logmel80",
+  "max_batch_frames": 12000,
+  "max_batch_size": 32,
+  "n_fft": 512,
+  "n_mels": 80,
+  "num_workers": 8,
+  "number_of_buckets": 40,
+  "peak_lr": 0.0001,
+  "persistent_workers": true,
+  "phase1_epochs": 5,
+  "phase2_end_epoch": 35,
+  "phase3_task_lr": 2e-05,
+  "pin_memory": true,
+  "prefetch_factor": 2,
+  "project_root": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA",
+  "projected_dimension": 768,
+  "report_root": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69",
+  "results_root": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/results/exp69",
+  "run_root": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/runtime/runs/exp69",
+  "sample_rate": 16000,
+  "seed": 1337,
+  "source_cache_root": "/data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16",
+  "use_amp": true,
+  "warmup_start_lr": 1e-05,
+  "weight_decay": 0.0001,
+  "win_length": 400
+}

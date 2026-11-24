@@ -1,0 +1,13 @@
+{
+  "amp_skips_total": 77,
+  "best_epoch": 40,
+  "best_score": 0.5111968011155287,
+  "condition": "lid_dialect",
+  "domain": "one_bit",
+  "epoch": 40,
+  "epochs": 40,
+  "phase": "phase3_heads_only",
+  "selection_score": 0.5111968011155287,
+  "status": "epoch_complete",
+  "timestamp": 1785968966.5621462
+}

@@ -1,0 +1,31 @@
+includes:
+  - ../../common/project.yaml
+  - ../../common/data.yaml
+  - ../../models/ecapa_compact_7m.yaml
+  - ../../common/training.yaml
+  - ../../common/report.yaml
+
+run:
+  id: exp61_ecapa_compact_7m_sixteen_bit
+  experiment: exp61
+  precision_domain: sixteen_bit
+
+  cache_domain: sixteen_bit
+
+  output_directory: >
+    /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61/sixteen_bit/indicwav2vec_final_full
+
+  master_log: >
+    /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/logs/ecapa_7p2m/exp61/sixteen_bit_train.log
+
+  progress_file: >
+    /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/telemetry/ecapa_7p2m/exp61/sixteen_bit_progress.json
+
+  lock_file: >
+    /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/locks/exp61_sixteen_bit.lock
+
+  matched_test_domain: sixteen_bit
+  cross_test_domain: one_bit
+
+  overwrite_completed_run: false
+  resume_from_last_checkpoint: true

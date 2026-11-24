@@ -1,0 +1,84 @@
+report:
+  output_root: /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/analysis/ecapa_7p2m/exp61
+
+  image:
+    format: png
+    dpi: 300
+    transparent_background: false
+
+  figures:
+    one_bit_train_dev_accuracy:
+      enabled: true
+      filename: figures/main/fig01_one_bit_train_dev_accuracy.png
+
+    one_bit_train_dev_loss:
+      enabled: true
+      filename: figures/main/fig02_one_bit_train_dev_loss.png
+
+    one_bit_confusion_composite:
+      enabled: true
+      filename: figures/main/fig03_one_bit_confusion_composite.png
+
+    sixteen_bit_train_dev_accuracy:
+      enabled: true
+      filename: figures/main/fig04_sixteen_bit_train_dev_accuracy.png
+
+    sixteen_bit_train_dev_loss:
+      enabled: true
+      filename: figures/main/fig05_sixteen_bit_train_dev_loss.png
+
+    sixteen_bit_confusion_composite:
+      enabled: true
+      filename: figures/main/fig06_sixteen_bit_confusion_composite.png
+
+    cross_precision_summary:
+      enabled: true
+      filename: figures/main/fig07_cross_precision_summary.png
+
+    cross_one_to_sixteen_confusion_composite:
+      enabled: true
+      filename: figures/appendix/figA1_cross_1_to_16_confusions.png
+
+    cross_sixteen_to_one_confusion_composite:
+      enabled: true
+      filename: figures/appendix/figA2_cross_16_to_1_confusions.png
+
+  tables:
+    experimental_configuration:
+      enabled: true
+      filename: tables/table01_experimental_configuration.csv
+
+    matched_results:
+      enabled: true
+      filename: tables/table02_matched_results.csv
+
+    per_language_dialect:
+      enabled: true
+      filename: tables/table03_per_language_dialect.csv
+
+    cross_precision_results:
+      enabled: true
+      filename: tables/table04_cross_precision_results.csv
+
+    efficiency:
+      enabled: true
+      filename: tables/table05_efficiency.csv
+
+  confusion_matrix_style:
+    normalization: row_percentage
+    annotate_cells: true
+    percentage_decimals: 1
+
+    fixed_scale_minimum: 0.0
+    fixed_scale_maximum: 100.0
+
+    true_label_axis: vertical
+    predicted_label_axis: horizontal
+
+  training_curve_style:
+    accuracy_y_minimum: 0.0
+    accuracy_y_maximum: 1.0
+
+    use_identical_axes_across_precision_domains: true
+    show_phase_boundaries: true
+    show_best_epoch: true

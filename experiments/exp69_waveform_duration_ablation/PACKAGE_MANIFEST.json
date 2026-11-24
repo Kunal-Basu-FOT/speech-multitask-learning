@@ -1,0 +1,197 @@
+{
+  "conditions": 8,
+  "created_utc": "2026-08-06T05:39:17.235630+00:00",
+  "domains": [
+    "one_bit",
+    "sixteen_bit"
+  ],
+  "durations": [
+    "3s",
+    "7s",
+    "9s",
+    "full"
+  ],
+  "files": [
+    {
+      "bytes": 2662,
+      "path": "README.md",
+      "sha256": "aae7e18922cd8fea3bbef8eef1bd41629d11d8cc528c0423f032e7e72dfc299f"
+    },
+    {
+      "bytes": 1321,
+      "path": "RUN_ALL_GPU1.sh",
+      "sha256": "0967cca3bedf65822e09a50069c688ef9c04e0540dcdc91cb763ac2f08a90c34"
+    },
+    {
+      "bytes": 1028,
+      "path": "UPLOAD_AND_RUN_WTC9.txt",
+      "sha256": "8331053f6a047f67d2fbeff1e70991c83e2738be05fe5323646512ee44331e3f"
+    },
+    {
+      "bytes": 1667,
+      "path": "configs/exp69.json",
+      "sha256": "32898c0fdf01c853ac50440ddebbf7b43dcb04d48de65bfc4e12f9c393198aab"
+    },
+    {
+      "bytes": 3705,
+      "path": "docs/SCIENTIFIC_PROTOCOL.md",
+      "sha256": "f73cb4d19bd6b3a8227281061e9cc20482df7c2af8f415a0820574c03c2a941d"
+    },
+    {
+      "bytes": 58,
+      "path": "requirements-runtime.txt",
+      "sha256": "91159bb13391e4ea79c31d7b36da451526a8c0880c209d66e6af72572b25003a"
+    },
+    {
+      "bytes": 2029,
+      "path": "scripts/00_install_validate.sh",
+      "sha256": "229b39ca8ce6815bd34df7a5c995bdad6b2e9a6523121f7c2dd2982c11e261a5"
+    },
+    {
+      "bytes": 635,
+      "path": "scripts/01_preflight_gpu1.sh",
+      "sha256": "90f1c0ec6047002b8e550ff183a271e4cdbfeab4f8f1760aeebdacc7435cdf64"
+    },
+    {
+      "bytes": 402,
+      "path": "scripts/02_build_cache_cpu.sh",
+      "sha256": "5a5d197b9617a24e3bab6cf93fc91a930270b63f6c23121999bbbabca59e3567"
+    },
+    {
+      "bytes": 1377,
+      "path": "scripts/10_master_queue_gpu1.sh",
+      "sha256": "77b2e62c6fd0eaac623ac734b7c1011f95be2a818345eb9a4eb2dfd11e66658c"
+    },
+    {
+      "bytes": 1546,
+      "path": "scripts/11_status.sh",
+      "sha256": "44508abbf6d5bb8200fb81b6bcf5338a1bf3663c317c09e554c681790eefd6be"
+    },
+    {
+      "bytes": 46,
+      "path": "scripts/12_attach.sh",
+      "sha256": "6191122ab5f47f29cb3c2a48ee9f5a107cecf938e47f62bfb6dc46dfee26d63b"
+    },
+    {
+      "bytes": 215,
+      "path": "scripts/13_stop.sh",
+      "sha256": "296e36451556bc20e4df98dc6ee35cf8c7cabf6a27412309e460db68287a3ebb"
+    },
+    {
+      "bytes": 297,
+      "path": "scripts/20_generate_report.sh",
+      "sha256": "5efabd373bd0ea6cd3fa1f1d598c2b931c0566c4032c43d7a224c26c03df61e1"
+    },
+    {
+      "bytes": 297,
+      "path": "scripts/21_verify.sh",
+      "sha256": "d10018cd06c4195d36ef681176c80e721c3615117067e2c87f05b66987191334"
+    },
+    {
+      "bytes": 87,
+      "path": "src/exp69/__init__.py",
+      "sha256": "8d846488505da719de1fe0ace223d5ab11b37ebeb417fbb94ec53d92f2269906"
+    },
+    {
+      "bytes": 17377,
+      "path": "src/exp69/cache.py",
+      "sha256": "30e2fdb60989455f7b1f0a2db216879acd168c027d1d99618f47cc7f2eb7d344"
+    },
+    {
+      "bytes": 4266,
+      "path": "src/exp69/checkpoint.py",
+      "sha256": "eb18288d072addf1a6d38cc60a53fe47dd3ef3c98308a2c1704bc729fafb706a"
+    },
+    {
+      "bytes": 5419,
+      "path": "src/exp69/cli.py",
+      "sha256": "4871832a83c15e4ea819db91400a8ee5509cb37f7d71a0c211f319710faa87a7"
+    },
+    {
+      "bytes": 1020,
+      "path": "src/exp69/config.py",
+      "sha256": "1c9fb65d5d1ec42be98fa83595222922013a415ad70f3fbbf723f6b4c32eac1c"
+    },
+    {
+      "bytes": 11197,
+      "path": "src/exp69/data.py",
+      "sha256": "4688750b23bfd3a0266f6b151eba316df1a5621c598a2190125bafbd0ccb6b27"
+    },
+    {
+      "bytes": 9297,
+      "path": "src/exp69/evaluate.py",
+      "sha256": "565e26858d6ab133dd377b6a62150211ae3d95c6123f97835e1bdcb220862c28"
+    },
+    {
+      "bytes": 6112,
+      "path": "src/exp69/metrics.py",
+      "sha256": "54468e86c7e7f220f2d8c2f86e786bbf98754bb63b890a1ac60a0f2dcf435e58"
+    },
+    {
+      "bytes": 3413,
+      "path": "src/exp69/model.py",
+      "sha256": "fe0e487c014fa203d69b35a01c0577af472ce94e458b5ffa76e22b9b6eac9d26"
+    },
+    {
+      "bytes": 8360,
+      "path": "src/exp69/preflight.py",
+      "sha256": "7f402a7371f9264417a280eb45f55292615049fd919b33ceddf4d16a726e2e22"
+    },
+    {
+      "bytes": 33319,
+      "path": "src/exp69/report.py",
+      "sha256": "e10fa6c1ad4942cd2342278a5d6ab8c39d178f221ca2f8b28df1fcf72179926c"
+    },
+    {
+      "bytes": 2659,
+      "path": "src/exp69/schedule.py",
+      "sha256": "866c03fbf9ea944710b014af41eceadbac864e96f3c17f20a7b2070ced5b21aa"
+    },
+    {
+      "bytes": 18073,
+      "path": "src/exp69/train.py",
+      "sha256": "5f528271ce0c424be056dcd665676ac6c788d1d3d3a7faa3b2ad535ed565f4eb"
+    },
+    {
+      "bytes": 3148,
+      "path": "src/exp69/utils.py",
+      "sha256": "573ca2d45a53560d19052c312833e901af73ed3b8d9b876663948db02d9c42de"
+    },
+    {
+      "bytes": 6414,
+      "path": "src/exp69/verify.py",
+      "sha256": "02710a93e4c3c58b03d4f65c3e204dbbfd374c0a54635c67809aa52684614f1e"
+    },
+    {
+      "bytes": 4597,
+      "path": "tests/test_core.py",
+      "sha256": "aa9b2d925b6bd732db06dd34b09a2306d5981cebdd90f9365a7bb07134e4c208"
+    }
+  ],
+  "package": "EXP69_WAVEFORM_DURATION_ABLATION_GPU1_WTC9",
+  "physical_gpu": 1,
+  "planned_outputs": {
+    "figures": 8,
+    "tables": 8,
+    "written_analysis": 1
+  },
+  "repository": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA",
+  "rng_safety": {
+    "evaluation_restores_rng": false,
+    "gpu_preflight_real_roundtrip": true,
+    "rng_restore_conversion": "contiguous CPU torch.uint8",
+    "training_checkpoint_map_location": "cpu"
+  },
+  "screen": "exp69_gpu1",
+  "target_host": "wtc9-server",
+  "target_user": "wtc9",
+  "validation": {
+    "python_compile": "PASS",
+    "shell_syntax": "PASS",
+    "synthetic_dual_logmel_cache": "PASS",
+    "synthetic_report_generation": "PASS",
+    "synthetic_training_checkpoint_resume_and_evaluation": "PASS",
+    "unit_tests": "8 PASS"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,40 @@
+WINDOWS POWERSHELL
+==================
+
+1. Upload:
+
+scp "$env:USERPROFILE\Downloads\EXP69_WAVEFORM_DURATION_ABLATION_GPU1_WTC9_UPLOAD_READY_2026-08-06.zip" `
+    "wtc9@10.64.26.86:/data/Kunal/staging/"
+
+scp "$env:USERPROFILE\Downloads\EXP69_WAVEFORM_DURATION_ABLATION_GPU1_WTC9_UPLOAD_READY_2026-08-06.zip.sha256" `
+    "wtc9@10.64.26.86:/data/Kunal/staging/"
+
+WTC9
+====
+
+2. Verify checksum (the sed removes the creator's /mnt/data prefix):
+
+cd /data/Kunal/staging
+sed 's|/mnt/data/||' EXP69_WAVEFORM_DURATION_ABLATION_GPU1_WTC9_UPLOAD_READY_2026-08-06.zip.sha256 | sha256sum -c -
+
+3. Validate archive:
+
+unzip -t EXP69_WAVEFORM_DURATION_ABLATION_GPU1_WTC9_UPLOAD_READY_2026-08-06.zip
+
+4. Extract:
+
+cd /data/Kunal
+unzip -o /data/Kunal/staging/EXP69_WAVEFORM_DURATION_ABLATION_GPU1_WTC9_UPLOAD_READY_2026-08-06.zip
+
+5. Install/validate:
+
+cd /data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA
+bash scripts/00_install_validate.sh
+
+6. Once physical GPU 1 is free:
+
+bash RUN_ALL_GPU1.sh
+
+7. Monitor:
+
+bash scripts/11_status.sh

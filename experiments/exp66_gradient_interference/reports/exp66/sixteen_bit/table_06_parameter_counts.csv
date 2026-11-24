@@ -1,0 +1,4 @@
+condition,encoder,log_variances,task_heads,total,trainable
+standard_logged,7214196,3,508971,7723170,508974
+pcgrad,7214196,3,508971,7723170,508974
+gradnorm,7214196,3,508971,7723170,508971

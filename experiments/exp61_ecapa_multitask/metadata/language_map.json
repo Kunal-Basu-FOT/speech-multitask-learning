@@ -1,0 +1,42 @@
+{
+  "labels": [
+    "bh",
+    "bn",
+    "ch",
+    "kn",
+    "mg",
+    "mr",
+    "mt",
+    "te"
+  ],
+  "names": {
+    "bh": "Bhojpuri",
+    "bn": "Bengali",
+    "ch": "Chhattisgarhi",
+    "kn": "Kannada",
+    "mg": "Magahi",
+    "mr": "Marathi",
+    "mt": "Maithili",
+    "te": "Telugu"
+  },
+  "label_to_index": {
+    "bh": 0,
+    "bn": 1,
+    "ch": 2,
+    "kn": 3,
+    "mg": 4,
+    "mr": 5,
+    "mt": 6,
+    "te": 7
+  },
+  "index_to_label": {
+    "0": "bh",
+    "1": "bn",
+    "2": "ch",
+    "3": "kn",
+    "4": "mg",
+    "5": "mr",
+    "6": "mt",
+    "7": "te"
+  }
+}

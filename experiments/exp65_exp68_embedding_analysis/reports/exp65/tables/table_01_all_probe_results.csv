@@ -1,0 +1,331 @@
+family,source,model_domain,condition,task,language,evaluation,accuracy,macro_f1,examples,classes,regularization
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,lid,,matched_dev,0.6045016077170418,0.5992681514063595,11507,8,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,lid,,matched_test,0.6105982905982906,0.603622513719273,17550,8,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,lid,,cross_test,0.5652421652421652,0.563446148721953,17550,8,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,gender,,matched_dev,0.9356913183279743,0.9356430911269125,11507,2,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,gender,,matched_test,0.9108831908831909,0.9107857511763564,17550,2,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,gender,,cross_test,0.8414245014245014,0.8408427963850598,17550,2,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,bh,matched_dev,0.44,0.43844338265465743,1500,3,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,bh,matched_test,0.40765765765765766,0.4064201346561656,2220,3,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,bh,cross_test,0.3801801801801802,0.338622262554732,2220,3,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,bn,matched_dev,0.3373333333333333,0.3313372943115844,1500,5,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,bn,matched_test,0.3721251149954002,0.36818729507750136,2174,5,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,bn,cross_test,0.27598896044158233,0.2593086709322988,2174,5,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,ch,matched_dev,0.39490445859872614,0.39650206836552954,1413,4,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,ch,matched_test,0.3809310653536258,0.37324041851894446,2234,4,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,ch,cross_test,0.3384064458370636,0.29116360706408423,2234,4,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,kn,matched_dev,0.35104895104895106,0.3437587553203537,1430,5,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,kn,matched_test,0.3891716797778806,0.38308406304432435,2161,5,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,kn,cross_test,0.3216103655714947,0.28011259774100583,2161,5,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mg,matched_dev,0.5073375262054507,0.5048880811334785,1431,4,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mg,matched_test,0.4783401732786138,0.47782805876695844,2193,4,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mg,cross_test,0.4532603739170087,0.4285674223778219,2193,4,100.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mr,matched_dev,0.36796536796536794,0.36038865770703377,1386,4,1.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mr,matched_test,0.42304147465437786,0.42168067703170536,2170,4,1.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mr,cross_test,0.3898617511520737,0.37217652676967367,2170,4,1.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mt,matched_dev,0.4137686302342087,0.41283320078500263,1409,4,10.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mt,matched_test,0.36049723756906077,0.3599428521505807,2172,4,10.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,mt,cross_test,0.35313075506445674,0.34345870915494026,2172,4,10.0
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,te,matched_dev,0.3497913769123783,0.34567195342979773,1438,4,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,te,matched_test,0.3557951482479784,0.34567997199344014,2226,4,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect_language,te,cross_test,0.29559748427672955,0.2592978219125566,2226,4,0.0001
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect,,matched_dev,0.39526870553730203,0.3917279242134297,11507,33,5.5
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect,,matched_test,0.3959449439418244,0.39200793390495253,17550,33,5.5
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,dialect,,cross_test,0.35100453955507366,0.3215884523133892,17550,33,5.5
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,lid,,matched_dev,0.438081167984705,0.4344146321899175,11507,8,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,lid,,matched_test,0.43806267806267807,0.4340050612997445,17550,8,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,lid,,cross_test,0.25954415954415955,0.22694869058740821,17550,8,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,gender,,matched_dev,0.936212740071261,0.9362070160440887,11507,2,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,gender,,matched_test,0.9129344729344729,0.9129147669502597,17550,2,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,gender,,cross_test,0.7005698005698006,0.6883804758755294,17550,2,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,bh,matched_dev,0.4026666666666667,0.40315371322131804,1500,3,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,bh,matched_test,0.42702702702702705,0.4265287917601865,2220,3,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,bh,cross_test,0.39774774774774774,0.39197639996074485,2220,3,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,bn,matched_dev,0.37933333333333336,0.3792563663211681,1500,5,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,bn,matched_test,0.40708371665133397,0.40738682511659385,2174,5,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,bn,cross_test,0.2902483900643974,0.24805064340654406,2174,5,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,ch,matched_dev,0.47558386411889597,0.477191584589325,1413,4,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,ch,matched_test,0.44897045658012535,0.4451000110842528,2234,4,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,ch,cross_test,0.3343777976723366,0.3071497851215297,2234,4,0.0001
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,kn,matched_dev,0.386013986013986,0.38371839514280964,1430,5,1.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,kn,matched_test,0.45580749652938457,0.4530391285993513,2161,5,1.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,kn,cross_test,0.26793151318833874,0.21654357393345852,2161,5,1.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mg,matched_dev,0.5618448637316562,0.5592536644528175,1431,4,10.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mg,matched_test,0.5421796625626994,0.5423861575277185,2193,4,10.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mg,cross_test,0.4126766985864113,0.41418695390610866,2193,4,10.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mr,matched_dev,0.4365079365079365,0.43544443927846166,1386,4,1.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mr,matched_test,0.49585253456221196,0.4919009618589908,2170,4,1.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mr,cross_test,0.3138248847926267,0.2587242616424572,2170,4,1.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mt,matched_dev,0.49964513839602553,0.4963288110869065,1409,4,10.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mt,matched_test,0.48204419889502764,0.4821889492141938,2172,4,10.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,mt,cross_test,0.34392265193370164,0.30272974545242876,2172,4,10.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,te,matched_dev,0.3796940194714882,0.37616406931588375,1438,4,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,te,matched_test,0.46540880503144655,0.46424123985391963,2226,4,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect_language,te,cross_test,0.3077268643306379,0.2666187115792651,2226,4,100.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect,,matched_dev,0.4401612260299986,0.43881388042608627,11507,33,10.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect,,matched_test,0.465546737229907,0.4640965081269009,17550,33,10.0
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,dialect,,cross_test,0.3335570685395247,0.3007475093753171,17550,33,10.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,lid,,matched_dev,0.5722603632571478,0.5680915812786671,11507,8,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,lid,,matched_test,0.597037037037037,0.5912051494342045,17550,8,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,lid,,cross_test,0.5202849002849003,0.5226288068020025,17550,8,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,gender,,matched_dev,0.9402103067697923,0.9401909522075543,11507,2,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,gender,,matched_test,0.9178347578347579,0.9177990070983023,17550,2,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,gender,,cross_test,0.8464957264957265,0.8458383847015616,17550,2,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,bh,matched_dev,0.43666666666666665,0.4346580803317231,1500,3,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,bh,matched_test,0.4518018018018018,0.45054770409448786,2220,3,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,bh,cross_test,0.38873873873873876,0.3702691282228285,2220,3,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,bn,matched_dev,0.41533333333333333,0.41330127174198583,1500,5,10.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,bn,matched_test,0.43146274149034036,0.43065162881715385,2174,5,10.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,bn,cross_test,0.27276908923643056,0.23990133515782608,2174,5,10.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,ch,matched_dev,0.45222929936305734,0.453966521383501,1413,4,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,ch,matched_test,0.4440465532676813,0.4420620896229678,2234,4,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,ch,cross_test,0.39794091316025065,0.3876516277010029,2234,4,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,kn,matched_dev,0.3916083916083916,0.3897596567324621,1430,5,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,kn,matched_test,0.44979176307265156,0.4466691377022144,2161,5,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,kn,cross_test,0.31744562702452567,0.2706637169471843,2161,5,0.0001
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mg,matched_dev,0.5583508036338225,0.5547220167066087,1431,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mg,matched_test,0.5289557683538532,0.5301809688306692,2193,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mg,cross_test,0.44505243958048335,0.4282394075715191,2193,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mr,matched_dev,0.42063492063492064,0.42035149308263714,1386,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mr,matched_test,0.4847926267281106,0.4810580539675212,2170,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mr,cross_test,0.38387096774193546,0.3296680476059409,2170,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mt,matched_dev,0.45493257629524486,0.4530825546008541,1409,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mt,matched_test,0.47882136279926335,0.4764317128396669,2172,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,mt,cross_test,0.34714548802946593,0.34221884341422293,2172,4,100.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,te,matched_dev,0.4040333796940195,0.395985579082427,1438,4,10.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,te,matched_test,0.4528301886792453,0.45045396682641636,2226,4,10.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect_language,te,cross_test,0.34007187780772685,0.30896094340868774,2226,4,10.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect,,matched_dev,0.44172367140368207,0.4394783967077749,11507,33,55.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect,,matched_test,0.46531285077411844,0.46350690783763715,17550,33,55.0
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,dialect,,cross_test,0.36162939266494465,0.33469663125365157,17550,33,55.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,lid,,matched_dev,0.8916311810202485,0.890857430971582,11507,8,0.0001
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,lid,,matched_test,0.8917378917378918,0.8905206806734333,17550,8,0.0001
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,lid,,cross_test,0.31515669515669514,0.2936153480735624,17550,8,0.0001
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,gender,,matched_dev,0.8233249326496915,0.8233176257618703,11507,2,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,gender,,matched_test,0.8166381766381766,0.8166377741970776,17550,2,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,gender,,cross_test,0.6166951566951567,0.6162510967838041,17550,2,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,bh,matched_dev,0.536,0.5314601738785872,1500,3,0.1
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,bh,matched_test,0.5099099099099099,0.5094771731096849,2220,3,0.1
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,bh,cross_test,0.3536036036036036,0.27534406229128966,2220,3,0.1
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,bn,matched_dev,0.4266666666666667,0.42295088246173107,1500,5,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,bn,matched_test,0.45170193192272307,0.4497209023570196,2174,5,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,bn,cross_test,0.3247470101195952,0.3002804663398649,2174,5,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,ch,matched_dev,0.4543524416135881,0.4525129413114125,1413,4,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,ch,matched_test,0.4623992837958818,0.4531677545395334,2234,4,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,ch,cross_test,0.29946284691136976,0.2565731241683087,2234,4,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,kn,matched_dev,0.4489510489510489,0.44665166781653465,1430,5,1.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,kn,matched_test,0.4900509023600185,0.48081986121915954,2161,5,1.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,kn,cross_test,0.27348449791763074,0.2408310106651832,2161,5,1.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mg,matched_dev,0.6268343815513627,0.6273413058787599,1431,4,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mg,matched_test,0.6269949840401277,0.6310519458712931,2193,4,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mg,cross_test,0.3511171910624715,0.30810455407694554,2193,4,10.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mr,matched_dev,0.4227994227994228,0.40538900349051066,1386,4,1.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mr,matched_test,0.49078341013824883,0.47580404856759967,2170,4,1.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mr,cross_test,0.2654377880184332,0.25816326837940506,2170,4,1.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mt,matched_dev,0.4641589779985806,0.47125429054335516,1409,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mt,matched_test,0.47974217311233885,0.4817031708758513,2172,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,mt,cross_test,0.2523020257826888,0.15602776954179903,2172,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,te,matched_dev,0.3581363004172462,0.3517586126259668,1438,4,0.01
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,te,matched_test,0.38454627133872415,0.37267056673010307,2226,4,0.01
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect_language,te,cross_test,0.252470799640611,0.19081045803419408,2226,4,0.01
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect,,matched_dev,0.46723740499973954,0.46366485975085725,11507,33,1.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect,,matched_test,0.4870161083272466,0.4818019279087805,17550,33,1.0
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,dialect,,cross_test,0.2965782203820505,0.24826683918712378,17550,33,1.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,lid,,matched_dev,0.7202572347266881,0.7163564444210337,11507,8,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,lid,,matched_test,0.7037037037037037,0.7000788656883126,17550,8,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,lid,,cross_test,0.1920797720797721,0.16727198091675938,17550,8,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,gender,,matched_dev,0.9396888850265056,0.9396847740031528,11507,2,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,gender,,matched_test,0.9176638176638177,0.917648799653989,17550,2,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,gender,,cross_test,0.5866096866096866,0.5265002956034349,17550,2,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,bh,matched_dev,0.5606666666666666,0.5579857538886923,1500,3,0.0001
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,bh,matched_test,0.55990990990991,0.55995074970826,2220,3,0.0001
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,bh,cross_test,0.3567567567567568,0.3033193853801717,2220,3,0.0001
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,bn,matched_dev,0.5346666666666666,0.5318333613988797,1500,5,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,bn,matched_test,0.5685372585096596,0.5683469749909118,2174,5,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,bn,cross_test,0.23597056117755288,0.16300425272615543,2174,5,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,ch,matched_dev,0.6234961075725407,0.625493797321099,1413,4,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,ch,matched_test,0.590420769919427,0.5880152911816146,2234,4,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,ch,cross_test,0.27887197851387646,0.22539593108654218,2234,4,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,kn,matched_dev,0.5594405594405595,0.5558731405420219,1430,5,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,kn,matched_test,0.6251735307727904,0.6214273178554733,2161,5,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,kn,cross_test,0.2878297084683017,0.22594762882073863,2161,5,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mg,matched_dev,0.6911250873515025,0.6932765458482278,1431,4,10.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mg,matched_test,0.6867305061559508,0.6894277714069778,2193,4,10.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mg,cross_test,0.31965344277245783,0.26910776099897105,2193,4,10.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mr,matched_dev,0.5808080808080808,0.5779744678606702,1386,4,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mr,matched_test,0.656221198156682,0.649033670336832,2170,4,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mr,cross_test,0.3248847926267281,0.3242540050422465,2170,4,100.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mt,matched_dev,0.6188786373314408,0.620157312060446,1409,4,0.0001
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mt,matched_test,0.6151012891344383,0.6173383388848348,2172,4,0.0001
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,mt,cross_test,0.2803867403314917,0.216883150689587,2172,4,0.0001
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,te,matched_dev,0.5973574408901252,0.5931662580924235,1438,4,10.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,te,matched_test,0.6275831087151842,0.6266541621671116,2226,4,10.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect_language,te,cross_test,0.3005390835579515,0.2510197405985605,2226,4,10.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect,,matched_dev,0.5958049058409478,0.5944700796265575,11507,33,55.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect,,matched_test,0.6162096964092554,0.6150242845665019,17550,33,55.0
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,dialect,,cross_test,0.29811163302563964,0.24736648191787164,17550,33,55.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,lid,,matched_dev,0.898670374554619,0.8957586631058974,11507,8,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,lid,,matched_test,0.8884330484330484,0.8863585029979699,17550,8,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,lid,,cross_test,0.29133903133903133,0.2875138809894149,17550,8,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,gender,,matched_dev,0.8785087338142,0.8784277453537123,11507,2,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,gender,,matched_test,0.8751566951566951,0.8751319613504112,17550,2,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,gender,,cross_test,0.7032478632478633,0.7018818116201629,17550,2,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,bh,matched_dev,0.6146666666666667,0.6109447609502755,1500,3,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,bh,matched_test,0.6112612612612612,0.6108515510199742,2220,3,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,bh,cross_test,0.34594594594594597,0.2740644965018108,2220,3,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,bn,matched_dev,0.542,0.5482028839504499,1500,5,10.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,bn,matched_test,0.5846366145354186,0.5850047065230675,2174,5,10.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,bn,cross_test,0.23781048758049678,0.17188194848750657,2174,5,10.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,ch,matched_dev,0.6334041047416844,0.6365903742299325,1413,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,ch,matched_test,0.6307072515666965,0.6267172273439394,2234,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,ch,cross_test,0.2811101163831692,0.23710837848114882,2234,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,kn,matched_dev,0.6,0.5961238348127816,1430,5,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,kn,matched_test,0.6381304951411384,0.6357658419215271,2161,5,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,kn,cross_test,0.2892179546506247,0.25921752702210654,2161,5,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mg,matched_dev,0.716282320055905,0.7173814648416477,1431,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mg,matched_test,0.7077063383492932,0.7134671881376974,2193,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mg,cross_test,0.3128134974920201,0.2559810439354915,2193,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mr,matched_dev,0.5966810966810967,0.5972383370144233,1386,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mr,matched_test,0.6769585253456222,0.6716662276360664,2170,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mr,cross_test,0.34101382488479265,0.3151527988152151,2170,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mt,matched_dev,0.6366217175301633,0.643149198648604,1409,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mt,matched_test,0.6201657458563536,0.6246093046381325,2172,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,mt,cross_test,0.3149171270718232,0.2785723635101963,2172,4,0.0001
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,te,matched_dev,0.6036161335187761,0.5978737305802555,1438,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,te,matched_test,0.6504941599281222,0.6494830237469598,2226,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect_language,te,cross_test,0.3194070080862534,0.3143766510950178,2226,4,100.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect,,matched_dev,0.6179090048992866,0.6184380731285462,11507,33,55.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect,,matched_test,0.6400075489979883,0.6396956338709205,17550,33,55.0
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,dialect,,cross_test,0.30527949526189074,0.26329440098106166,17550,33,55.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,lid,,matched_dev,0.5457547579734074,0.5428469269976501,11507,8,10.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,lid,,matched_test,0.5693447293447294,0.5635627889140489,17550,8,10.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,lid,,cross_test,0.5038176638176638,0.5013340370610107,17550,8,10.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,gender,,matched_dev,0.9576779351698966,0.9576778073189567,11507,2,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,gender,,matched_test,0.9374928774928775,0.9374883716182119,17550,2,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,gender,,cross_test,0.9107122507122507,0.9107115546738834,17550,2,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,bh,matched_dev,0.412,0.41147914242824735,1500,3,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,bh,matched_test,0.4283783783783784,0.4264618048442544,2220,3,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,bh,cross_test,0.36936936936936937,0.32211289288164124,2220,3,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,bn,matched_dev,0.38866666666666666,0.38673890438563113,1500,5,0.0001
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,bn,matched_test,0.4199632014719411,0.4174635104567491,2174,5,0.0001
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,bn,cross_test,0.2934682612695492,0.2744928052437826,2174,5,0.0001
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,ch,matched_dev,0.445859872611465,0.4500343088871937,1413,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,ch,matched_test,0.4521038495971352,0.4487201995440875,2234,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,ch,cross_test,0.37869292748433303,0.3581960841687627,2234,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,kn,matched_dev,0.3713286713286713,0.3661735597211163,1430,5,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,kn,matched_test,0.44053678852383155,0.43713989016432364,2161,5,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,kn,cross_test,0.34012031466913467,0.2929670311637834,2161,5,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mg,matched_dev,0.5422781271837875,0.5391002321417232,1431,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mg,matched_test,0.528499772001824,0.5305621626175832,2193,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mg,cross_test,0.4099407204742362,0.4168091819879237,2193,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mr,matched_dev,0.42712842712842713,0.4270347655136247,1386,4,10.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mr,matched_test,0.47557603686635946,0.47059853505786553,2170,4,10.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mr,cross_test,0.3511520737327189,0.26814742479164716,2170,4,10.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mt,matched_dev,0.41092973740241306,0.41616090791460836,1409,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mt,matched_test,0.4534990791896869,0.45504291050973505,2172,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,mt,cross_test,0.3425414364640884,0.3259703641925137,2172,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,te,matched_dev,0.40681502086230875,0.40550867732264756,1438,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,te,matched_test,0.43755615453728663,0.43285431378206213,2226,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect_language,te,cross_test,0.34007187780772685,0.3042681808980138,2226,4,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect,,matched_dev,0.4256258153979674,0.42527881228934905,11507,33,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect,,matched_test,0.4545141575708054,0.45235541587208256,17550,33,100.0
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,dialect,,cross_test,0.35316962265889457,0.32037049566600856,17550,33,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,lid,,matched_dev,0.8888502650560528,0.8863016913713481,11507,8,1.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,lid,,matched_test,0.8811965811965812,0.8791317445888907,17550,8,1.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,lid,,cross_test,0.30421652421652423,0.26963528299427125,17550,8,1.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,gender,,matched_dev,0.9689754062744417,0.9689751663440891,11507,2,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,gender,,matched_test,0.9532763532763533,0.9532706432380545,17550,2,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,gender,,cross_test,0.8026210826210827,0.8021280926200353,17550,2,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,bh,matched_dev,0.5726666666666667,0.5678613685506728,1500,3,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,bh,matched_test,0.5635135135135135,0.563664340261037,2220,3,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,bh,cross_test,0.34864864864864864,0.2791230976442423,2220,3,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,bn,matched_dev,0.5306666666666666,0.5317534983448048,1500,5,1.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,bn,matched_test,0.5671573137074517,0.5669085832731464,2174,5,1.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,bn,cross_test,0.23919043238270468,0.18608306107305467,2174,5,1.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,ch,matched_dev,0.6220806794055201,0.6247768745262048,1413,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,ch,matched_test,0.5948970456580125,0.5929064284805761,2234,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,ch,cross_test,0.2694717994628469,0.23204899592448952,2234,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,kn,matched_dev,0.5832167832167832,0.5792220958651839,1430,5,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,kn,matched_test,0.6358167515039334,0.6339835483802486,2161,5,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,kn,cross_test,0.2744099953725127,0.23386383308965927,2161,5,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mg,matched_dev,0.6848357791754018,0.6859169706353014,1431,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mg,matched_test,0.6931144550843593,0.6978121346175346,2193,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mg,cross_test,0.29867761057911535,0.20132441202614798,2193,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mr,matched_dev,0.5772005772005772,0.5826790638236509,1386,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mr,matched_test,0.6576036866359447,0.653571404661724,2170,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mr,cross_test,0.3069124423963134,0.26288762541146793,2170,4,0.0001
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mt,matched_dev,0.6117814052519518,0.6172065369605374,1409,4,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mt,matched_test,0.610036832412523,0.6138279436572689,2172,4,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,mt,cross_test,0.30847145488029465,0.2915420877796002,2172,4,100.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,te,matched_dev,0.6175243393602226,0.6148479275594005,1438,4,10.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,te,matched_test,0.6217430368373764,0.6216564602685657,2226,4,10.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect_language,te,cross_test,0.284366576819407,0.2463721462152696,2226,4,10.0
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect,,matched_dev,0.5999966121179737,0.6005330420332196,11507,33,0.50005
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect,,matched_test,0.6179853294191393,0.6180413554500126,17550,33,0.50005
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,dialect,,cross_test,0.29126862006773047,0.24165565739549144,17550,33,0.50005
+random,Random encoder / one_bit input,one_bit,random_encoder,lid,,matched_dev,0.275310680455375,0.26963681379122545,11507,8,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,lid,,matched_test,0.2846153846153846,0.2804352128255791,17550,8,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,lid,,cross_test,0.17726495726495725,0.1468623622503782,17550,8,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,gender,,matched_dev,0.9402972103936734,0.9402873324697429,11507,2,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,gender,,matched_test,0.9177207977207977,0.9177032868324311,17550,2,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,gender,,cross_test,0.6356125356125356,0.5836695092297892,17550,2,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,bh,matched_dev,0.378,0.3767406128329494,1500,3,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,bh,matched_test,0.3567567567567568,0.35560775336764633,2220,3,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,bh,cross_test,0.3472972972972973,0.2707792818225148,2220,3,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,bn,matched_dev,0.3373333333333333,0.32865697447690395,1500,5,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,bn,matched_test,0.3316467341306348,0.3242457058931036,2174,5,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,bn,cross_test,0.21389144434222632,0.11707277864590435,2174,5,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,ch,matched_dev,0.3934890304317056,0.38976204704335315,1413,4,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,ch,matched_test,0.3809310653536258,0.37510152317363354,2234,4,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,ch,cross_test,0.2712623097582811,0.17825101531539456,2234,4,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,kn,matched_dev,0.3020979020979021,0.2943750949223286,1430,5,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,kn,matched_test,0.33317908375751965,0.3272373624653102,2161,5,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,kn,cross_test,0.21888014807959277,0.17106120789920476,2161,5,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mg,matched_dev,0.42348008385744235,0.41811229586635645,1431,4,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mg,matched_test,0.39443684450524397,0.391708918374281,2193,4,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mg,cross_test,0.23073415412676698,0.1695149972472004,2193,4,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mr,matched_dev,0.33694083694083693,0.3384729390852536,1386,4,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mr,matched_test,0.31981566820276497,0.32132031569692354,2170,4,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mr,cross_test,0.27926267281105993,0.19706954676438948,2170,4,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mt,matched_dev,0.3910574875798439,0.38347294241529795,1409,4,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mt,matched_test,0.31261510128913444,0.3102352766109106,2172,4,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,mt,cross_test,0.2923572744014733,0.2313251213321887,2172,4,100.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,te,matched_dev,0.34005563282336576,0.3352821289629087,1438,4,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,te,matched_test,0.367026055705301,0.36597573024001906,2226,4,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect_language,te,cross_test,0.2502246181491464,0.19415644247351568,2226,4,0.0001
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect,,matched_dev,0.36280678838305375,0.358109379450669,11507,33,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect,,matched_test,0.3495509137126227,0.3464290732277285,17550,33,10.0
+random,Random encoder / one_bit input,one_bit,random_encoder,dialect,,cross_test,0.2629887398707305,0.1911537989375391,17550,33,10.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,lid,,matched_dev,0.500391066307465,0.4839168709898951,11507,8,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,lid,,matched_test,0.5031908831908832,0.49001683541617536,17550,8,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,lid,,cross_test,0.1492877492877493,0.09554667795047181,17550,8,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,gender,,matched_dev,0.9508125488832885,0.9508091960890264,11507,2,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,gender,,matched_test,0.9339601139601139,0.9339463867152613,17550,2,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,gender,,cross_test,0.7414814814814815,0.7414277450622435,17550,2,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,bh,matched_dev,0.41533333333333333,0.4089805058006326,1500,3,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,bh,matched_test,0.40135135135135136,0.40040518408759335,2220,3,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,bh,cross_test,0.34594594594594597,0.3008889276230169,2220,3,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,bn,matched_dev,0.33866666666666667,0.3264461882705529,1500,5,10.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,bn,matched_test,0.3675252989880405,0.3590030796392506,2174,5,10.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,bn,cross_test,0.24425022999080037,0.20981042064502525,2174,5,10.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,ch,matched_dev,0.4140127388535032,0.41224397107062155,1413,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,ch,matched_test,0.43285586392121755,0.4295781564951857,2234,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,ch,cross_test,0.25156669650850494,0.14492782190550954,2234,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,kn,matched_dev,0.3706293706293706,0.3584069357509238,1430,5,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,kn,matched_test,0.4002776492364646,0.3901359613566497,2161,5,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,kn,cross_test,0.26839426191577975,0.23782989097805562,2161,5,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mg,matched_dev,0.4856743535988819,0.4791767743089385,1431,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mg,matched_test,0.46557227542179663,0.4589162163804306,2193,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mg,cross_test,0.25170998632010944,0.20619878282795112,2193,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mr,matched_dev,0.3686868686868687,0.3654030698399258,1386,4,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mr,matched_test,0.41935483870967744,0.4104361702883871,2170,4,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mr,cross_test,0.28986175115207374,0.20407205734435216,2170,4,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mt,matched_dev,0.44854506742370476,0.444499403788047,1409,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mt,matched_test,0.3798342541436464,0.37646499382029747,2172,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,mt,cross_test,0.23802946593001842,0.13597837203954652,2172,4,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,te,matched_dev,0.38456189151599446,0.3763873204247773,1438,4,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,te,matched_test,0.3939802336028751,0.3939928534742721,2226,4,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect_language,te,cross_test,0.28706199460916443,0.24987504686071663,2226,4,0.0001
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect,,matched_dev,0.40326378633854043,0.39644302115680247,11507,33,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect,,matched_test,0.4075939706718837,0.40236657694275835,17550,33,100.0
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,dialect,,cross_test,0.27210254154654967,0.21119766502802173,17550,33,100.0

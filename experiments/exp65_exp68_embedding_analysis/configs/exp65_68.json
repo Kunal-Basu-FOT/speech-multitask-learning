@@ -1,0 +1,18 @@
+{
+  "seed": 1337,
+  "feature_dimension": 768,
+  "embedding_dimension": 192,
+  "domains": ["one_bit", "sixteen_bit"],
+  "splits": ["train", "dev", "test"],
+  "conditions": ["lid_only", "dialect_only", "lid_dialect"],
+  "expected_rows": {"train": 146359, "dev": 11507, "test": 17550},
+  "frame_budget": 12000,
+  "maximum_batch_size": 32,
+  "workers": 4,
+  "fewshot_fractions": [0.10, 0.25, 0.50, 1.00],
+  "ridge_lambdas": [0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+  "umap_samples": 5000,
+  "tsne_samples": 3000,
+  "silhouette_samples": 2000,
+  "output_dpi": 300
+}

@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-08-06T05:47:09.610045+00:00",
+  "device": "cpu",
+  "duration_frame_caps": {
+    "3s": 298,
+    "7s": 698,
+    "9s": 898,
+    "full": null
+  },
+  "exp61_reference": {
+    "completion_marker": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61/EXPERIMENT_COMPLETE.json",
+    "reference_table": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/tables/table_02_matched_results.csv"
+  },
+  "gpu_name": null,
+  "model_smoke": {
+    "embedding_shape": [
+      3,
+      192
+    ],
+    "parameters": {
+      "encoder_including_projection": 7276404,
+      "frontend_projection": 62208,
+      "task_parameters": 508974,
+      "total": 7785378
+    }
+  },
+  "require_gpu": false,
+  "rng_roundtrip": {
+    "checkpoint_bytes": 16047,
+    "cpu_rng_device": "cpu",
+    "cpu_rng_dtype": "torch.uint8",
+    "status": "RNG_CHECKPOINT_ROUNDTRIP_PASS",
+    "training_state": {
+      "completed_epoch": 0
+    }
+  },
+  "source_indexes": {
+    "dev": {
+      "rows": 11507,
+      "sample_audio_checked": 5,
+      "sha256": "a03d214541f2e80f5bfcd8e94ca6fa2a6ed1e3de6e38edf14cb4af6c3f0d2367"
+    },
+    "test": {
+      "rows": 17550,
+      "sample_audio_checked": 5,
+      "sha256": "7e6c7c18ff3297a45e6694d8ed87aa731d4a909e40f850c18ffb4336dccbea46"
+    },
+    "train": {
+      "rows": 146359,
+      "sample_audio_checked": 5,
+      "sha256": "89e15af1c7ce2e525f0f0d1ba9ca030131625567302f848a0be1e8fcb17340ae"
+    }
+  },
+  "status": "EXP69_PREFLIGHT_PASS"
+}

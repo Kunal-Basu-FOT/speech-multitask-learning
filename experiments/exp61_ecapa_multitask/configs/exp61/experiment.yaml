@@ -1,0 +1,92 @@
+experiment:
+  name: EXP6.1_ECAPA_Multitask_Quantized_Speech
+  model_id: ecapa_7p2m
+  tasks:
+    - language
+    - oracle_language_conditioned_dialect
+    - gender
+  domains:
+    - one_bit
+    - sixteen_bit
+
+paths:
+  project_root: /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK
+  cache_root: /data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16
+  run_root: /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61
+  results_root: /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/results/ecapa_7p2m/exp61
+  report_root: /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61
+
+runtime:
+  host: wtc9-server
+  physical_gpu: 1
+  process_device: cuda:0
+  cpu_fallback: false
+  seed: 1337
+
+model:
+  architecture: SpeechBrain_ECAPA_TDNN
+  feature_dimension: 768
+  feature_layer_zero_based: 11
+  full_utterance: true
+  embedding_dimension: 192
+  ecapa_parameters: 7212660
+  total_parameters: 7723170
+  language_classes: 8
+  gender_classes: 2
+  dialect_classes: 33
+  dialect_heads: 8
+
+data:
+  expected_split_counts:
+    train: 146359
+    dev: 11507
+    test: 17550
+  max_batch_frames: 12000
+  max_batch_size: 32
+  number_of_buckets: 40
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 2
+  crop_or_truncate: false
+
+training:
+  total_epochs: 40
+  phases:
+    phase1: [1, 5]
+    phase2: [6, 35]
+    phase3: [36, 40]
+  gradient_accumulation_steps: 1
+  maximum_gradient_norm: 1.0
+  amp_enabled: true
+  progress_interval_batches: 50
+  checkpoint_boundary: epoch
+
+optimizer:
+  name: AdamW
+  peak_learning_rate: 0.0001
+  weight_decay: 0.0001
+  beta1: 0.9
+  beta2: 0.999
+  epsilon: 0.00000001
+
+scheduler:
+  warmup_start_learning_rate: 0.00001
+  cosine_minimum_learning_rate: 0.000005
+  heads_only_learning_rate: 0.00002
+
+selection:
+  metric: three_task_mean_macro_f1
+  components:
+    - language_macro_f1
+    - dialect_language_macro_f1
+    - gender_macro_f1
+
+evaluation:
+  dialect_routing: ground_truth_language
+  matched_conditions:
+    - one_bit_to_one_bit
+    - sixteen_bit_to_sixteen_bit
+  cross_conditions:
+    - one_bit_to_sixteen_bit
+    - sixteen_bit_to_one_bit

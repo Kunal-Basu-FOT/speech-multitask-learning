@@ -1,0 +1,40 @@
+{
+  "bundle": "EXP61_INTEGRATION_BUNDLE",
+  "target_repository": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK",
+  "production_host": "wtc9-server",
+  "physical_gpu": 1,
+  "queue_order": [
+    "preflight",
+    "train_one_bit",
+    "evaluate_one_to_one_dev_test",
+    "evaluate_one_to_sixteen_test",
+    "train_sixteen_bit",
+    "evaluate_sixteen_to_sixteen_dev_test",
+    "evaluate_sixteen_to_one_test",
+    "generate_report"
+  ],
+  "files": [
+    "BUNDLE_MANIFEST.json",
+    "README_UNZIP_AND_VALIDATE.md",
+    "configs/exp61/experiment.yaml",
+    "scripts/launch/10_launch_exp61_gpu1_queue.sh",
+    "scripts/launch/11_status_exp61_gpu1.sh",
+    "scripts/launch/12_attach_exp61_gpu1.sh",
+    "scripts/launch/13_stop_exp61_gpu1.sh",
+    "scripts/validation/08_validate_exp61_integration.sh",
+    "src/speech_mtl/exp61/README.md",
+    "src/speech_mtl/exp61/__init__.py",
+    "src/speech_mtl/exp61/batching.py",
+    "src/speech_mtl/exp61/cli.py",
+    "src/speech_mtl/exp61/config.py",
+    "src/speech_mtl/exp61/data.py",
+    "src/speech_mtl/exp61/epoch.py",
+    "src/speech_mtl/exp61/evaluation.py",
+    "src/speech_mtl/exp61/history.py",
+    "src/speech_mtl/exp61/metrics.py",
+    "src/speech_mtl/exp61/preflight.py",
+    "src/speech_mtl/exp61/runner.py",
+    "src/speech_mtl/exp61/validation.py",
+    "tests/unit/test_exp61_integration.py"
+  ]
+}

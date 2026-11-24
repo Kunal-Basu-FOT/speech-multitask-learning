@@ -1,0 +1,133 @@
+{
+  "manifest": "/data/Kunal/manifests/respin_unique_sentence_train.csv",
+  "duplicate_group_count": 6,
+  "participating_row_count": 12,
+  "groups": [
+    {
+      "group": 1,
+      "language": "ch",
+      "text": "नॉन बैंकिंग सेवाएं का होथे",
+      "row_count": 2,
+      "utterance_ids": [
+        "IISc_RESPIN_ch_D1_30691_495113_M_BANK_304956_30715913",
+        "IISc_RESPIN_ch_D1_30039_495334_F_BANK_304536_30142331"
+      ],
+      "dialects": [
+        "ch_D1"
+      ],
+      "genders": [
+        "F",
+        "M"
+      ],
+      "speakers": [
+        "IISc_RESPIN_ch_D1_30039",
+        "IISc_RESPIN_ch_D1_30691"
+      ]
+    },
+    {
+      "group": 2,
+      "language": "ch",
+      "text": "यू.पी.आई सेवाएं का होथे",
+      "row_count": 2,
+      "utterance_ids": [
+        "IISc_RESPIN_ch_D1_31501_495113_F_BANK_304951_30794126",
+        "IISc_RESPIN_ch_D1_30131_495334_M_BANK_304530_30161058"
+      ],
+      "dialects": [
+        "ch_D1"
+      ],
+      "genders": [
+        "F",
+        "M"
+      ],
+      "speakers": [
+        "IISc_RESPIN_ch_D1_30131",
+        "IISc_RESPIN_ch_D1_31501"
+      ]
+    },
+    {
+      "group": 3,
+      "language": "kn",
+      "text": "ಫಾರಂ ಕೋಳಿಗಳ ಆಹಾರ ಪದ್ಧತಿಯ ವಿಧಾನಗಳ ಬಗ್ಗೆ ವಿವರಿಸಿ",
+      "row_count": 2,
+      "utterance_ids": [
+        "IISc_RESPIN_kn_D3_50444_580001_F_AGRI_515142_50447671",
+        "IISc_RESPIN_kn_D1_50593_583101_M_AGRI_519724_50238210"
+      ],
+      "dialects": [
+        "kn_D1",
+        "kn_D3"
+      ],
+      "genders": [
+        "F",
+        "M"
+      ],
+      "speakers": [
+        "IISc_RESPIN_kn_D1_50593",
+        "IISc_RESPIN_kn_D3_50444"
+      ]
+    },
+    {
+      "group": 4,
+      "language": "mt",
+      "text": "आर.टी.जी.एस की होय छै",
+      "row_count": 2,
+      "utterance_ids": [
+        "IISc_RESPIN_mt_D2_81446_852122_M_BANK_812066_80710862",
+        "IISc_RESPIN_mt_D4_80371_812001_M_BANK_825209_80100386"
+      ],
+      "dialects": [
+        "mt_D2",
+        "mt_D4"
+      ],
+      "genders": [
+        "M"
+      ],
+      "speakers": [
+        "IISc_RESPIN_mt_D2_81446",
+        "IISc_RESPIN_mt_D4_80371"
+      ]
+    },
+    {
+      "group": 5,
+      "language": "te",
+      "text": "ఆర్.టి.జి.ఎస్ అంటే ఏమి",
+      "row_count": 2,
+      "utterance_ids": [
+        "IISc_RESPIN_te_D2_90315_NA_M_BANK_909977_90426364",
+        "IISc_RESPIN_te_D2_90216_517299_M_BANK_910052_90737406"
+      ],
+      "dialects": [
+        "te_D2"
+      ],
+      "genders": [
+        "M"
+      ],
+      "speakers": [
+        "IISc_RESPIN_te_D2_90216",
+        "IISc_RESPIN_te_D2_90315"
+      ]
+    },
+    {
+      "group": 6,
+      "language": "te",
+      "text": "ఎ.టి.ఎం అంటే ఏమి వాటి లాభాలు సెప్పండి",
+      "row_count": 2,
+      "utterance_ids": [
+        "IISc_RESPIN_te_D2_90315_NA_M_BANK_910170_90426804",
+        "IISc_RESPIN_te_D2_90794_517113_F_BANK_909773_90616791"
+      ],
+      "dialects": [
+        "te_D2"
+      ],
+      "genders": [
+        "F",
+        "M"
+      ],
+      "speakers": [
+        "IISc_RESPIN_te_D2_90315",
+        "IISc_RESPIN_te_D2_90794"
+      ]
+    }
+  ]
+}

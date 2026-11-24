@@ -1,0 +1,21 @@
+--- /data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/runtime/admin/rng_fix_20260806T093224+0530/checkpoint.py.before	2026-08-05 20:21:47.000000000 +0530
++++ /data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/runtime/admin/rng_fix_20260806T093224+0530/checkpoint.py.after	2026-08-06 09:32:25.669253656 +0530
+@@ -26,9 +26,16 @@
+ def restore_rng_state(payload: dict[str, Any]) -> None:
+     random.setstate(payload["python"])
+     np.random.set_state(payload["numpy"])
+-    torch.set_rng_state(payload["torch_cpu"])
++    torch.set_rng_state(
++        payload["torch_cpu"]
++        .detach()
++        .to(device="cpu", dtype=torch.uint8)
++    )
+     if torch.cuda.is_available() and "torch_cuda" in payload:
+-        torch.cuda.set_rng_state_all(payload["torch_cuda"])
++        torch.cuda.set_rng_state_all([
++            state.detach().to(device="cpu", dtype=torch.uint8)
++            for state in payload["torch_cuda"]
++        ])
+ 
+ 
+ def save_checkpoint(path: Path, payload: dict[str, Any]) -> None:

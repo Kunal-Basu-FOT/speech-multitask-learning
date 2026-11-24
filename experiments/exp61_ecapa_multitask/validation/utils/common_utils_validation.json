@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "configuration_contract": "PASS",
+  "atomic_io_contract": "PASS",
+  "sha256_contract": "PASS",
+  "logging_contract": "PASS",
+  "reproducibility_contract": "PASS",
+  "gpu_parser_contract": "PASS",
+  "seed_reports_equal": true,
+  "live_physical_gpu1_assessment": {
+    "available": true,
+    "physical_gpu": {
+      "index": 1,
+      "uuid": "GPU-0354c3a1-7f2f-fbd8-3b87-8dea1c954c45",
+      "name": "NVIDIA GeForce RTX 3090",
+      "memory_total_mib": 24576,
+      "memory_used_mib": 15,
+      "utilization_percent": 0
+    },
+    "compute_processes": [],
+    "reasons": [],
+    "thresholds": {
+      "maximum_used_memory_mib": 1024,
+      "maximum_utilization_percent": 10,
+      "reject_compute_processes": true
+    },
+    "queried": true
+  },
+  "runtime_metadata": {
+    "created_utc": "2026-08-05T12:26:08.385344+00:00",
+    "hostname": "wtc9-server",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "python": {
+      "version": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+      "executable": "/data/Kunal/env_speech_mtl/bin/python"
+    },
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "PyYAML": "6.0.3",
+      "torch": "2.6.0+cu124",
+      "torchaudio": "2.6.0+cu124",
+      "speechbrain": "1.0.3",
+      "tqdm": "4.70.0",
+      "matplotlib": "3.10.9",
+      "scikit-learn": "1.7.2"
+    },
+    "environment": {
+      "CUDA_DEVICE_ORDER": null,
+      "CUDA_VISIBLE_DEVICES": "",
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "PYTORCH_CUDA_ALLOC_CONF": null
+    }
+  }
+}

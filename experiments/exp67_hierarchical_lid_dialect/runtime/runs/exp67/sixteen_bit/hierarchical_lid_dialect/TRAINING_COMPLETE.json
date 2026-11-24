@@ -1,0 +1,9 @@
+{
+  "best_epoch": 39,
+  "best_score": 0.8200122234432285,
+  "checkpoint": "/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/runtime/runs/exp67/sixteen_bit/hierarchical_lid_dialect/checkpoints/best.pt",
+  "condition": "hierarchical_lid_dialect",
+  "domain": "sixteen_bit",
+  "status": "complete",
+  "timestamp": 1786000149.2806175
+}

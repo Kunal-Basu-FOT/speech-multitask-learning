@@ -1,0 +1,15 @@
+{
+  "condition": "hierarchical_lid_dialect",
+  "domains": [
+    "one_bit",
+    "sixteen_bit"
+  ],
+  "evaluation_cells": [
+    "one_bit->one_bit",
+    "one_bit->sixteen_bit",
+    "sixteen_bit->sixteen_bit",
+    "sixteen_bit->one_bit"
+  ],
+  "status": "complete",
+  "timestamp": 1786000182.5602145
+}

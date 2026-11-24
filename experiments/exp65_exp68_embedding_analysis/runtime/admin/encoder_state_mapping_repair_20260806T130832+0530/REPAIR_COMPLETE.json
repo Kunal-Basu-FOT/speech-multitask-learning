@@ -1,0 +1,11 @@
+{
+  "status": "REPAIR_COMPLETE",
+  "timestamp": "2026-08-06T13:08:50+05:30",
+  "repair": "Strict unique encoder state-block mapping",
+  "name_mapping_passes": 0,
+  "order_mapping_passes": 6,
+  "total_checkpoint_mappings": 6,
+  "exp62_files_modified": false,
+  "checkpoints_modified": false,
+  "preflight_passed": true
+}

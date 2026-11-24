@@ -1,0 +1,8 @@
+{
+  "condition": "lid_dialect",
+  "metrics": "/home3/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/results/exp62_reduced/one_bit/lid_dialect/test_one_bit/metrics.json",
+  "status": "complete",
+  "test_domain": "one_bit",
+  "timestamp": 1785968984.125928,
+  "train_domain": "one_bit"
+}

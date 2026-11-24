@@ -1,0 +1,62 @@
+{
+  "config_sha256": "f8be7966606bebf075bf53c4393e79d3c184b29d6123e8d837c656221521ea3d",
+  "created_utc": "2026-08-05T12:58:44.999853+00:00",
+  "dev_index_sha256": "a03d214541f2e80f5bfcd8e94ca6fa2a6ed1e3de6e38edf14cb4af6c3f0d2367",
+  "domain": "one_bit",
+  "optimizer_steps_per_epoch": 4868,
+  "parameter_report": {
+    "all_classifier_heads": 508971,
+    "dialect_heads": 406817,
+    "ecapa": 7212660,
+    "encoder_total": 7214196,
+    "gender_head": 50306,
+    "input_normalization": 1536,
+    "language_head": 51848,
+    "task_weighting": 3,
+    "total": 7723170,
+    "trainable": 7723170
+  },
+  "runtime": {
+    "created_utc": "2026-08-05T12:58:44.999869+00:00",
+    "environment": {
+      "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+      "CUDA_VISIBLE_DEVICES": "1",
+      "MKL_NUM_THREADS": "8",
+      "OMP_NUM_THREADS": "8",
+      "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True,max_split_size_mb:128"
+    },
+    "hostname": "wtc9-server",
+    "packages": {
+      "PyYAML": "6.0.3",
+      "matplotlib": "3.10.9",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "speechbrain": "1.0.3",
+      "torch": "2.6.0+cu124",
+      "torchaudio": "2.6.0+cu124",
+      "tqdm": "4.70.0"
+    },
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "python": {
+      "executable": "/data/Kunal/env_speech_mtl/bin/python",
+      "version": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]"
+    }
+  },
+  "seed": {
+    "cuda_seeded": true,
+    "deterministic_algorithms": false,
+    "seed": 1337,
+    "warn_only": true
+  },
+  "train_index_sha256": "89e15af1c7ce2e525f0f0d1ba9ca030131625567302f848a0be1e8fcb17340ae",
+  "train_sampler": {
+    "batches": 4868,
+    "examples": 146359,
+    "largest_batch": 32,
+    "over_budget_singletons": 0,
+    "padded_frames": 43177485,
+    "padding_ratio": 0.0003003185572295619,
+    "real_frames": 43164518
+  }
+}

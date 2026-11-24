@@ -1,0 +1,16 @@
+{
+  "status": "TRAINING",
+  "epoch": 1,
+  "phase": "phase1_warmup_joint",
+  "batch": 800,
+  "batches": 4868,
+  "examples_seen_in_epoch": 23954,
+  "global_batch": 800,
+  "optimizer_step": 800,
+  "mean_total_loss": 3.805107868094969,
+  "learning_rates": {
+    "encoder": 1.295821521015654e-05,
+    "tasks": 1.295821521015654e-05
+  },
+  "elapsed_seconds": 177.57504269201308
+}

@@ -1,0 +1,103 @@
+model:
+  name: ecapa_compact_7m
+  implementation: speechbrain.lobes.models.ECAPA_TDNN.ECAPA_TDNN
+
+  input:
+    feature_dimension: 768
+    layout_from_dataset: time_feature
+    layout_for_ecapa: batch_time_feature
+    input_layer_norm: true
+
+  ecapa:
+    input_size: 768
+
+    # SpeechBrain ECAPA encoder target:
+    # approximately 7.21 million encoder parameters.
+    channels:
+      - 480
+      - 480
+      - 480
+      - 480
+      - 1440
+
+    kernel_sizes:
+      - 5
+      - 3
+      - 3
+      - 3
+      - 1
+
+    dilations:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 1
+
+    groups:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+
+    res2net_scale: 8
+    se_channels: 128
+    attention_channels: 128
+
+    embedding_dimension: 192
+    global_context: true
+    dropout: 0.10
+
+  shared_embedding:
+    dimension: 192
+    apply_layer_norm: true
+
+  task_heads:
+    architecture:
+      hidden_dimension: 256
+      activation: relu
+      dropout: 0.10
+      input_layer_norm: true
+
+    language:
+      number_of_classes: 8
+
+    gender:
+      number_of_classes: 2
+
+    dialect:
+      router: oracle_ground_truth_language
+
+      heads:
+        bh:
+          number_of_classes: 3
+        bn:
+          number_of_classes: 5
+        ch:
+          number_of_classes: 4
+        kn:
+          number_of_classes: 5
+        mg:
+          number_of_classes: 4
+        mr:
+          number_of_classes: 4
+        mt:
+          number_of_classes: 4
+        te:
+          number_of_classes: 4
+
+parameter_audit:
+  # The exact count is measured from the installed SpeechBrain version.
+  target_encoder_parameters: 7000000
+
+  acceptable_encoder_parameters:
+    minimum: 6500000
+    maximum: 8000000
+
+  fail_when_outside_range: true
+
+  count_input_normalization: true
+  count_all_task_heads: true
+  count_loss_parameters: true
+  report_total_trainable_parameters: true

@@ -1,0 +1,4 @@
+condition,model,task_weighting,shared_gradient_update,diagnostic_frequency
+standard_logged,hard-sharing ECAPA,learned homoscedastic uncertainty,ordinary summed objective,every 50 batches
+pcgrad,hard-sharing ECAPA,learned homoscedastic uncertainty,PCGrad on full shared encoder every optimizer step,every optimizer step
+gradnorm,hard-sharing ECAPA,GradNorm positive weights normalized to sum to three,ordinary weighted sum,every 50 batches

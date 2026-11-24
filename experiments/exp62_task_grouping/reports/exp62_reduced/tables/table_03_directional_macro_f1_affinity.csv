@@ -1,0 +1,5 @@
+domain,domain_label,target_task,partner_task,baseline_condition,joint_condition,single_task_macro_f1_percent,joint_macro_f1_percent,directional_affinity_pp
+one_bit,1-bit,language,dialect,lid_only,lid_dialect,63.21149523,45.27503751,-17.93645772
+one_bit,1-bit,dialect,language,dialect_only,lid_dialect,46.85168645,45.27503751,-1.57664894
+sixteen_bit,16-bit,language,dialect,lid_only,lid_dialect,89.63091253,63.88375600,-25.74715653
+sixteen_bit,16-bit,dialect,language,dialect_only,lid_dialect,62.49921257,63.88375600,1.38454343

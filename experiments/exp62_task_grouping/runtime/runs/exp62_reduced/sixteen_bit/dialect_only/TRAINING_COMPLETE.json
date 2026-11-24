@@ -1,0 +1,9 @@
+{
+  "best_epoch": 39,
+  "best_score": 0.6031161469007833,
+  "checkpoint": "/home3/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/runtime/runs/exp62_reduced/sixteen_bit/dialect_only/checkpoints/best.pt",
+  "condition": "dialect_only",
+  "domain": "sixteen_bit",
+  "status": "complete",
+  "timestamp": 1785988765.6209784
+}

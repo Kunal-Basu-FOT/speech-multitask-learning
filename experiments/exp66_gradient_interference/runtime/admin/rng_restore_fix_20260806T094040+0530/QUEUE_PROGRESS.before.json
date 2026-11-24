@@ -1,0 +1,15 @@
+{
+  "condition": "standard_logged",
+  "condition_index_within_domain": 1,
+  "condition_total_within_domain": 3,
+  "domain": "one_bit",
+  "domain_index": 1,
+  "domain_total": 2,
+  "global_index": 1,
+  "global_total": 6,
+  "includes_cross_precision_evaluation": true,
+  "includes_matched_evaluation": true,
+  "next_domain_is_blocked_until_domain_report_complete": true,
+  "status": "running_condition",
+  "timestamp": 1785948063.2611175
+}

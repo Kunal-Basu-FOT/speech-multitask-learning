@@ -1,0 +1,4 @@
+EXP 6.6 launched on WTC10 physical GPU0.
+Screen: exp66_gpu0
+Log: /data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/runtime/logs/exp66/master_queue.screen.log
+Queue: one-bit all methods + evaluations + report, then sixteen-bit all methods + evaluations + report.

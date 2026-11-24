@@ -1,0 +1,217 @@
+from __future__ import annotations
+
+import random
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+import torch
+
+
+def _build_encoder():
+    from speech_mtl.common.models.factory import build_exp61_model
+
+    model = build_exp61_model()
+    return model.encoder
+
+
+def _checkpoint_state(path: Path) -> dict[str, torch.Tensor]:
+    payload: Any = torch.load(path, map_location="cpu", weights_only=False)
+    if not isinstance(payload, dict):
+        raise RuntimeError(f"checkpoint is not a dictionary: {path}")
+    state = payload.get("model", payload)
+    if not isinstance(state, dict):
+        raise RuntimeError(f"checkpoint model state is not a dictionary: {path}")
+    return state
+
+
+def map_encoder_state(state, target_state):
+    """Map a trained EXP 6.2 shared encoder into the analysis encoder.
+
+    Strategy 1 uses exact or suffix-compatible names.
+
+    Strategy 2 is a strict architecture-order fallback. It is accepted only
+    when exactly one contiguous block in the source state has the same full
+    tensor shape/type signature as the complete target encoder state.
+    """
+
+    source_items = [
+        (name, value)
+        for name, value in state.items()
+        if torch.is_tensor(value)
+    ]
+    target_items = [
+        (name, value)
+        for name, value in target_state.items()
+        if torch.is_tensor(value)
+    ]
+
+    if not source_items:
+        raise RuntimeError("checkpoint model state contains no tensors")
+
+    if not target_items:
+        raise RuntimeError("target encoder state contains no tensors")
+
+    def compatible(source_value, target_value):
+        return (
+            tuple(source_value.shape) == tuple(target_value.shape)
+            and source_value.is_floating_point()
+                == target_value.is_floating_point()
+            and source_value.is_complex()
+                == target_value.is_complex()
+        )
+
+    # First try the original name-based contract.
+    name_mapped = {}
+    name_failures = {}
+
+    for target_name, target_value in target_items:
+        matches = [
+            (source_name, source_value)
+            for source_name, source_value in source_items
+            if compatible(source_value, target_value)
+            and (
+                source_name == target_name
+                or source_name.endswith("." + target_name)
+            )
+        ]
+
+        if len(matches) == 1:
+            name_mapped[target_name] = matches[0][1]
+        else:
+            name_failures[target_name] = [
+                source_name for source_name, _ in matches
+            ]
+
+    if len(name_mapped) == len(target_items):
+        print(
+            "ENCODER_STATE_MAP_NAME_PASS "
+            f"tensors={len(name_mapped)}"
+        )
+        return name_mapped
+
+    # Strict order-signature fallback. The shared encoder was registered as
+    # one module in the EXP 6.2 model, so its state tensors must form one
+    # complete ordered block. We require the match to be unique.
+    target_count = len(target_items)
+
+    if len(source_items) < target_count:
+        raise RuntimeError(
+            "checkpoint has fewer model tensors than the target encoder: "
+            f"source={len(source_items)} target={target_count}"
+        )
+
+    candidate_starts = []
+
+    for start_index in range(len(source_items) - target_count + 1):
+        valid = True
+
+        for offset, (_, target_value) in enumerate(target_items):
+            _, source_value = source_items[start_index + offset]
+
+            if not compatible(source_value, target_value):
+                valid = False
+                break
+
+        if valid:
+            candidate_starts.append(start_index)
+
+    if len(candidate_starts) != 1:
+        first_failed_target = next(iter(name_failures), "<unknown>")
+        source_preview = [
+            {
+                "index": index,
+                "name": name,
+                "shape": tuple(value.shape),
+                "dtype": str(value.dtype),
+            }
+            for index, (name, value) in enumerate(source_items[:25])
+        ]
+        target_preview = [
+            {
+                "index": index,
+                "name": name,
+                "shape": tuple(value.shape),
+                "dtype": str(value.dtype),
+            }
+            for index, (name, value) in enumerate(target_items[:25])
+        ]
+
+        raise RuntimeError(
+            "cannot establish a unique encoder tensor block; "
+            f"name_mapping_first_failure={first_failed_target!r}, "
+            f"source_tensors={len(source_items)}, "
+            f"target_tensors={target_count}, "
+            f"candidate_starts={candidate_starts}, "
+            f"source_preview={source_preview}, "
+            f"target_preview={target_preview}"
+        )
+
+    start_index = candidate_starts[0]
+    mapped = {}
+
+    for offset, (target_name, target_value) in enumerate(target_items):
+        source_name, source_value = source_items[start_index + offset]
+
+        if not compatible(source_value, target_value):
+            raise RuntimeError(
+                "internal encoder mapping verification failed for "
+                f"target={target_name!r}, source={source_name!r}"
+            )
+
+        mapped[target_name] = source_value
+
+    first_source_name = source_items[start_index][0]
+    last_source_name = source_items[
+        start_index + target_count - 1
+    ][0]
+
+    print(
+        "ENCODER_STATE_MAP_ORDER_PASS "
+        f"start={start_index} "
+        f"tensors={target_count} "
+        f"first={first_source_name} "
+        f"last={last_source_name}"
+    )
+
+    return mapped
+
+
+def load_frozen_encoder(checkpoint_path: Path, device: torch.device):
+    encoder = _build_encoder()
+    state = _checkpoint_state(checkpoint_path)
+    mapped = map_encoder_state(state, encoder.state_dict())
+    encoder.load_state_dict(mapped, strict=True)
+    encoder.requires_grad_(False)
+    encoder.eval()
+    encoder.to(device)
+    return encoder
+
+
+def build_random_encoder(seed: int, device: torch.device):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+    encoder = _build_encoder()
+    encoder.requires_grad_(False)
+    encoder.eval()
+    encoder.to(device)
+    return encoder
+
+
+def forward_encoder(
+    encoder,
+    features: torch.Tensor,
+    relative_lengths: torch.Tensor,
+    valid_mask: torch.Tensor,
+) -> torch.Tensor:
+    embeddings = encoder(
+        features=features,
+        relative_lengths=relative_lengths,
+        valid_mask=valid_mask,
+    )
+    if embeddings.ndim != 2:
+        raise RuntimeError(f"encoder output must be [B,D], received {tuple(embeddings.shape)}")
+    return embeddings

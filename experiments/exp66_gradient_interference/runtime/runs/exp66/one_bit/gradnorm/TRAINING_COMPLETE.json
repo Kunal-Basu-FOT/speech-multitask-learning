@@ -1,0 +1,11 @@
+{
+  "best_epoch": 39,
+  "best_score": 0.6574743145555485,
+  "checkpoint": "/data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/runtime/runs/exp66/one_bit/gradnorm/checkpoints/best.pt",
+  "condition": "gradnorm",
+  "domain": "one_bit",
+  "gradient_epoch_summary": "/data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/runtime/runs/exp66/one_bit/gradnorm/gradient_epoch_summary.csv",
+  "gradient_samples": "/data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/runtime/runs/exp66/one_bit/gradnorm/gradient_samples.csv",
+  "status": "complete",
+  "timestamp": 1786056409.246994
+}

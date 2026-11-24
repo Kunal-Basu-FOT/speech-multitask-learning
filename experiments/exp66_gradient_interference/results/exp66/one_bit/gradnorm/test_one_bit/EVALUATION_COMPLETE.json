@@ -1,0 +1,8 @@
+{
+  "condition": "gradnorm",
+  "matched": true,
+  "status": "complete",
+  "test_domain": "one_bit",
+  "timestamp": 1786056427.0577772,
+  "train_domain": "one_bit"
+}

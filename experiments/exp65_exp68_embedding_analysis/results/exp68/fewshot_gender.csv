@@ -1,0 +1,121 @@
+family,source,model_domain,condition,fraction,labelled_examples,evaluation,accuracy,macro_f1,examples,regularization,seed
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.1,14629,matched_dev,0.9331711132354219,0.9331187421047951,11507,1.0,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.1,14629,matched_test,0.9098575498575499,0.9097669847699412,17550,1.0,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.1,14629,cross_test,0.8279202279202279,0.8262591798819636,17550,1.0,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.25,36583,matched_dev,0.9341270530981142,0.934069831582675,11507,0.0001,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.25,36583,matched_test,0.9097435897435897,0.9096329802356049,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.25,36583,cross_test,0.8365811965811966,0.8358212705835494,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.5,73177,matched_dev,0.9346484748414009,0.9345994655776191,11507,10.0,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.5,73177,matched_test,0.9100284900284901,0.9099284104845841,17550,10.0,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,0.5,73177,cross_test,0.8426780626780627,0.842166645251671,17550,10.0,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,1.0,146359,matched_dev,0.9356913183279743,0.9356430911269125,11507,0.0001,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,1.0,146359,matched_test,0.9108831908831909,0.9107857511763564,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_only,one_bit,lid_only,1.0,146359,cross_test,0.8414245014245014,0.8408427963850598,17550,0.0001,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.1,14629,matched_dev,0.9345615712175198,0.9345558062826349,11507,10.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.1,14629,matched_test,0.9111680911680912,0.911146590836985,17550,10.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.1,14629,cross_test,0.6894586894586895,0.6756909820721628,17550,10.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.25,36583,matched_dev,0.9349091857130443,0.9349034514019835,11507,1.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.25,36583,matched_test,0.9116239316239316,0.9116034717247288,17550,1.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.25,36583,cross_test,0.7057549857549857,0.6953856779607877,17550,1.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.5,73177,matched_dev,0.9355175110802121,0.9355123442187956,11507,100.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.5,73177,matched_test,0.9130484330484331,0.9130278479236813,17550,100.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,0.5,73177,cross_test,0.6946438746438747,0.6797973621686509,17550,100.0,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,1.0,146359,matched_dev,0.936212740071261,0.9362070160440887,11507,0.0001,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,1.0,146359,matched_test,0.9129344729344729,0.9129147669502597,17550,0.0001,1337
+exp62,EXP6.2 one_bit dialect_only,one_bit,dialect_only,1.0,146359,cross_test,0.7005698005698006,0.6883804758755294,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.1,14629,matched_dev,0.9398626922742679,0.9398443376963751,11507,1.0,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.1,14629,matched_test,0.917037037037037,0.9169972995472505,17550,1.0,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.1,14629,cross_test,0.8519088319088319,0.8518109697260681,17550,1.0,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.25,36583,matched_dev,0.9389936560354567,0.9389750362179989,11507,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.25,36583,matched_test,0.9177207977207977,0.9176817973834672,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.25,36583,cross_test,0.8516239316239316,0.8511841960886923,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.5,73177,matched_dev,0.9392543669071001,0.9392378009528072,11507,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.5,73177,matched_test,0.9176068376068376,0.9175740548265559,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,0.5,73177,cross_test,0.8461538461538461,0.8455201952001401,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,1.0,146359,matched_dev,0.9402103067697923,0.9401909522075543,11507,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,1.0,146359,matched_test,0.9178347578347579,0.9177990070983023,17550,0.0001,1337
+exp62,EXP6.2 one_bit lid_dialect,one_bit,lid_dialect,1.0,146359,cross_test,0.8464957264957265,0.8458383847015616,17550,0.0001,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.1,14629,matched_dev,0.8134179195272443,0.8132841496299187,11507,0.1,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.1,14629,matched_test,0.8107122507122507,0.810672593089393,17550,0.1,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.1,14629,cross_test,0.5981766381766381,0.596688646108839,17550,0.1,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.25,36583,matched_dev,0.8208916311810203,0.8208796781969196,11507,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.25,36583,matched_test,0.8168660968660969,0.8168660112457062,17550,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.25,36583,cross_test,0.6034757834757835,0.6028778345221739,17550,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.5,73177,matched_dev,0.8211523420526636,0.821123939066587,11507,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.5,73177,matched_test,0.8163532763532764,0.8163509098035275,17550,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,0.5,73177,cross_test,0.614928774928775,0.6148649080447182,17550,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,1.0,146359,matched_dev,0.8233249326496915,0.8233176257618703,11507,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,1.0,146359,matched_test,0.8166381766381766,0.8166377741970776,17550,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_only,sixteen_bit,lid_only,1.0,146359,cross_test,0.6166951566951567,0.6162510967838041,17550,10.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.1,14629,matched_dev,0.9380377161727644,0.9380359173052555,11507,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.1,14629,matched_test,0.9162962962962963,0.916287972724782,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.1,14629,cross_test,0.582962962962963,0.5172506066150995,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.25,36583,matched_dev,0.9390805596593378,0.9390769966051828,11507,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.25,36583,matched_test,0.9176638176638177,0.9176516876954539,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.25,36583,cross_test,0.5784615384615385,0.5111091185857889,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.5,73177,matched_dev,0.939949595898149,0.9399463957253917,11507,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.5,73177,matched_test,0.917037037037037,0.9170262613142833,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,0.5,73177,cross_test,0.5805128205128205,0.5146268570862538,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,1.0,146359,matched_dev,0.9396888850265056,0.9396847740031528,11507,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,1.0,146359,matched_test,0.9176638176638177,0.917648799653989,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit dialect_only,sixteen_bit,dialect_only,1.0,146359,cross_test,0.5866096866096866,0.5265002956034349,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.1,14629,matched_dev,0.872425480142522,0.8722445833405181,11507,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.1,14629,matched_test,0.8664957264957265,0.8664203113985399,17550,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.1,14629,cross_test,0.6913390313390313,0.6839637900854321,17550,10.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.25,36583,matched_dev,0.8767706613365778,0.8766782475918402,11507,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.25,36583,matched_test,0.8706552706552707,0.8706259954038544,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.25,36583,cross_test,0.6953276353276353,0.6928980388212909,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.5,73177,matched_dev,0.8779004084470322,0.8777999063340989,11507,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.5,73177,matched_test,0.8731623931623932,0.8731296361594012,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,0.5,73177,cross_test,0.6976638176638177,0.6954149858667382,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,1.0,146359,matched_dev,0.8785087338142,0.8784277453537123,11507,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,1.0,146359,matched_test,0.8751566951566951,0.8751319613504112,17550,100.0,1337
+exp62,EXP6.2 sixteen_bit lid_dialect,sixteen_bit,lid_dialect,1.0,146359,cross_test,0.7032478632478633,0.7018818116201629,17550,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.1,14629,matched_dev,0.95872077865647,0.9587206776490348,11507,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.1,14629,matched_test,0.9363532763532764,0.9363485643253389,17550,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.1,14629,cross_test,0.9092877492877492,0.9092876314804348,17550,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.25,36583,matched_dev,0.95872077865647,0.9587206988481671,11507,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.25,36583,matched_test,0.9366381766381766,0.9366340282580363,17550,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.25,36583,cross_test,0.9097435897435897,0.9097407753197009,17550,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.5,73177,matched_dev,0.9586338750325889,0.9586337847467985,11507,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.5,73177,matched_test,0.9372079772079772,0.9372036312452126,17550,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,0.5,73177,cross_test,0.9107122507122507,0.9107111001123573,17550,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,1.0,146359,matched_dev,0.9576779351698966,0.9576778073189567,11507,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,1.0,146359,matched_test,0.9374928774928775,0.9374883716182119,17550,100.0,1337
+exp61,EXP6.1 one_bit supervised reference,one_bit,three_task_reference,1.0,146359,cross_test,0.9107122507122507,0.9107115546738834,17550,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.1,14629,matched_dev,0.9695837316416095,0.9695834814843234,11507,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.1,14629,matched_test,0.9528774928774929,0.9528732256439152,17550,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.1,14629,cross_test,0.7993162393162393,0.7990302878368285,17550,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.25,36583,matched_dev,0.9688015990266794,0.9688014397482287,11507,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.25,36583,matched_test,0.9532193732193732,0.9532147213118081,17550,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.25,36583,cross_test,0.8012535612535613,0.8006841930931985,17550,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.5,73177,matched_dev,0.9689754062744417,0.9689751953983528,11507,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.5,73177,matched_test,0.9533333333333334,0.9533286927580644,17550,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,0.5,73177,cross_test,0.8020512820512821,0.8015591294927815,17550,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,1.0,146359,matched_dev,0.9689754062744417,0.9689751663440891,11507,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,1.0,146359,matched_test,0.9532763532763533,0.9532706432380545,17550,100.0,1337
+exp61,EXP6.1 sixteen_bit supervised reference,sixteen_bit,three_task_reference,1.0,146359,cross_test,0.8026210826210827,0.8021280926200353,17550,100.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.1,14629,matched_dev,0.9393412705309812,0.9393275566787771,11507,100.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.1,14629,matched_test,0.9150997150997151,0.9150752293915501,17550,100.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.1,14629,cross_test,0.7148717948717949,0.6949208247348934,17550,100.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.25,36583,matched_dev,0.940731728513079,0.9407198336240018,11507,10.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.25,36583,matched_test,0.9163532763532763,0.916332282446138,17550,10.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.25,36583,cross_test,0.653960113960114,0.6105218680603601,17550,10.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.5,73177,matched_dev,0.9402972103936734,0.9402862355227447,11507,100.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.5,73177,matched_test,0.9172649572649573,0.9172470731054916,17550,100.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,0.5,73177,cross_test,0.659031339031339,0.6180925352180859,17550,100.0,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,1.0,146359,matched_dev,0.9402972103936734,0.9402873324697429,11507,0.0001,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,1.0,146359,matched_test,0.9177207977207977,0.9177032868324311,17550,0.0001,1337
+random,Random encoder / one_bit input,one_bit,random_encoder,1.0,146359,cross_test,0.6356125356125356,0.5836695092297892,17550,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.1,14629,matched_dev,0.9495089945250716,0.9495059056426304,11507,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.1,14629,matched_test,0.9336752136752137,0.9336640176306767,17550,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.1,14629,cross_test,0.734985754985755,0.7348821110871304,17550,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.25,36583,matched_dev,0.9504649343877639,0.9504612675554237,11507,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.25,36583,matched_test,0.9335042735042735,0.9334904515070837,17550,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.25,36583,cross_test,0.7445584045584046,0.7445584037290554,17550,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.5,73177,matched_dev,0.9504649343877639,0.9504619709588733,11507,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.5,73177,matched_test,0.9338461538461539,0.9338334686649985,17550,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,0.5,73177,cross_test,0.7405698005698006,0.7405263904818147,17550,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,1.0,146359,matched_dev,0.9508125488832885,0.9508091960890264,11507,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,1.0,146359,matched_test,0.9339601139601139,0.9339463867152613,17550,0.0001,1337
+random,Random encoder / sixteen_bit input,sixteen_bit,random_encoder,1.0,146359,cross_test,0.7414814814814815,0.7414277450622435,17550,0.0001,1337

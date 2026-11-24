@@ -1,0 +1,14 @@
+{
+  "comparison_with_exp61": "deferred_until_exp61_results_are_imported",
+  "condition": "hierarchical_lid_dialect",
+  "figures": [
+    "figure_01_matched_1bit_vs_16bit.png",
+    "figure_02_cross_precision_delta.png"
+  ],
+  "status": "complete",
+  "tables": [
+    "table_01_matched_and_cross_precision.csv",
+    "table_02_per_language_dialect.csv",
+    "table_03_parameter_count.csv"
+  ]
+}

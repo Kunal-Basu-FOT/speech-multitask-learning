@@ -1,0 +1,17 @@
+{
+  "domain": "one_bit",
+  "duration": "3s",
+  "embedding_dimension": 192,
+  "epochs": 40,
+  "experiment": "EXP6.9",
+  "feature_dimension": 80,
+  "max_batch_frames": 12000,
+  "max_batch_size": 32,
+  "model": "80-bin log-Mel -> Linear(80,768) -> EXP6.1 compact ECAPA-TDNN",
+  "number_of_buckets": 40,
+  "one_bit_quantizer": "+1 if x>0 else -1",
+  "projected_dimension": 768,
+  "seed": 1337,
+  "steps_per_epoch": 4600,
+  "train_index_sha256": "840c379e83926207d10da124d7df4d5fb6f72b886bcd93308ae2fc6f7dc5ce3d"
+}

@@ -1,0 +1,93 @@
+{
+  "checks": [
+    {
+      "check": "cache_complete",
+      "path": "/data/Kunal/shared_cache/exp69_waveform_logmel80/CACHE_COMPLETE.json"
+    },
+    {
+      "check": "condition_complete",
+      "domain": "one_bit",
+      "duration": "3s",
+      "history_rows": 40
+    },
+    {
+      "check": "condition_complete",
+      "domain": "one_bit",
+      "duration": "7s",
+      "history_rows": 40
+    },
+    {
+      "check": "condition_complete",
+      "domain": "one_bit",
+      "duration": "9s",
+      "history_rows": 40
+    },
+    {
+      "check": "condition_complete",
+      "domain": "one_bit",
+      "duration": "full",
+      "history_rows": 40
+    },
+    {
+      "check": "condition_complete",
+      "domain": "sixteen_bit",
+      "duration": "3s",
+      "history_rows": 40
+    },
+    {
+      "check": "condition_complete",
+      "domain": "sixteen_bit",
+      "duration": "7s",
+      "history_rows": 40
+    },
+    {
+      "check": "condition_complete",
+      "domain": "sixteen_bit",
+      "duration": "9s",
+      "history_rows": 40
+    },
+    {
+      "check": "condition_complete",
+      "domain": "sixteen_bit",
+      "duration": "full",
+      "history_rows": 40
+    }
+  ],
+  "conditions": 8,
+  "created_utc": "2026-08-07T22:18:44.254201+00:00",
+  "experiment": "EXP6.9",
+  "report": {
+    "analysis": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/RESULTS_INTERPRETATION.md",
+    "created_utc": "2026-08-07T22:18:39.730236+00:00",
+    "figure_count": 8,
+    "figures": {
+      "figure_01_duration_frontend_ablation": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/figures/figure_01_duration_frontend_ablation.png",
+      "figure_02_one_bit_duration_transfer": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/figures/figure_02_one_bit_duration_transfer.png",
+      "figure_03_sixteen_bit_duration_transfer": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/figures/figure_03_sixteen_bit_duration_transfer.png",
+      "figure_04_full_frontend_gain": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/figures/figure_04_full_frontend_gain.png",
+      "figure_05_cross_precision": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/figures/figure_05_cross_precision.png",
+      "figure_06_training_runtime": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/figures/figure_06_training_runtime.png",
+      "figure_07_one_bit_full_confusions": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/figures/figure_07_one_bit_full_confusions.png",
+      "figure_08_sixteen_bit_full_confusions": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/figures/figure_08_sixteen_bit_full_confusions.png"
+    },
+    "status": "REPORT_COMPLETE",
+    "table_count": 8,
+    "tables": {
+      "table_01_experimental_configuration": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/tables/table_01_experimental_configuration.csv",
+      "table_02_matched_duration_results": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/tables/table_02_matched_duration_results.csv",
+      "table_03_full_frontend_comparison": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/tables/table_03_full_frontend_comparison.csv",
+      "table_04_indicwav2vec2_gain": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/tables/table_04_indicwav2vec2_gain.csv",
+      "table_05_cross_precision": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/tables/table_05_cross_precision.csv",
+      "table_06_duration_transfer": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/tables/table_06_duration_transfer.csv",
+      "table_07_runtime": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/tables/table_07_runtime.csv",
+      "table_08_paired_speaker_bootstrap": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/reports/exp69/tables/table_08_paired_speaker_bootstrap.csv"
+    }
+  },
+  "rng_safety": {
+    "evaluation_restores_rng": false,
+    "rng_tensor_conversion": "cpu uint8 before torch.set_rng_state",
+    "training_loads_map_location": "cpu"
+  },
+  "status": "EXPERIMENT_COMPLETE",
+  "training_epochs_per_condition": 40
+}

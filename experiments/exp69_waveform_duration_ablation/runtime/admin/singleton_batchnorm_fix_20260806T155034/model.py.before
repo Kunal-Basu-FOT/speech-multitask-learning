@@ -1,0 +1,85 @@
+from __future__ import annotations
+
+from typing import Iterable
+
+import torch
+from torch import nn
+
+
+class LogMelProjectedMultitaskECAPA(nn.Module):
+    """80-bin log-Mel front end projected into the frozen EXP 6.1 ECAPA shape."""
+
+    def __init__(self, feature_dimension: int = 80, projected_dimension: int = 768) -> None:
+        super().__init__()
+        if feature_dimension != 80:
+            raise ValueError(f"EXP 6.9 expects 80 log-Mel bins, got {feature_dimension}")
+        if projected_dimension != 768:
+            raise ValueError(f"EXP 6.9 expects projection dimension 768, got {projected_dimension}")
+
+        # Imported lazily so package unit tests can run without SpeechBrain.
+        from speech_mtl.common.models.factory import build_exp61_model
+
+        self.frontend_projection = nn.Linear(feature_dimension, projected_dimension)
+        nn.init.xavier_uniform_(self.frontend_projection.weight)
+        nn.init.zeros_(self.frontend_projection.bias)
+        self.base = build_exp61_model()
+
+    def forward(
+        self,
+        *,
+        features: torch.Tensor,
+        relative_lengths: torch.Tensor,
+        oracle_languages: list[str],
+        valid_mask: torch.Tensor,
+    ):
+        if features.ndim != 3 or features.shape[-1] != 80:
+            raise ValueError(f"Expected [B,T,80] log-Mel features, received {tuple(features.shape)}")
+        projected = self.frontend_projection(features)
+        projected = projected.masked_fill(~valid_mask.unsqueeze(-1), 0.0)
+        return self.base(
+            features=projected,
+            relative_lengths=relative_lengths,
+            oracle_languages=oracle_languages,
+            valid_mask=valid_mask,
+        )
+
+    def encoder_parameters(self) -> list[nn.Parameter]:
+        values = list(self.frontend_projection.parameters())
+        values.extend(list(self.base.encoder_parameters()))
+        return values
+
+    def task_parameters(self) -> list[nn.Parameter]:
+        encoder_ids = {id(parameter) for parameter in self.encoder_parameters()}
+        values = [parameter for parameter in self.parameters() if id(parameter) not in encoder_ids]
+        if not values:
+            raise RuntimeError("No task parameters were identified")
+        return values
+
+    def set_encoder_trainable(self, trainable: bool) -> None:
+        for parameter in self.frontend_projection.parameters():
+            parameter.requires_grad_(trainable)
+        self.base.set_encoder_trainable(trainable)
+        if trainable:
+            self.frontend_projection.train()
+            self.base.encoder.train()
+        else:
+            self.frontend_projection.eval()
+            self.base.encoder.eval()
+
+    @property
+    def embedding_dimension(self) -> int:
+        return int(self.base.embedding_dimension)
+
+
+def parameter_report(model: LogMelProjectedMultitaskECAPA) -> dict[str, int]:
+    encoder_ids = {id(value) for value in model.encoder_parameters()}
+    total = sum(parameter.numel() for parameter in model.parameters())
+    encoder = sum(parameter.numel() for parameter in model.parameters() if id(parameter) in encoder_ids)
+    tasks = total - encoder
+    projection = sum(parameter.numel() for parameter in model.frontend_projection.parameters())
+    return {
+        "total": int(total),
+        "encoder_including_projection": int(encoder),
+        "task_parameters": int(tasks),
+        "frontend_projection": int(projection),
+    }

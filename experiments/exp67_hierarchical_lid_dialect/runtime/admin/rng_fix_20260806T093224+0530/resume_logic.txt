@@ -1,0 +1,58 @@
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:46:            history=root / "history.csv",
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:166:    resume: bool = True,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:170:    complete_path = paths.root / "TRAINING_COMPLETE.json"
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:172:    if resume and complete_path.is_file() and best_path.is_file():
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:214:    total_amp_skips = 0
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:216:    last_path = paths.checkpoints / "last.pt"
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:217:    if resume and last_path.is_file():
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:227:        total_amp_skips = int(checkpoint.get("total_amp_skips", 0))
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:233:        "encoder_lr", "task_lr", "amp_skips_epoch", "amp_skips_total",
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:255:        skips_epoch = 0
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:256:        consecutive_skips = 0
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:295:                skips_epoch += 1
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:296:                total_amp_skips += 1
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:297:                consecutive_skips += 1
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:301:                    f"scale={old_scale}->{new_scale} total_skips={total_amp_skips}",
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:304:                if skips_epoch > cfg.training.max_amp_skips_per_epoch:
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:305:                    raise RuntimeError("Exceeded maximum AMP skips in one epoch")
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:306:                if consecutive_skips > cfg.training.max_consecutive_amp_skips:
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:307:                    raise RuntimeError("Exceeded maximum consecutive AMP skips")
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:313:            consecutive_skips = 0
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:321:                amp_skip=skips_epoch,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:333:                        "amp_skips_epoch": skips_epoch,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:334:                        "amp_skips_total": total_amp_skips,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:358:            "total_amp_skips": total_amp_skips,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:384:            "amp_skips_epoch": skips_epoch,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:385:            "amp_skips_total": total_amp_skips,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:403:                "amp_skips_total": total_amp_skips,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:409:    complete = paths.root / "TRAINING_COMPLETE.json"
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/config.py:61:    max_amp_skips_per_epoch: int
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/config.py:62:    max_consecutive_amp_skips: int
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:46:            history=root / "history.csv",
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:166:    resume: bool = True,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:170:    complete_path = paths.root / "TRAINING_COMPLETE.json"
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:172:    if resume and complete_path.is_file() and best_path.is_file():
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:214:    total_amp_skips = 0
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:216:    last_path = paths.checkpoints / "last.pt"
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:217:    if resume and last_path.is_file():
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:227:        total_amp_skips = int(checkpoint.get("total_amp_skips", 0))
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:233:        "encoder_lr", "task_lr", "amp_skips_epoch", "amp_skips_total",
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:255:        skips_epoch = 0
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:256:        consecutive_skips = 0
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:295:                skips_epoch += 1
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:296:                total_amp_skips += 1
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:297:                consecutive_skips += 1
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:301:                    f"scale={old_scale}->{new_scale} total_skips={total_amp_skips}",
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:304:                if skips_epoch > cfg.training.max_amp_skips_per_epoch:
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:305:                    raise RuntimeError("Exceeded maximum AMP skips in one epoch")
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:306:                if consecutive_skips > cfg.training.max_consecutive_amp_skips:
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:307:                    raise RuntimeError("Exceeded maximum consecutive AMP skips")
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:313:            consecutive_skips = 0
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:321:                amp_skip=skips_epoch,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:333:                        "amp_skips_epoch": skips_epoch,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:334:                        "amp_skips_total": total_amp_skips,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:358:            "total_amp_skips": total_amp_skips,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:384:            "amp_skips_epoch": skips_epoch,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:385:            "amp_skips_total": total_amp_skips,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:403:                "amp_skips_total": total_amp_skips,
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/src/speech_mtl/exp67/train.py:409:    complete = paths.root / "TRAINING_COMPLETE.json"

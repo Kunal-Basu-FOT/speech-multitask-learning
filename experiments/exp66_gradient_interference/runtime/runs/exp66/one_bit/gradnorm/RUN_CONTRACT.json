@@ -1,0 +1,164 @@
+{
+  "active_tasks": [
+    "lid",
+    "dialect",
+    "gender"
+  ],
+  "condition": "gradnorm",
+  "config": {
+    "data": {
+      "max_batch_frames": 12000,
+      "max_batch_size": 32,
+      "num_workers": 8,
+      "number_of_buckets": 40,
+      "persistent_workers": true,
+      "pin_memory": true,
+      "prefetch_factor": 2
+    },
+    "model": {
+      "attention_channels": 128,
+      "channels": [
+        480,
+        480,
+        480,
+        480,
+        1440
+      ],
+      "dilations": [
+        1,
+        2,
+        3,
+        4,
+        1
+      ],
+      "dropout": 0.1,
+      "embedding_dim": 192,
+      "global_context": true,
+      "groups": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "head_dropout": 0.1,
+      "head_hidden": 256,
+      "input_dim": 768,
+      "kernels": [
+        5,
+        3,
+        3,
+        3,
+        1
+      ],
+      "res2net_scale": 8,
+      "se_channels": 128
+    },
+    "paths": {
+      "cache_root": "/data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16",
+      "project_root": "/data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer",
+      "report_root": "/data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/reports/exp66",
+      "results_root": "/data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/results/exp66",
+      "run_root": "/data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/runtime/runs/exp66"
+    },
+    "training": {
+      "amp": true,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "cosine_min_lr": 5e-06,
+      "epochs": 40,
+      "eps": 1e-08,
+      "grad_clip_norm": 1.0,
+      "gradient_diagnostic_interval": 50,
+      "gradnorm_alpha": 1.5,
+      "gradnorm_weight_lr": 0.025,
+      "max_amp_skips_per_epoch": 100,
+      "max_consecutive_amp_skips": 20,
+      "peak_lr": 0.0001,
+      "phase1_epochs": 5,
+      "phase2_epochs": 30,
+      "phase3_epochs": 5,
+      "phase3_task_lr": 2e-05,
+      "progress_every_batches": 50,
+      "seed": 1337,
+      "warmup_start_lr": 1e-05,
+      "weight_decay": 0.0001
+    }
+  },
+  "contract_sha256": "b802a0a618113d91c9c82268ebd19606b55c0b8d0c921701a03081d7ca11c641",
+  "domain": "one_bit",
+  "experiment": "exp66",
+  "gradient_diagnostic_interval": 50,
+  "gradient_diagnostic_scope": "shared_input_norm_and_full_ecapa_encoder",
+  "gradnorm_scope": "task_weights_from_shared_embedding_gradient_norms",
+  "labels": {
+    "dialect_values_by_language": {
+      "bh": [
+        "0",
+        "1",
+        "2"
+      ],
+      "bn": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "ch": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "kn": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mg": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "mr": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "mt": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "te": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "gender_values": [
+      "0",
+      "1"
+    ],
+    "languages": [
+      "bh",
+      "bn",
+      "ch",
+      "kn",
+      "mg",
+      "mr",
+      "mt",
+      "te"
+    ]
+  },
+  "pcgrad_scope": "shared_encoder_parameters_only"
+}

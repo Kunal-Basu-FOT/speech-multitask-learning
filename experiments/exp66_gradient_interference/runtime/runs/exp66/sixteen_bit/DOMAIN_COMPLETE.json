@@ -1,0 +1,12 @@
+{
+  "conditions": [
+    "standard_logged",
+    "pcgrad",
+    "gradnorm"
+  ],
+  "domain": "sixteen_bit",
+  "matched_and_cross_precision_complete": true,
+  "report_root": "/data/Kunal/FORMAL_EXP6_6_GradientInterference_IndicWav2Vec_FinalLayer/reports/exp66/sixteen_bit",
+  "status": "complete",
+  "timestamp": 1786133376.9882822
+}

@@ -1,0 +1,60 @@
+parameter,value
+experiment.name,EXP6.1_ECAPA_Multitask_Quantized_Speech
+experiment.model_id,ecapa_7p2m
+experiment.tasks,"language, oracle_language_conditioned_dialect, gender"
+experiment.domains,"one_bit, sixteen_bit"
+paths.project_root,/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK
+paths.cache_root,/data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16
+paths.run_root,/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61
+paths.results_root,/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/results/ecapa_7p2m/exp61
+paths.report_root,/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61
+runtime.host,wtc9-server
+runtime.physical_gpu,1
+runtime.process_device,cuda:0
+runtime.cpu_fallback,False
+runtime.seed,1337
+model.architecture,SpeechBrain_ECAPA_TDNN
+model.feature_dimension,768
+model.feature_layer_zero_based,11
+model.full_utterance,True
+model.embedding_dimension,192
+model.ecapa_parameters,7212660
+model.total_parameters,7723170
+model.language_classes,8
+model.gender_classes,2
+model.dialect_classes,33
+model.dialect_heads,8
+data.expected_split_counts.train,146359
+data.expected_split_counts.dev,11507
+data.expected_split_counts.test,17550
+data.max_batch_frames,12000
+data.max_batch_size,32
+data.number_of_buckets,40
+data.num_workers,8
+data.pin_memory,True
+data.persistent_workers,True
+data.prefetch_factor,2
+data.crop_or_truncate,False
+training.total_epochs,40
+training.phases.phase1,"1, 5"
+training.phases.phase2,"6, 35"
+training.phases.phase3,"36, 40"
+training.gradient_accumulation_steps,1
+training.maximum_gradient_norm,1.0
+training.amp_enabled,True
+training.progress_interval_batches,50
+training.checkpoint_boundary,epoch
+optimizer.name,AdamW
+optimizer.peak_learning_rate,0.0001
+optimizer.weight_decay,0.0001
+optimizer.beta1,0.9
+optimizer.beta2,0.999
+optimizer.epsilon,1e-08
+scheduler.warmup_start_learning_rate,1e-05
+scheduler.cosine_minimum_learning_rate,5e-06
+scheduler.heads_only_learning_rate,2e-05
+selection.metric,three_task_mean_macro_f1
+selection.components,"language_macro_f1, dialect_language_macro_f1, gender_macro_f1"
+evaluation.dialect_routing,ground_truth_language
+evaluation.matched_conditions,"one_bit_to_one_bit, sixteen_bit_to_sixteen_bit"
+evaluation.cross_conditions,"one_bit_to_sixteen_bit, sixteen_bit_to_one_bit"

@@ -1,0 +1,11 @@
+family,model_domain,condition,source,dialect,gender,lid
+exp61,one_bit,three_task_reference,EXP6.1 one_bit supervised reference,0.45235541587208256,0.9374883716182119,0.5635627889140489
+exp61,sixteen_bit,three_task_reference,EXP6.1 sixteen_bit supervised reference,0.6180413554500126,0.9532706432380545,0.8791317445888907
+exp62,one_bit,dialect_only,EXP6.2 one_bit dialect_only,0.4640965081269009,0.9129147669502597,0.4340050612997445
+exp62,one_bit,lid_dialect,EXP6.2 one_bit lid_dialect,0.46350690783763715,0.9177990070983023,0.5912051494342045
+exp62,one_bit,lid_only,EXP6.2 one_bit lid_only,0.39200793390495253,0.9107857511763564,0.603622513719273
+exp62,sixteen_bit,dialect_only,EXP6.2 sixteen_bit dialect_only,0.6150242845665019,0.917648799653989,0.7000788656883126
+exp62,sixteen_bit,lid_dialect,EXP6.2 sixteen_bit lid_dialect,0.6396956338709205,0.8751319613504112,0.8863585029979699
+exp62,sixteen_bit,lid_only,EXP6.2 sixteen_bit lid_only,0.4818019279087805,0.8166377741970776,0.8905206806734333
+random,one_bit,random_encoder,Random encoder / one_bit input,0.3464290732277285,0.9177032868324311,0.2804352128255791
+random,sixteen_bit,random_encoder,Random encoder / sixteen_bit input,0.40236657694275835,0.9339463867152613,0.49001683541617536

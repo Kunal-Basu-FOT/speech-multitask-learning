@@ -1,0 +1,22 @@
+{
+  "amp_skips_total": 107,
+  "best_checkpoint": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/runtime/runs/exp69/one_bit/7s/checkpoints/best.pt",
+  "best_dev_metric": 0.5733712228554264,
+  "best_epoch": 38,
+  "created_utc": "2026-08-06T15:47:15.899762+00:00",
+  "dev_examples": 11507,
+  "domain": "one_bit",
+  "duration": "7s",
+  "epochs": 40,
+  "history": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/runtime/runs/exp69/one_bit/7s/history.csv",
+  "last_checkpoint": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/runtime/runs/exp69/one_bit/7s/checkpoints/last.pt",
+  "model_parameters": {
+    "encoder_including_projection": 7276404,
+    "frontend_projection": 62208,
+    "task_parameters": 508974,
+    "total": 7785378
+  },
+  "optimizer_steps": 272813,
+  "status": "TRAINING_COMPLETE",
+  "train_examples": 146359
+}

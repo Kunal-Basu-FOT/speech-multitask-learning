@@ -1,0 +1,44 @@
+project:
+  name: FORMAL_EXP6_ECAPA_MULTITASK
+  experiment_id: exp61
+  description: >
+    Multitask classification of language, oracle language-conditioned
+    dialect, and gender using full-length cached IndicWav2Vec final-layer
+    feature sequences followed by a compact ECAPA-TDNN.
+
+  repository_root: /data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK
+
+  canonical_workspace: /data/Kunal
+  canonical_machine: wtc9
+
+  seed: 1337
+
+runtime:
+  physical_gpu_index: 1
+
+  # CUDA_VISIBLE_DEVICES=1 will expose physical GPU1 as cuda:0.
+  process_device: cuda:0
+
+  python_executable: /data/Kunal/env_speech_mtl/bin/python
+
+  use_cuda: true
+  allow_cpu_fallback: false
+
+  torch_num_threads: 8
+  interop_threads: 2
+
+  cudnn_benchmark: true
+  deterministic_algorithms: false
+
+  visible_progress: true
+  use_tqdm: true
+  tqdm_leave_epoch_bar: true
+  tqdm_dynamic_ncols: true
+
+provenance:
+  record_environment: true
+  record_git_commit: true
+  record_run_command: true
+  record_resolved_config: true
+  record_parameter_counts: true
+  record_gpu_information: true

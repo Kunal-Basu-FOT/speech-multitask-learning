@@ -1,0 +1,5 @@
+run,examples,elapsed_seconds,examples_per_second
+one_bit_to_one_bit_test,17550,18.380801436956972,954.8005869163823
+one_bit_to_sixteen_bit_test,17550,12.712386299972422,1380.5433209686266
+sixteen_bit_to_sixteen_bit_test,17550,13.096716040046886,1340.030580668921
+sixteen_bit_to_one_bit_test,17550,12.862349641975015,1364.447436783035

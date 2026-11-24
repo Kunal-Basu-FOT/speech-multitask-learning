@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "parameter_total": 7723170,
+  "phase_boundaries": {
+    "1": "phase1_warmup_joint",
+    "5": "phase1_warmup_joint",
+    "6": "phase2_full_joint",
+    "35": "phase2_full_joint",
+    "36": "phase3_heads_only",
+    "40": "phase3_heads_only"
+  },
+  "initial_learning_rates": {
+    "encoder": 1e-05,
+    "tasks": 1e-05
+  },
+  "learning_rates_after_one_step": {
+    "encoder": 1.642857142857143e-05,
+    "tasks": 1.642857142857143e-05
+  },
+  "phase3_learning_rates": {
+    "encoder": 0.0,
+    "tasks": 2e-05
+  },
+  "losses": {
+    "language": 2.059760570526123,
+    "dialect": 1.4105925559997559,
+    "gender": 0.756628155708313
+  },
+  "weighted_total_loss": 4.226981163024902,
+  "gradient_norm": 42.372642517089844,
+  "checkpoint_roundtrip": "PASS",
+  "phase3_freeze": "PASS"
+}

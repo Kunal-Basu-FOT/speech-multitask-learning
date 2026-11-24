@@ -1,0 +1,102 @@
+{
+  "experiment": "EXP 6.2 reduced LID-dialect task grouping",
+  "figures": [
+    {
+      "bytes": 93262,
+      "path": "reports/exp62_reduced/figures/figure_01_one_bit_matched_macro_f1.png",
+      "sha256": "d1499809863cb2092fa72f479a442d9a398d95a7845bcc14d4344f2c0d2d987f"
+    },
+    {
+      "bytes": 92918,
+      "path": "reports/exp62_reduced/figures/figure_02_sixteen_bit_matched_macro_f1.png",
+      "sha256": "544615b231299943f9c4908ed1130bbf51718df3837cf95583727746bb69dee3"
+    },
+    {
+      "bytes": 106881,
+      "path": "reports/exp62_reduced/figures/figure_03_one_bit_affinity_heatmap.png",
+      "sha256": "7d0207895521ada7cfa508bc790832230757d54aacba349fc082e498f00877f1"
+    },
+    {
+      "bytes": 107502,
+      "path": "reports/exp62_reduced/figures/figure_04_sixteen_bit_affinity_heatmap.png",
+      "sha256": "b4f89ea33f28d50198b203dea211f8d978df698c3c056136b95c9320c7146f06"
+    },
+    {
+      "bytes": 161382,
+      "path": "reports/exp62_reduced/figures/figure_05_cross_precision_transfer.png",
+      "sha256": "0d30fdb009a24178cc98cf0de553f428599ee099f2749768501fc8e262ad85f5"
+    }
+  ],
+  "generated_at_utc": "2026-08-06T07:23:38.690074+00:00",
+  "report_root": "reports/exp62_reduced",
+  "scientific_notes": [
+    "This is the reduced six-condition LID-dialect study.",
+    "Directional macro-F1 affinity is the primary transfer measure.",
+    "Directional accuracy affinity is the secondary measure.",
+    "Matched and cross-precision results are kept separate.",
+    "No model was retrained during report generation."
+  ],
+  "scope": {
+    "conditions": [
+      "lid_only",
+      "dialect_only",
+      "lid_dialect"
+    ],
+    "cross_precision_cells": 6,
+    "domains": [
+      "one_bit",
+      "sixteen_bit"
+    ],
+    "evaluation_cells": 12,
+    "matched_cells": 6,
+    "tasks": [
+      "language",
+      "dialect"
+    ],
+    "training_conditions": 6
+  },
+  "source_completion_marker": "runtime/runs/exp62_reduced/EXPERIMENT_COMPLETE.json",
+  "status": "REPORT_COMPLETE",
+  "summary": {
+    "readme": "reports/exp62_reduced/README_RESULTS.md",
+    "readme_sha256": "88f0375fb0a61815487c4362a2fcc2dc928c91a972236b5cf0792eb67812af18"
+  },
+  "tables": [
+    {
+      "bytes": 971,
+      "path": "reports/exp62_reduced/tables/table_01_condition_configuration.csv",
+      "rows": 6,
+      "sha256": "0e184524e257f21ba471b3cf839c2e7313698bfbd56142f5cf3f05bd2a4b039d"
+    },
+    {
+      "bytes": 2200,
+      "path": "reports/exp62_reduced/tables/table_02_matched_results.csv",
+      "rows": 6,
+      "sha256": "ee5060d6516a8903af3f1116a94ba8d1798d60b4ad4f4625786bd32867a75a82"
+    },
+    {
+      "bytes": 527,
+      "path": "reports/exp62_reduced/tables/table_03_directional_macro_f1_affinity.csv",
+      "rows": 4,
+      "sha256": "68c6c9c5c461e7940e1914cbc1c4444f6d9373b904246ade0701407f34886d0b"
+    },
+    {
+      "bytes": 524,
+      "path": "reports/exp62_reduced/tables/table_04_directional_accuracy_affinity.csv",
+      "rows": 4,
+      "sha256": "eafe83ad318ee7f4d457a071ed4f1a5a29ad134daa9659697681e233cd865839"
+    },
+    {
+      "bytes": 2206,
+      "path": "reports/exp62_reduced/tables/table_05_cross_precision_results.csv",
+      "rows": 6,
+      "sha256": "475ac8d4578dc9cbfdefe0c277810925e295f21b537f5758e4e8088a9e474470"
+    },
+    {
+      "bytes": 7250,
+      "path": "reports/exp62_reduced/tables/table_06_per_language_dialect.csv",
+      "rows": 64,
+      "sha256": "1f34598518bdd22826c99cdcd2ce0c915deaf55b58056e07dfd27166cb9e9b9e"
+    }
+  ]
+}

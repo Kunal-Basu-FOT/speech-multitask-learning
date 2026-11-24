@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-08-05T19:58:58.399400+00:00",
+  "one_bit_training": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61/one_bit/TRAINING_COMPLETE.json",
+  "report": {
+    "appendix_figures": 2,
+    "artifacts": {
+      "appendix_a_one_to_sixteen_confusion": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/appendix_a_one_to_sixteen_confusion.png",
+      "appendix_b_sixteen_to_one_confusion": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/appendix_b_sixteen_to_one_confusion.png",
+      "figure_01_one_bit_loss": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/figure_01_one_bit_loss.png",
+      "figure_02_one_bit_accuracy": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/figure_02_one_bit_accuracy.png",
+      "figure_03_one_bit_matched_confusion": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/figure_03_one_bit_matched_confusion.png",
+      "figure_04_sixteen_bit_loss": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/figure_04_sixteen_bit_loss.png",
+      "figure_05_sixteen_bit_accuracy": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/figure_05_sixteen_bit_accuracy.png",
+      "figure_06_sixteen_bit_matched_confusion": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/figure_06_sixteen_bit_matched_confusion.png",
+      "figure_07_cross_precision_summary": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/figures/figure_07_cross_precision_summary.png",
+      "table_01_experimental_configuration": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/tables/table_01_experimental_configuration.csv",
+      "table_02_matched_results": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/tables/table_02_matched_results.csv",
+      "table_03_per_language_dialect": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/tables/table_03_per_language_dialect.csv",
+      "table_04_cross_precision": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/tables/table_04_cross_precision.csv",
+      "table_05_runtime": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/reports/ecapa_7p2m/exp61/tables/table_05_runtime.csv"
+    },
+    "created_utc": "2026-08-05T19:58:58.391138+00:00",
+    "main_figures": 7,
+    "status": "REPORT_COMPLETE",
+    "tables": 5
+  },
+  "sixteen_bit_training": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61/sixteen_bit/TRAINING_COMPLETE.json",
+  "status": "EXPERIMENT_COMPLETE"
+}

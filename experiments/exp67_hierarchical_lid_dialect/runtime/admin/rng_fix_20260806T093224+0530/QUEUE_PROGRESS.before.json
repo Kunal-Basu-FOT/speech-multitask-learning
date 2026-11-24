@@ -1,0 +1,10 @@
+{
+  "condition": "hierarchical_lid_dialect",
+  "domain": "one_bit",
+  "includes_cross_precision_evaluation": true,
+  "includes_matched_evaluation": true,
+  "index": 1,
+  "status": "running",
+  "timestamp": 1785945512.1696577,
+  "total": 2
+}

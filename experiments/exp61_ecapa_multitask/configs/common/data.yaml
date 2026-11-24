@@ -1,0 +1,158 @@
+data:
+  dataset_name: RESPIN
+  dataset_scope: eight_language_unique_sentence
+
+  manifests:
+    train: /data/Kunal/manifests/respin_unique_sentence_train.csv
+    dev: /data/Kunal/manifests/respin_unique_sentence_dev.csv
+    test: /data/Kunal/manifests/respin_unique_sentence_test.csv
+
+  required_manifest_columns:
+    - utt_id
+    - split
+    - language
+    - dialect
+    - dialect_local
+    - gender
+    - speaker_id
+    - duration
+    - text
+
+  optional_manifest_columns:
+    - audio_path
+    - gender_available
+
+  languages:
+    - bh
+    - bn
+    - ch
+    - kn
+    - mg
+    - mr
+    - mt
+    - te
+
+  language_names:
+    bh: Bhojpuri
+    bn: Bengali
+    ch: Chhattisgarhi
+    kn: Kannada
+    mg: Magahi
+    mr: Marathi
+    mt: Maithili
+    te: Telugu
+
+  language_to_index:
+    bh: 0
+    bn: 1
+    ch: 2
+    kn: 3
+    mg: 4
+    mr: 5
+    mt: 6
+    te: 7
+
+  gender_labels:
+    - F
+    - M
+
+  gender_to_index:
+    F: 0
+    M: 1
+
+  dialect_class_counts:
+    bh: 3
+    bn: 5
+    ch: 4
+    kn: 5
+    mg: 4
+    mr: 4
+    mt: 4
+    te: 4
+
+  dialect_local_labels:
+    bh: [D1, D2, D3]
+    bn: [D1, D2, D3, D4, D5]
+    ch: [D1, D2, D3, D4]
+    kn: [D1, D2, D3, D4, D5]
+    mg: [D1, D2, D3, D4]
+    mr: [D1, D2, D3, D4]
+    mt: [D1, D2, D3, D4]
+    te: [D1, D2, D3, D4]
+
+  tasks:
+    language:
+      enabled: true
+      number_of_classes: 8
+
+    dialect:
+      enabled: true
+      total_number_of_classes: 33
+      routing: oracle_ground_truth_language
+      number_of_language_specific_heads: 8
+      predicted_language_routing_is_primary: false
+
+    gender:
+      enabled: true
+      number_of_classes: 2
+
+manifest_validation:
+  primary_unique_key: utt_id
+
+  repeated_language_text:
+    policy: retain_and_document
+    fatal: false
+    observed_training_groups: 6
+    observed_training_rows: 12
+
+    rationale: >
+      The repeated transcript strings belong to distinct utterance IDs
+      and speakers. Some also occur under different dialect labels.
+      They are valid acoustic examples and are retained.
+
+  duplicate_utterance_id:
+    policy: reject
+    fatal: true
+
+cache:
+  root: /data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16
+
+  domains:
+    one_bit:
+      root: /data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16/one_bit
+
+    sixteen_bit:
+      root: /data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16/sixteen_bit
+
+  format:
+    discovery_mode: auto
+    storage_dtype: float16
+    load_dtype: float32
+    feature_dimension: 768
+
+    ssl_model_family: IndicWav2Vec
+    ssl_layer_zero_based: 11
+    ssl_layer_description: final_transformer_layer
+
+    sequences_are_unpadded: true
+    preserve_full_sequence: true
+    permit_temporal_cropping: false
+    permit_duration_truncation: false
+
+  compatibility_policy:
+    require_all_manifest_ids_in_cache: true
+    allow_extra_cache_ids: true
+    allow_missing_cache_ids: false
+    require_same_ids_across_precision_domains: true
+    require_same_split_across_precision_domains: true
+
+  numerical_validation:
+    require_finite_values: true
+    require_positive_frame_count: true
+    require_feature_dimension: 768
+    reject_empty_sequences: true
+
+  index_resolution:
+    use_cached_frame_count_for_batching: true
+    generate_filtered_index_view: true
+    duplicate_feature_storage: false

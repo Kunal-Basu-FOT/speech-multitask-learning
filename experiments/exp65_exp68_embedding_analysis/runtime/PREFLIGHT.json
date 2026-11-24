@@ -1,0 +1,80 @@
+{
+  "cache": [
+    {
+      "index_sha256": "89e15af1c7ce2e525f0f0d1ba9ca030131625567302f848a0be1e8fcb17340ae",
+      "rows": 146359,
+      "split": "train"
+    },
+    {
+      "index_sha256": "a03d214541f2e80f5bfcd8e94ca6fa2a6ed1e3de6e38edf14cb4af6c3f0d2367",
+      "rows": 11507,
+      "split": "dev"
+    },
+    {
+      "index_sha256": "7e6c7c18ff3297a45e6694d8ed87aa731d4a909e40f850c18ffb4336dccbea46",
+      "rows": 17550,
+      "split": "test"
+    }
+  ],
+  "created_utc": "2026-08-06T07:42:21.269311+00:00",
+  "dependencies": {
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "sklearn": "1.7.2",
+    "torch": "2.6.0+cu124",
+    "umap": "0.5.12"
+  },
+  "exp61_reference_cells": 12,
+  "exp62": [
+    {
+      "checkpoint": "/data/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/runtime/runs/exp62_reduced/one_bit/lid_only/checkpoints/best.pt",
+      "checkpoint_sha256": "525d7caac6ee2f6fbf46cf3cd51156041a9524d9c2ae2cd58d43ab54b232bab9",
+      "condition": "lid_only",
+      "domain": "one_bit",
+      "history_rows": 40
+    },
+    {
+      "checkpoint": "/data/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/runtime/runs/exp62_reduced/one_bit/dialect_only/checkpoints/best.pt",
+      "checkpoint_sha256": "b60f611c2c25dc19a20ac2cce32b8610fa5f4fd478fd955489e9441f803172e3",
+      "condition": "dialect_only",
+      "domain": "one_bit",
+      "history_rows": 40
+    },
+    {
+      "checkpoint": "/data/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/runtime/runs/exp62_reduced/one_bit/lid_dialect/checkpoints/best.pt",
+      "checkpoint_sha256": "c5489d5787be4ec6d15eb9b9d3895e9c12fd574db3214105943d79daf278be1f",
+      "condition": "lid_dialect",
+      "domain": "one_bit",
+      "history_rows": 40
+    },
+    {
+      "checkpoint": "/data/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/runtime/runs/exp62_reduced/sixteen_bit/lid_only/checkpoints/best.pt",
+      "checkpoint_sha256": "ee507b0a82245043f21bae777671c67b63d247fd28a76039f243d3cff41a4f86",
+      "condition": "lid_only",
+      "domain": "sixteen_bit",
+      "history_rows": 40
+    },
+    {
+      "checkpoint": "/data/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/runtime/runs/exp62_reduced/sixteen_bit/dialect_only/checkpoints/best.pt",
+      "checkpoint_sha256": "90f1aff59c83297e1b222a69dec91f3f8adbb2d50760fdcde0b884c6f9c07138",
+      "condition": "dialect_only",
+      "domain": "sixteen_bit",
+      "history_rows": 40
+    },
+    {
+      "checkpoint": "/data/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/runtime/runs/exp62_reduced/sixteen_bit/lid_dialect/checkpoints/best.pt",
+      "checkpoint_sha256": "a041ed492f4490affec3cd8f2ce5d200ba85356283f0e9f47c1d92f904faf355",
+      "condition": "lid_dialect",
+      "domain": "sixteen_bit",
+      "history_rows": 40
+    }
+  ],
+  "gpu": {
+    "visible_device_count": 1,
+    "visible_device_name": "NVIDIA GeForce RTX 3090"
+  },
+  "host": "wtc9-server",
+  "status": "EXP65_68_PREFLIGHT_PASS",
+  "user": "wtc9"
+}

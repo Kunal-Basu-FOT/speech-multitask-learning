@@ -1,0 +1,103 @@
+     1	from __future__ import annotations
+     2	
+     3	import random
+     4	from pathlib import Path
+     5	from typing import Any
+     6	
+     7	import numpy as np
+     8	import torch
+     9	
+    10	
+    11	def _build_encoder():
+    12	    from speech_mtl.common.models.factory import build_exp61_model
+    13	
+    14	    model = build_exp61_model()
+    15	    return model.encoder
+    16	
+    17	
+    18	def _checkpoint_state(path: Path) -> dict[str, torch.Tensor]:
+    19	    payload: Any = torch.load(path, map_location="cpu", weights_only=False)
+    20	    if not isinstance(payload, dict):
+    21	        raise RuntimeError(f"checkpoint is not a dictionary: {path}")
+    22	    state = payload.get("model", payload)
+    23	    if not isinstance(state, dict):
+    24	        raise RuntimeError(f"checkpoint model state is not a dictionary: {path}")
+    25	    return state
+    26	
+    27	
+    28	def map_encoder_state(
+    29	    checkpoint_state: dict[str, torch.Tensor],
+    30	    target_state: dict[str, torch.Tensor],
+    31	) -> dict[str, torch.Tensor]:
+    32	    mapped: dict[str, torch.Tensor] = {}
+    33	    source_keys = list(checkpoint_state)
+    34	    prefixes = ("", "encoder.", "module.encoder.", "model.encoder.", "shared_encoder.")
+    35	    for target_key, target_value in target_state.items():
+    36	        candidates = [prefix + target_key for prefix in prefixes]
+    37	        matches = [key for key in candidates if key in checkpoint_state]
+    38	        if not matches:
+    39	            suffix_matches = [key for key in source_keys if key.endswith("." + target_key) or key == target_key]
+    40	            if len(suffix_matches) == 1:
+    41	                matches = suffix_matches
+    42	        if len(matches) != 1:
+    43	            raise RuntimeError(
+    44	                f"cannot uniquely map encoder parameter {target_key}; matches={matches[:10]}"
+    45	            )
+    46	        source = checkpoint_state[matches[0]]
+    47	        if not torch.is_tensor(source):
+    48	            raise RuntimeError(f"mapped value is not a tensor: {matches[0]}")
+    49	        if tuple(source.shape) != tuple(target_value.shape):
+    50	            raise RuntimeError(
+    51	                f"shape mismatch for {target_key}: source={tuple(source.shape)} target={tuple(target_value.shape)}"
+    52	            )
+    53	        mapped[target_key] = source.detach().cpu()
+    54	    unexpected_encoder_like = [
+    55	        key for key in source_keys if ("encoder" in key or "ecapa" in key) and not any(
+    56	            key == prefix + target for prefix in prefixes for target in target_state
+    57	        )
+    58	    ]
+    59	    if len(mapped) != len(target_state):
+    60	        raise RuntimeError("encoder state mapping is incomplete")
+    61	    # Extra active-head tensors are expected; unmatched encoder-like tensors are recorded by callers.
+    62	    _ = unexpected_encoder_like
+    63	    return mapped
+    64	
+    65	
+    66	def load_frozen_encoder(checkpoint_path: Path, device: torch.device):
+    67	    encoder = _build_encoder()
+    68	    state = _checkpoint_state(checkpoint_path)
+    69	    mapped = map_encoder_state(state, encoder.state_dict())
+    70	    encoder.load_state_dict(mapped, strict=True)
+    71	    encoder.requires_grad_(False)
+    72	    encoder.eval()
+    73	    encoder.to(device)
+    74	    return encoder
+    75	
+    76	
+    77	def build_random_encoder(seed: int, device: torch.device):
+    78	    random.seed(seed)
+    79	    np.random.seed(seed)
+    80	    torch.manual_seed(seed)
+    81	    if torch.cuda.is_available():
+    82	        torch.cuda.manual_seed_all(seed)
+    83	    encoder = _build_encoder()
+    84	    encoder.requires_grad_(False)
+    85	    encoder.eval()
+    86	    encoder.to(device)
+    87	    return encoder
+    88	
+    89	
+    90	def forward_encoder(
+    91	    encoder,
+    92	    features: torch.Tensor,
+    93	    relative_lengths: torch.Tensor,
+    94	    valid_mask: torch.Tensor,
+    95	) -> torch.Tensor:
+    96	    embeddings = encoder(
+    97	        features=features,
+    98	        relative_lengths=relative_lengths,
+    99	        valid_mask=valid_mask,
+   100	    )
+   101	    if embeddings.ndim != 2:
+   102	        raise RuntimeError(f"encoder output must be [B,D], received {tuple(embeddings.shape)}")
+   103	    return embeddings

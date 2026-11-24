@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "stable_sampler_batches": 2,
+  "synthetic_examples": 8,
+  "optimizer_steps": 2,
+  "train_selection_metric": {
+    "name": "three_task_mean_macro_f1",
+    "value": 0.11868686868686867,
+    "components": {
+      "language_macro_f1": 0.08333333333333333,
+      "dialect_language_macro_f1": 0.0,
+      "gender_macro_f1": 0.2727272727272727
+    }
+  },
+  "evaluation_selection_metric": {
+    "name": "three_task_mean_macro_f1",
+    "value": 0.1111111111111111,
+    "components": {
+      "language_macro_f1": 0.0,
+      "dialect_language_macro_f1": 0.0,
+      "gender_macro_f1": 0.3333333333333333
+    }
+  },
+  "training_integration": "PASS",
+  "evaluation_integration": "PASS",
+  "prediction_export": "PASS"
+}

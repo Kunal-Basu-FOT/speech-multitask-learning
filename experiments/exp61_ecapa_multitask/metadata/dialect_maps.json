@@ -1,0 +1,222 @@
+{
+  "bh": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3"
+    ],
+    "number_of_classes": 3,
+    "label_to_index": {
+      "D1": 0,
+      "D2": 1,
+      "D3": 2
+    },
+    "index_to_label": {
+      "0": "D1",
+      "1": "D2",
+      "2": "D3"
+    },
+    "composite_labels": [
+      "bh_D1",
+      "bh_D2",
+      "bh_D3"
+    ]
+  },
+  "bn": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5"
+    ],
+    "number_of_classes": 5,
+    "label_to_index": {
+      "D1": 0,
+      "D2": 1,
+      "D3": 2,
+      "D4": 3,
+      "D5": 4
+    },
+    "index_to_label": {
+      "0": "D1",
+      "1": "D2",
+      "2": "D3",
+      "3": "D4",
+      "4": "D5"
+    },
+    "composite_labels": [
+      "bn_D1",
+      "bn_D2",
+      "bn_D3",
+      "bn_D4",
+      "bn_D5"
+    ]
+  },
+  "ch": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "number_of_classes": 4,
+    "label_to_index": {
+      "D1": 0,
+      "D2": 1,
+      "D3": 2,
+      "D4": 3
+    },
+    "index_to_label": {
+      "0": "D1",
+      "1": "D2",
+      "2": "D3",
+      "3": "D4"
+    },
+    "composite_labels": [
+      "ch_D1",
+      "ch_D2",
+      "ch_D3",
+      "ch_D4"
+    ]
+  },
+  "kn": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5"
+    ],
+    "number_of_classes": 5,
+    "label_to_index": {
+      "D1": 0,
+      "D2": 1,
+      "D3": 2,
+      "D4": 3,
+      "D5": 4
+    },
+    "index_to_label": {
+      "0": "D1",
+      "1": "D2",
+      "2": "D3",
+      "3": "D4",
+      "4": "D5"
+    },
+    "composite_labels": [
+      "kn_D1",
+      "kn_D2",
+      "kn_D3",
+      "kn_D4",
+      "kn_D5"
+    ]
+  },
+  "mg": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "number_of_classes": 4,
+    "label_to_index": {
+      "D1": 0,
+      "D2": 1,
+      "D3": 2,
+      "D4": 3
+    },
+    "index_to_label": {
+      "0": "D1",
+      "1": "D2",
+      "2": "D3",
+      "3": "D4"
+    },
+    "composite_labels": [
+      "mg_D1",
+      "mg_D2",
+      "mg_D3",
+      "mg_D4"
+    ]
+  },
+  "mr": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "number_of_classes": 4,
+    "label_to_index": {
+      "D1": 0,
+      "D2": 1,
+      "D3": 2,
+      "D4": 3
+    },
+    "index_to_label": {
+      "0": "D1",
+      "1": "D2",
+      "2": "D3",
+      "3": "D4"
+    },
+    "composite_labels": [
+      "mr_D1",
+      "mr_D2",
+      "mr_D3",
+      "mr_D4"
+    ]
+  },
+  "mt": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "number_of_classes": 4,
+    "label_to_index": {
+      "D1": 0,
+      "D2": 1,
+      "D3": 2,
+      "D4": 3
+    },
+    "index_to_label": {
+      "0": "D1",
+      "1": "D2",
+      "2": "D3",
+      "3": "D4"
+    },
+    "composite_labels": [
+      "mt_D1",
+      "mt_D2",
+      "mt_D3",
+      "mt_D4"
+    ]
+  },
+  "te": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "number_of_classes": 4,
+    "label_to_index": {
+      "D1": 0,
+      "D2": 1,
+      "D3": 2,
+      "D4": 3
+    },
+    "index_to_label": {
+      "0": "D1",
+      "1": "D2",
+      "2": "D3",
+      "3": "D4"
+    },
+    "composite_labels": [
+      "te_D1",
+      "te_D2",
+      "te_D3",
+      "te_D4"
+    ]
+  }
+}

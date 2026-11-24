@@ -1,0 +1,14 @@
+{
+  "best_checkpoint": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61/sixteen_bit/checkpoints/best.pt",
+  "best_dev_metric": 0.8169367544849385,
+  "best_epoch": 40,
+  "created_utc": "2026-08-05T19:58:08.996129+00:00",
+  "dev_examples": 11507,
+  "domain": "sixteen_bit",
+  "epochs": 40,
+  "history": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61/sixteen_bit/history.csv",
+  "last_checkpoint": "/data/Kunal/FORMAL_EXP6_ECAPA_MULTITASK/runtime/runs/ecapa_7p2m/exp61/sixteen_bit/checkpoints/last.pt",
+  "optimizer_steps": 194642,
+  "status": "TRAINING_COMPLETE",
+  "train_examples": 146359
+}

@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-08-07T17:30:50.641279+00:00",
+  "examples": 11507,
+  "metrics": "/data/Kunal/FORMAL_EXP6_9_Waveform_Duration_Ablation_ECAPA/results/exp69/sixteen_bit/9s/input_sixteen_bit/dev_9s/metrics.json",
+  "predictions": null,
+  "status": "EVALUATION_COMPLETE"
+}

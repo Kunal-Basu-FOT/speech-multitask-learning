@@ -1,0 +1,3 @@
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/runtime/runs/exp67/one_bit/hierarchical_lid_dialect/best_dev_metrics.json
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/runtime/runs/exp67/one_bit/hierarchical_lid_dialect/history.csv
+/data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/runtime/runs/exp67/one_bit/hierarchical_lid_dialect/TRAINING_COMPLETE.json

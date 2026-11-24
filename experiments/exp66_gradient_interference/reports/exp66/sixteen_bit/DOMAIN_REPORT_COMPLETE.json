@@ -1,0 +1,35 @@
+{
+  "conditions": [
+    "standard_logged",
+    "pcgrad",
+    "gradnorm"
+  ],
+  "cross_test_domain": "one_bit",
+  "domain": "sixteen_bit",
+  "figures": [
+    "figure_01_matched_macro_f1_by_method.png",
+    "figure_02_matched_vs_cross_precision.png",
+    "figure_03_gradient_conflict_rate_by_method.png",
+    "figure_04_mean_gradient_cosine_by_method.png",
+    "figure_08_development_selection_curves.png",
+    "figure_09_loss_curves.png",
+    "figure_10_gradnorm_task_weights.png",
+    "figure_11_pcgrad_projection_counts.png",
+    "figure_gradient_epochs_gradnorm.png",
+    "figure_gradient_epochs_pcgrad.png",
+    "figure_gradient_epochs_standard_logged.png"
+  ],
+  "matched_test_domain": "sixteen_bit",
+  "queue_semantics": "This domain report was generated after all three methods completed training, matched evaluation, and cross-precision evaluation, and before the next domain was allowed to start.",
+  "status": "complete",
+  "tables": [
+    "table_01_matched_and_cross_precision.csv",
+    "table_02_per_language_dialect.csv",
+    "table_03_gradient_conflict_aggregate.csv",
+    "table_04_gradient_epoch_summary.csv",
+    "table_05_training_history.csv",
+    "table_06_parameter_counts.csv",
+    "table_07_gradnorm_weights.csv",
+    "table_08_method_configuration.csv"
+  ]
+}

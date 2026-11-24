@@ -1,0 +1,7 @@
+model_domain,task,joint_condition,single_condition,joint_macro_f1,single_macro_f1,delta_joint_minus_single
+one_bit,lid,lid_dialect,lid_only,0.5912051494342045,0.603622513719273,-0.012417364285068455
+one_bit,dialect,lid_dialect,dialect_only,0.46350690783763715,0.4640965081269009,-0.0005896002892637475
+one_bit,gender,lid_dialect,"mean(lid_only,dialect_only)",0.9177990070983023,0.9118502590633081,0.0059487480349942334
+sixteen_bit,lid,lid_dialect,lid_only,0.8863585029979699,0.8905206806734333,-0.004162177675463341
+sixteen_bit,dialect,lid_dialect,dialect_only,0.6396956338709205,0.6150242845665019,0.02467134930441861
+sixteen_bit,gender,lid_dialect,"mean(lid_only,dialect_only)",0.8751319613504112,0.8671432869255333,0.007988674424877829

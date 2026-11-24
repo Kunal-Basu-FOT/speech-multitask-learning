@@ -1,0 +1,50 @@
+paths:
+  project_root: /data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer
+  cache_root: /data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16
+  run_root: /data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/runtime/runs/exp67
+  results_root: /data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/results/exp67
+  report_root: /data/Kunal/FORMAL_EXP6_7_Hierarchical_LID_Dialect_IndicWav2Vec_FinalLayer/reports/exp67
+
+data:
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 2
+  max_batch_frames: 12000
+  max_batch_size: 32
+  number_of_buckets: 40
+
+model:
+  input_dim: 768
+  embedding_dim: 192
+  head_hidden: 256
+  head_dropout: 0.1
+  dropout: 0.1
+  channels: [480, 480, 480, 480, 1440]
+  kernels: [5, 3, 3, 3, 1]
+  dilations: [1, 2, 3, 4, 1]
+  groups: [1, 1, 1, 1, 1]
+  attention_channels: 128
+  res2net_scale: 8
+  se_channels: 128
+  global_context: true
+  lid_probability_temperature: 1.0
+
+training:
+  seed: 1337
+  epochs: 40
+  phase1_epochs: 5
+  phase2_epochs: 30
+  phase3_epochs: 5
+  warmup_start_lr: 0.00001
+  peak_lr: 0.0001
+  cosine_min_lr: 0.000005
+  phase3_task_lr: 0.00002
+  weight_decay: 0.0001
+  grad_clip_norm: 1.0
+  amp: true
+  max_amp_skips_per_epoch: 100
+  max_consecutive_amp_skips: 20
+  betas: [0.9, 0.999]
+  eps: 0.00000001
+  progress_every_batches: 50

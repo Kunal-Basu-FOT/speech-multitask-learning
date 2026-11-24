@@ -1,0 +1,330 @@
+{
+  "status": "PASS",
+  "cache_root": "/data/Kunal/shared_cache/exp61_indicwav2vec_final_layer_fp16",
+  "splits": {
+    "train": {
+      "domains": {
+        "one_bit": {
+          "rows": 146359,
+          "frames": 43164518,
+          "minimum_frames": 47,
+          "maximum_frames": 1691,
+          "index_sha256": "89e15af1c7ce2e525f0f0d1ba9ca030131625567302f848a0be1e8fcb17340ae",
+          "feature_bytes": 66300699648
+        },
+        "sixteen_bit": {
+          "rows": 146359,
+          "frames": 43164518,
+          "minimum_frames": 47,
+          "maximum_frames": 1691,
+          "index_sha256": "89e15af1c7ce2e525f0f0d1ba9ca030131625567302f848a0be1e8fcb17340ae",
+          "feature_bytes": 66300699648
+        }
+      },
+      "indexes_identical": true,
+      "labels": {
+        "languages": [
+          "bh",
+          "bn",
+          "ch",
+          "kn",
+          "mg",
+          "mr",
+          "mt",
+          "te"
+        ],
+        "lid_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "gender_values": [
+          0,
+          1
+        ],
+        "language_to_lid": {
+          "bh": 1,
+          "bn": 0,
+          "ch": 7,
+          "kn": 5,
+          "mg": 2,
+          "mr": 4,
+          "mt": 3,
+          "te": 6
+        },
+        "dialect_values_by_language": {
+          "bh": [
+            0,
+            1,
+            2
+          ],
+          "bn": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "ch": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kn": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "mg": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "mr": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "mt": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "te": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    "dev": {
+      "domains": {
+        "one_bit": {
+          "rows": 11507,
+          "frames": 3163197,
+          "minimum_frames": 68,
+          "maximum_frames": 1180,
+          "index_sha256": "a03d214541f2e80f5bfcd8e94ca6fa2a6ed1e3de6e38edf14cb4af6c3f0d2367",
+          "feature_bytes": 4858670592
+        },
+        "sixteen_bit": {
+          "rows": 11507,
+          "frames": 3163197,
+          "minimum_frames": 68,
+          "maximum_frames": 1180,
+          "index_sha256": "a03d214541f2e80f5bfcd8e94ca6fa2a6ed1e3de6e38edf14cb4af6c3f0d2367",
+          "feature_bytes": 4858670592
+        }
+      },
+      "indexes_identical": true,
+      "labels": {
+        "languages": [
+          "bh",
+          "bn",
+          "ch",
+          "kn",
+          "mg",
+          "mr",
+          "mt",
+          "te"
+        ],
+        "lid_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "gender_values": [
+          0,
+          1
+        ],
+        "language_to_lid": {
+          "bh": 1,
+          "bn": 0,
+          "ch": 7,
+          "kn": 5,
+          "mg": 2,
+          "mr": 4,
+          "mt": 3,
+          "te": 6
+        },
+        "dialect_values_by_language": {
+          "bh": [
+            0,
+            1,
+            2
+          ],
+          "bn": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "ch": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kn": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "mg": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "mr": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "mt": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "te": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    "test": {
+      "domains": {
+        "one_bit": {
+          "rows": 17550,
+          "frames": 4800662,
+          "minimum_frames": 48,
+          "maximum_frames": 1195,
+          "index_sha256": "7e6c7c18ff3297a45e6694d8ed87aa731d4a909e40f850c18ffb4336dccbea46",
+          "feature_bytes": 7373816832
+        },
+        "sixteen_bit": {
+          "rows": 17550,
+          "frames": 4800662,
+          "minimum_frames": 48,
+          "maximum_frames": 1195,
+          "index_sha256": "7e6c7c18ff3297a45e6694d8ed87aa731d4a909e40f850c18ffb4336dccbea46",
+          "feature_bytes": 7373816832
+        }
+      },
+      "indexes_identical": true,
+      "labels": {
+        "languages": [
+          "bh",
+          "bn",
+          "ch",
+          "kn",
+          "mg",
+          "mr",
+          "mt",
+          "te"
+        ],
+        "lid_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "gender_values": [
+          0,
+          1
+        ],
+        "language_to_lid": {
+          "bh": 1,
+          "bn": 0,
+          "ch": 7,
+          "kn": 5,
+          "mg": 2,
+          "mr": 4,
+          "mt": 3,
+          "te": 6
+        },
+        "dialect_values_by_language": {
+          "bh": [
+            0,
+            1,
+            2
+          ],
+          "bn": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "ch": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kn": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "mg": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "mr": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "mt": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "te": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    }
+  }
+}

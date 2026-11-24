@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    "standard_logged",
+    "pcgrad",
+    "gradnorm"
+  ],
+  "domains": [
+    "one_bit",
+    "sixteen_bit"
+  ],
+  "figures": [
+    "figure_01_methods_across_bit_depths.png",
+    "figure_02_bit_depth_gap_by_task_and_method.png"
+  ],
+  "status": "complete",
+  "tables": [
+    "table_01_all_evaluation_cells.csv",
+    "table_02_bit_depth_gaps.csv"
+  ]
+}

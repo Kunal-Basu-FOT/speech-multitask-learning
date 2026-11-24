@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "parameter_report": {
+    "input_normalization": 1536,
+    "ecapa": 7212660,
+    "encoder_total": 7214196,
+    "language_head": 51848,
+    "gender_head": 50306,
+    "dialect_heads": 406817,
+    "all_classifier_heads": 508971,
+    "task_weighting": 3,
+    "total": 7723170,
+    "trainable": 7723170
+  },
+  "forward_contract": {
+    "batch_size": 8,
+    "maximum_frames": 64,
+    "feature_dimension": 768,
+    "embedding_shape": [
+      8,
+      192
+    ],
+    "language_logits_shape": [
+      8,
+      8
+    ],
+    "gender_logits_shape": [
+      8,
+      2
+    ],
+    "dialect_shapes": {
+      "bh": [
+        1,
+        3
+      ],
+      "bn": [
+        1,
+        5
+      ],
+      "ch": [
+        1,
+        4
+      ],
+      "kn": [
+        1,
+        5
+      ],
+      "mg": [
+        1,
+        4
+      ],
+      "mr": [
+        1,
+        4
+      ],
+      "mt": [
+        1,
+        4
+      ],
+      "te": [
+        1,
+        4
+      ]
+    }
+  },
+  "oracle_routing_covered_examples": 8,
+  "task_log_variances": {
+    "dialect": 0.0,
+    "gender": 0.0,
+    "language": 0.0
+  },
+  "phase3_encoder_freeze_check": "PASS"
+}

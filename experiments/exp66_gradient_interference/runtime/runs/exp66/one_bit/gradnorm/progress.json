@@ -1,0 +1,15 @@
+{
+  "amp_skips_total": 70,
+  "best_epoch": 39,
+  "best_score": 0.6574743145555485,
+  "condition": "gradnorm",
+  "domain": "one_bit",
+  "epoch": 40,
+  "epochs": 40,
+  "gradient_samples_epoch": 0,
+  "pcgrad_projections_epoch": 0,
+  "phase": "phase3_heads_only",
+  "selection_score": 0.6573481675878569,
+  "status": "epoch_complete",
+  "timestamp": 1786056409.246626
+}

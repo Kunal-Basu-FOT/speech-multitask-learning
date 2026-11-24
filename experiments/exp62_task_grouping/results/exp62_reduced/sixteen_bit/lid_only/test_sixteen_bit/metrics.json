@@ -1,0 +1,62 @@
+{
+  "best_epoch": 40,
+  "checkpoint": "/home3/Kunal/FORMAL_EXP6_2_TaskGrouping_IndicWav2Vec_FinalLayer/runtime/runs/exp62_reduced/sixteen_bit/lid_only/checkpoints/best.pt",
+  "condition": "lid_only",
+  "elapsed_seconds": 9.692286729812622,
+  "examples": 17550,
+  "lid_accuracy": 0.8966951566951566,
+  "lid_macro_f1": 0.8963091253384174,
+  "lid_macro_precision": 0.9023501885891139,
+  "lid_macro_recall": 0.8967494779761931,
+  "lid_per_class_f1": [
+    0.8314140948871488,
+    0.9635854341736696,
+    0.8327817792485888,
+    0.9713890170742963,
+    0.7666497203863752,
+    0.9646950939935809,
+    0.8634215500945179,
+    0.976536312849162
+  ],
+  "lid_per_class_precision": [
+    0.850612629594722,
+    0.9781990521327014,
+    0.736823975198071,
+    0.9687068568798896,
+    0.8661688684663986,
+    0.9598540145985401,
+    0.8868932038834951,
+    0.9715429079590929
+  ],
+  "lid_per_class_recall": [
+    0.8130630630630631,
+    0.9494020239190433,
+    0.9574753804834378,
+    0.974086071263304,
+    0.6876424988600092,
+    0.9695852534562212,
+    0.8411602209944752,
+    0.981581311769991
+  ],
+  "lid_support": [
+    2220,
+    2174,
+    2234,
+    2161,
+    2193,
+    2170,
+    2172,
+    2226
+  ],
+  "loss": 0.45098746977049237,
+  "matched": true,
+  "parameter_counts": {
+    "encoder": 7214196,
+    "tasks": 51848,
+    "total": 7266044,
+    "trainable": 51848
+  },
+  "selection_score": 0.8794391543792641,
+  "test_domain": "sixteen_bit",
+  "train_domain": "sixteen_bit"
+}

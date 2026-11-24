@@ -1,0 +1,8 @@
+{
+  "condition": "pcgrad",
+  "matched": true,
+  "status": "complete",
+  "test_domain": "sixteen_bit",
+  "timestamp": 1786121021.9804535,
+  "train_domain": "sixteen_bit"
+}

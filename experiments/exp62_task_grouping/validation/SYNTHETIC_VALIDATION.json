@@ -1,0 +1,57 @@
+{
+  "dialect_only": {
+    "loss": 1.4876036643981934,
+    "matrix_keys": [
+      "dialect_bh",
+      "dialect_bn",
+      "dialect_ch",
+      "dialect_kn",
+      "dialect_mg",
+      "dialect_mr",
+      "dialect_mt",
+      "dialect_te"
+    ],
+    "parameter_counts": {
+      "encoder": 7214196,
+      "tasks": 406817,
+      "total": 7621013,
+      "trainable": 7621013
+    },
+    "selection_score": 0.0
+  },
+  "lid_dialect": {
+    "loss": 3.4491991996765137,
+    "matrix_keys": [
+      "dialect_bh",
+      "dialect_bn",
+      "dialect_ch",
+      "dialect_kn",
+      "dialect_mg",
+      "dialect_mr",
+      "dialect_mt",
+      "dialect_te",
+      "lid"
+    ],
+    "parameter_counts": {
+      "encoder": 7214196,
+      "tasks": 458667,
+      "total": 7672863,
+      "trainable": 7672863
+    },
+    "selection_score": 0.109375
+  },
+  "lid_only": {
+    "loss": 2.090937852859497,
+    "matrix_keys": [
+      "lid"
+    ],
+    "parameter_counts": {
+      "encoder": 7214196,
+      "tasks": 51848,
+      "total": 7266044,
+      "trainable": 7266044
+    },
+    "selection_score": 0.125
+  },
+  "status": "pass"
+}
